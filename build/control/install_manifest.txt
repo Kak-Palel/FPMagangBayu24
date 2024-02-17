@@ -1,0 +1,16 @@
+/home/olel/Projects/FPMagangBayu24/install/control/lib/control/bot_control
+/home/olel/Projects/FPMagangBayu24/install/control/share/ament_index/resource_index/package_run_dependencies/control
+/home/olel/Projects/FPMagangBayu24/install/control/share/ament_index/resource_index/parent_prefix_path/control
+/home/olel/Projects/FPMagangBayu24/install/control/share/control/environment/ament_prefix_path.sh
+/home/olel/Projects/FPMagangBayu24/install/control/share/control/environment/ament_prefix_path.dsv
+/home/olel/Projects/FPMagangBayu24/install/control/share/control/environment/path.sh
+/home/olel/Projects/FPMagangBayu24/install/control/share/control/environment/path.dsv
+/home/olel/Projects/FPMagangBayu24/install/control/share/control/local_setup.bash
+/home/olel/Projects/FPMagangBayu24/install/control/share/control/local_setup.sh
+/home/olel/Projects/FPMagangBayu24/install/control/share/control/local_setup.zsh
+/home/olel/Projects/FPMagangBayu24/install/control/share/control/local_setup.dsv
+/home/olel/Projects/FPMagangBayu24/install/control/share/control/package.dsv
+/home/olel/Projects/FPMagangBayu24/install/control/share/ament_index/resource_index/packages/control
+/home/olel/Projects/FPMagangBayu24/install/control/share/control/cmake/controlConfig.cmake
+/home/olel/Projects/FPMagangBayu24/install/control/share/control/cmake/controlConfig-version.cmake
+/home/olel/Projects/FPMagangBayu24/install/control/share/control/package.xml

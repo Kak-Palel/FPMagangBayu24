@@ -1,0 +1,3 @@
+[console_scripts]
+bot_vision = vision.visioner:main
+
