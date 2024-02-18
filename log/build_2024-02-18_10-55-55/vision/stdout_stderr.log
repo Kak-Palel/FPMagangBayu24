@@ -1,0 +1,27 @@
+running egg_info
+writing ../../build/vision/vision.egg-info/PKG-INFO
+writing dependency_links to ../../build/vision/vision.egg-info/dependency_links.txt
+writing entry points to ../../build/vision/vision.egg-info/entry_points.txt
+writing requirements to ../../build/vision/vision.egg-info/requires.txt
+writing top-level names to ../../build/vision/vision.egg-info/top_level.txt
+reading manifest file '../../build/vision/vision.egg-info/SOURCES.txt'
+writing manifest file '../../build/vision/vision.egg-info/SOURCES.txt'
+running build
+running build_py
+copying vision/visioner.py -> /home/olel/Projects/FPMagangBayu24/build/vision/build/lib/vision
+running install
+running install_lib
+copying /home/olel/Projects/FPMagangBayu24/build/vision/build/lib/vision/visioner.py -> /home/olel/Projects/FPMagangBayu24/install/vision/lib/python3.8/site-packages/vision
+byte-compiling /home/olel/Projects/FPMagangBayu24/install/vision/lib/python3.8/site-packages/vision/visioner.py to visioner.cpython-38.pyc
+running install_data
+  File "/home/olel/Projects/FPMagangBayu24/install/vision/lib/python3.8/site-packages/vision/visioner.py", line 43
+    break
+    ^
+SyntaxError: 'break' outside loop
+
+running install_egg_info
+removing '/home/olel/Projects/FPMagangBayu24/install/vision/lib/python3.8/site-packages/vision-0.0.0-py3.8.egg-info' (and everything under it)
+Copying ../../build/vision/vision.egg-info to /home/olel/Projects/FPMagangBayu24/install/vision/lib/python3.8/site-packages/vision-0.0.0-py3.8.egg-info
+running install_scripts
+Installing bot_vision script to /home/olel/Projects/FPMagangBayu24/install/vision/lib/vision
+writing list of installed files to '/home/olel/Projects/FPMagangBayu24/build/vision/install.log'

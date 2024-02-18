@@ -9,9 +9,6 @@
 using namespace std::chrono_literals;
 using std::placeholders::_1;
 
-/* This example creates a subclass of Node and uses std::bind() to register a
-* member function as a callback from the timer. */
-
 class ControllerTicTacToe : public rclcpp::Node
 {
   public:
@@ -24,7 +21,6 @@ class ControllerTicTacToe : public rclcpp::Node
       publisher_ = this->create_publisher<std_msgs::msg::String>("ttt_moves", 10);
       timer_ = this->create_wall_timer(
       500ms, std::bind(&ControllerTicTacToe::timer_callback, this));
-    //   timer_callback();
       std::cout<<"constructor executed\n";
     }
 

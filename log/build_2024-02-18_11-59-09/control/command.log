@@ -1,0 +1,4 @@
+Invoking command in '/home/olel/Projects/FPMagangBayu24/build/control': /usr/bin/cmake --build /home/olel/Projects/FPMagangBayu24/build/control -- -j16 -l16
+Invoked command in '/home/olel/Projects/FPMagangBayu24/build/control' returned '0': /usr/bin/cmake --build /home/olel/Projects/FPMagangBayu24/build/control -- -j16 -l16
+Invoking command in '/home/olel/Projects/FPMagangBayu24/build/control': /usr/bin/cmake --install /home/olel/Projects/FPMagangBayu24/build/control
+Invoked command in '/home/olel/Projects/FPMagangBayu24/build/control' returned '0': /usr/bin/cmake --install /home/olel/Projects/FPMagangBayu24/build/control
