@@ -13,7 +13,7 @@ while True:
         break
 
     cv.imshow('olel', frame)
-    cv.waitkey(1)
+    cv.waitKey(1)
     # if cv.waitKey(1) == ord('q'):
         # break
 # When everything done, release the capture

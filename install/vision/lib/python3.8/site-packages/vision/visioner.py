@@ -16,7 +16,6 @@ class VisionerTicTacToe(Node):
         self.publisher_ = self.create_publisher(String, 'ttt_state', 10)
         timer_period = 0.032  # seconds | 30 fps
         self.timer = self.create_timer(timer_period, self.timer_callback)
-        self.i = 0
 
         self.subscription = self.create_subscription(
             String,
@@ -26,17 +25,22 @@ class VisionerTicTacToe(Node):
         self.subscription
 
     def readState(self):
-        # print("exec")
-        success, rawFrame = self.cap.read()
+        
+        successOpenCam, drawnFrame = self.cap.read()
 
-        if not success:
+        if not successOpenCam:
             print("NDAK BISA BACA HUAAA")
             return
         
-        drawnFrame = cv.rectangle(rawFrame, (150, 110), (490, 450), (255, 0, 0), 2)
+        processFrame = drawnFrame.copy()
         
-
-        processFrame = cv.cvtColor(rawFrame, cv.COLOR_BGR2HSV)
+        drawnFrame = cv.rectangle(drawnFrame, (150, 110), (490, 450), (255, 0, 0), 2)
+        
+        processFrame = cv.rectangle(processFrame, (0, 0), (150, 480), (0, 0, 0), -1)
+        processFrame = cv.rectangle(processFrame, (150, 0), (490, 110), (0, 0, 0), -1)
+        processFrame = cv.rectangle(processFrame, (490, 0), (640, 480), (0, 0, 0), -1)
+        processFrame = cv.rectangle(processFrame, (150, 450), (490, 480), (0, 0, 0), -1)
+        processFrame = cv.cvtColor(processFrame, cv.COLOR_BGR2HSV)
 
         upper_range = np.array([15, 255, 255])
         lower_range = np.array([0, 50, 50])
@@ -46,36 +50,48 @@ class VisionerTicTacToe(Node):
         
         circles = cv.HoughCircles(processFrame, cv.HOUGH_GRADIENT, 1, 60, param1 = 90, param2 = 35, minRadius = 40, maxRadius = 0)
             
+        gridPos = np.array([
+            [150, 263, 110, 223, 1],
+            [264, 376, 110, 223, 2],
+            [377, 490, 110, 223, 3],
+            [150, 263, 224, 336, 4],
+            [264, 376, 224, 336, 5],
+            [377, 490, 224, 336, 6],
+            [150, 263, 337, 450, 7],
+            [264, 376, 337, 450, 8],
+            [377, 490, 337, 450, 9]])
+        
+        gridState = np.array([0, 0, 0, 0, 0, 0 ,0, 0, 0])
+
         if circles is not None:
             circlesInt = np.round(circles[0, :]).astype("int")
             for (x, y, r) in circlesInt:
-                # if 140 <= x <= 500 and 100 <= y <= 460:
                 cv.circle(drawnFrame, (x, y), r, (255, 0, 0), 2)
-        # circles = np.array(np.around(circles))
-        # circles = np.array(circles)
-
-        # for circle in circles:
-        # if circles is not None:
-        #     for i in circles[0,:]:
-        #         cv.circle(drawnFrame, (float(i[0]), float(i[1])), float(i[2]), (255, 0, 0), 2)
-
-
+                for i in gridPos:
+                    if i[0] <= x and x <= i[1] and i[2] <= y and y <= i[3] and gridState[i[4]-1] != 2:
+                        gridState[i[4]-1] = 1
         
-            
-
         cv.imshow("ni olel", drawnFrame)
         cv.imshow("olel ngeri", processFrame)
-        cv.waitKey(1)
+        
+        msg = ''
+        for i in gridState:
+            msg += str(i)
+
+        if cv.waitKey(1) == ord('x'):
+            return msg
+        else:
+            return 'zonk'
 
     def timer_callback(self):
-        self.readState()
+        
 
         msg = String()
-        msg.data = 'SUSHI CANTIK: %d' % self.i
-        self.publisher_.publish(msg)
-        self.get_logger().info('Publishing: "%s"' % msg.data)
-        self.i += 1
-
+        msg.data = self.readState()
+        if msg.data != 'zonk':
+            self.publisher_.publish(msg)
+            print(msg.data)
+            print('move sent, processing...')
 
     def listener_callback(self, msg):
         self.get_logger().info('I heard: "%s"' % msg.data)
