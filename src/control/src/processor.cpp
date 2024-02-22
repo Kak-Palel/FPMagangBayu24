@@ -26,8 +26,9 @@ class ControllerTicTacToe : public rclcpp::Node
     }
 
   private:
-
-    void topic_callback(const std_msgs::msg::String::SharedPtr msg) const
+    int finalMove = -1;
+    
+    void topic_callback(const std_msgs::msg::String::SharedPtr msg)
     {
       RCLCPP_INFO(this->get_logger(), "A: '%s'", msg->data.c_str());
       std::string strBoard = msg->data.c_str();
@@ -39,15 +40,20 @@ class ControllerTicTacToe : public rclcpp::Node
         if((j+1) % 3 == 0){std::cout<<std::endl;}
       }
       std::cout<<std::endl;
+      finalMove = determine(vecBoard);
+      std::cout<<"move: "<<finalMove<<std::endl;
     }
     rclcpp::Subscription<std_msgs::msg::String>::SharedPtr subscription_;
 
     void timer_callback()
     {
-      auto message = std_msgs::msg::String();
-      message.data = "SUSHI LUTUUU " + std::to_string(count_++);
-      RCLCPP_INFO(this->get_logger(), "Publishing: '%s'", message.data.c_str());
-      publisher_->publish(message);
+      if(finalMove != -1)
+      {
+        auto message = std_msgs::msg::String();
+        message.data = std::to_string(finalMove);
+        publisher_->publish(message);
+        finalMove = -1;
+      }
     }
     rclcpp::TimerBase::SharedPtr timer_;
     rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_;
@@ -65,36 +71,86 @@ class ControllerTicTacToe : public rclcpp::Node
     
     std::vector<std::vector<int>> winCombination =
     {
-      {1, 2, 3},
-      {4, 5, 6},
-      {7, 8, 9},
+      {0, 1, 2},
+      {3, 4, 5},
+      {6, 7, 8},
+      {0, 3, 6},
       {1, 4, 7},
       {2, 5, 8},
-      {3, 6, 9},
-      {1, 5, 9},
-      {3, 5, 7},
+      {0, 4, 8},
+      {2, 4, 6}
     };
-
 
     bool checkWin(std::vector<int> boardState, int player)
     {
       //loop through all the win combo, if any i for all j in boardState[winCombination[i][j]] == player, return true
+      for (uint64_t i = 0; i < winCombination.size(); i++)
+      {
+        if
+        (
+          boardState[winCombination[i][0]] == player &&
+          boardState[winCombination[i][1]] == player &&
+          boardState[winCombination[i][2]] == player
+        )
+        {return true;}
+      }
       return false;
     }
 
-    int moveScore(std::vector<int> boardState, int Player)
+    std::vector<int> availableMoves(std::vector<int> boardState)
     {
-      //check win/lose and return 1 or -1
+      std::vector<int> moves;
+      for(int i = 0; i < 9; i++)
+      {
+        if(boardState[i] == 0) {moves.push_back(i);}
+      }
+      return moves;
+    }
 
-      //else loop thru all moves that we can make, and then do a recursive search with alternating Player (2 if statement)
+    int moveScore(std::vector<int> boardState, int playing)
+    {
+      if(checkWin(boardState, 1)) {return 1;}
+      else if(checkWin(boardState, 2)) {return -1;}
+      else
+      {
+        for(uint64_t i = 0; i < boardState.size(); i++)
+        {
+          if(boardState[i] == 0) {break;}
+          if(i == 7) {return 0;}
+        }
+      }
 
-      //return score
-      return 0;
+      //else loop thru all moves that we can make, and then do a recursive search with alternating Player
+      int score = 0;
+      std::vector<int> emptyGrids = availableMoves(boardState);
+      for(uint64_t i = 0; i < emptyGrids.size(); i++)
+      {
+        boardState[emptyGrids[i]] = playing;
+        score += moveScore(boardState, (playing == 1 ? 2 : 1));
+        boardState[emptyGrids[i]] = 0;
+      }
+      return score;
+      // return 0;
     }
 
     int determine(std::vector<int> boardState)
     {
-      return 0;
+      int maxScore = 0;
+      int maxMove = -1;
+      std::vector<int> moves = availableMoves(boardState);
+      for(uint64_t i = 0; i < moves.size(); i++)
+      {
+        boardState[moves[i]] = 2;
+        int tempScore = moveScore(boardState, 1);
+        std::cout<<"finalScore: "<<tempScore<<std::endl;
+        if(tempScore > maxScore)
+        {
+          maxScore = tempScore;
+          maxMove = moves[i];
+        }
+        boardState[moves[i]] = 0;
+      }
+      return maxMove;
     }
 };
 

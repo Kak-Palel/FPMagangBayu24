@@ -13,6 +13,9 @@ class VisionerTicTacToe(Node):
         self.cap = cv.VideoCapture(0)
         if not self.cap.isOpened():
             print("HUAAAAAAAAAA RUSAAAAAAAAAAAK")
+
+        self.botMoves = np.array([])
+        
         self.publisher_ = self.create_publisher(String, 'ttt_state', 10)
         timer_period = 0.032  # seconds | 30 fps
         self.timer = self.create_timer(timer_period, self.timer_callback)
@@ -23,6 +26,7 @@ class VisionerTicTacToe(Node):
             self.listener_callback,
             10)
         self.subscription
+        print("constructor excuted")
 
     def readState(self):
         
@@ -71,6 +75,17 @@ class VisionerTicTacToe(Node):
                     if i[0] <= x and x <= i[1] and i[2] <= y and y <= i[3] and gridState[i[4]-1] != 2:
                         gridState[i[4]-1] = 1
         
+        if self.botMoves is not None:
+            for i in self.botMoves:
+                i = int(i)
+                gridState[i] = 2
+                if 0<= i <= 2:
+                    cv.circle(drawnFrame, (150 + 56*(2*i+1), 166), 50, (255, 0, 0), -1)
+                elif 3 <= i <= 5:
+                    cv.circle(drawnFrame, (150 + 56*(2*(i-3)+1), 278), 50, (255, 0, 0), -1)
+                elif 6 <= i <= 8:
+                    cv.circle(drawnFrame, (150 + 56*(2*(i-6)+1), 390), 50, (255, 0, 0), -1)
+
         cv.imshow("olel ngeri", processFrame)
         cv.imshow("ni olel", drawnFrame)
         
@@ -94,7 +109,9 @@ class VisionerTicTacToe(Node):
             print('move sent, processing...')
 
     def listener_callback(self, msg):
-        self.get_logger().info('I heard: "%s"' % msg.data)
+        self.get_logger().info('bot move to grid "%s"' % msg.data)
+        self.botMoves =  np.append(self.botMoves, int(msg.data))
+        
 
 def main(args=None):
     rclpy.init(args=args)

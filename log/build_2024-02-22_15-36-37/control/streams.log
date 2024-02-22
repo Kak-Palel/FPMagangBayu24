@@ -1,0 +1,26 @@
+[0.107s] Invoking command in '/home/olel/Projects/FPMagangBayu24/build/control': /usr/bin/cmake --build /home/olel/Projects/FPMagangBayu24/build/control -- -j16 -l16
+[0.144s] [35m[1mScanning dependencies of target bot_control[0m
+[0.183s] [ 50%] [32mBuilding CXX object CMakeFiles/bot_control.dir/src/processor.cpp.o[0m
+[3.941s] [100%] [32m[1mLinking CXX executable bot_control[0m
+[4.097s] [100%] Built target bot_control
+[4.105s] Invoked command in '/home/olel/Projects/FPMagangBayu24/build/control' returned '0': /usr/bin/cmake --build /home/olel/Projects/FPMagangBayu24/build/control -- -j16 -l16
+[4.133s] Invoking command in '/home/olel/Projects/FPMagangBayu24/build/control': /usr/bin/cmake --install /home/olel/Projects/FPMagangBayu24/build/control
+[4.140s] -- Install configuration: ""
+[4.140s] -- Installing: /home/olel/Projects/FPMagangBayu24/install/control/lib/control/bot_control
+[4.142s] -- Set runtime path of "/home/olel/Projects/FPMagangBayu24/install/control/lib/control/bot_control" to ""
+[4.142s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/ament_index/resource_index/package_run_dependencies/control
+[4.142s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/ament_index/resource_index/parent_prefix_path/control
+[4.142s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/control/environment/ament_prefix_path.sh
+[4.142s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/control/environment/ament_prefix_path.dsv
+[4.143s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/control/environment/path.sh
+[4.143s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/control/environment/path.dsv
+[4.143s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/control/local_setup.bash
+[4.143s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/control/local_setup.sh
+[4.143s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/control/local_setup.zsh
+[4.143s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/control/local_setup.dsv
+[4.143s] -- Installing: /home/olel/Projects/FPMagangBayu24/install/control/share/control/package.dsv
+[4.143s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/ament_index/resource_index/packages/control
+[4.143s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/control/cmake/controlConfig.cmake
+[4.144s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/control/cmake/controlConfig-version.cmake
+[4.144s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/control/package.xml
+[4.144s] Invoked command in '/home/olel/Projects/FPMagangBayu24/build/control' returned '0': /usr/bin/cmake --install /home/olel/Projects/FPMagangBayu24/build/control

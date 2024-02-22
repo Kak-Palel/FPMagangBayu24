@@ -1,0 +1,2 @@
+Invoking command in '/home/olel/Projects/FPMagangBayu24/build/control': /usr/bin/cmake --build /home/olel/Projects/FPMagangBayu24/build/control -- -j16 -l16
+Invoked command in '/home/olel/Projects/FPMagangBayu24/build/control' returned '2': /usr/bin/cmake --build /home/olel/Projects/FPMagangBayu24/build/control -- -j16 -l16

@@ -1,0 +1,34 @@
+[0.098s] Invoking command in '/home/olel/Projects/FPMagangBayu24/build/control': /usr/bin/cmake --build /home/olel/Projects/FPMagangBayu24/build/control -- -j16 -l16
+[0.133s] [35m[1mScanning dependencies of target bot_control[0m
+[0.156s] [ 50%] [32mBuilding CXX object CMakeFiles/bot_control.dir/src/processor.cpp.o[0m
+[1.045s] [01m[K/home/olel/Projects/FPMagangBayu24/src/control/src/processor.cpp:[m[K In member function ‘[01m[Kint ControllerTicTacToe::moveScore(std::vector<int>, int)[m[K’:
+[1.045s] [01m[K/home/olel/Projects/FPMagangBayu24/src/control/src/processor.cpp:121:24:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[1.046s]   121 |       for(int i = 0; [01;35m[Ki < emptyGrids.size()[m[K; i++)
+[1.046s]       |                      [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[1.046s] [01m[K/home/olel/Projects/FPMagangBayu24/src/control/src/processor.cpp:[m[K In member function ‘[01m[Kint ControllerTicTacToe::determine(std::vector<int>)[m[K’:
+[1.046s] [01m[K/home/olel/Projects/FPMagangBayu24/src/control/src/processor.cpp:136:24:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[1.046s]   136 |       for(int i = 0; [01;35m[Ki < moves.size()[m[K; i++)
+[1.046s]       |                      [01;35m[K~~^~~~~~~~~~~~~~[m[K
+[3.786s] [100%] [32m[1mLinking CXX executable bot_control[0m
+[3.972s] [100%] Built target bot_control
+[3.980s] Invoked command in '/home/olel/Projects/FPMagangBayu24/build/control' returned '0': /usr/bin/cmake --build /home/olel/Projects/FPMagangBayu24/build/control -- -j16 -l16
+[4.010s] Invoking command in '/home/olel/Projects/FPMagangBayu24/build/control': /usr/bin/cmake --install /home/olel/Projects/FPMagangBayu24/build/control
+[4.015s] -- Install configuration: ""
+[4.015s] -- Installing: /home/olel/Projects/FPMagangBayu24/install/control/lib/control/bot_control
+[4.017s] -- Set runtime path of "/home/olel/Projects/FPMagangBayu24/install/control/lib/control/bot_control" to ""
+[4.017s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/ament_index/resource_index/package_run_dependencies/control
+[4.017s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/ament_index/resource_index/parent_prefix_path/control
+[4.017s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/control/environment/ament_prefix_path.sh
+[4.018s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/control/environment/ament_prefix_path.dsv
+[4.018s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/control/environment/path.sh
+[4.018s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/control/environment/path.dsv
+[4.018s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/control/local_setup.bash
+[4.018s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/control/local_setup.sh
+[4.018s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/control/local_setup.zsh
+[4.018s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/control/local_setup.dsv
+[4.019s] -- Installing: /home/olel/Projects/FPMagangBayu24/install/control/share/control/package.dsv
+[4.019s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/ament_index/resource_index/packages/control
+[4.019s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/control/cmake/controlConfig.cmake
+[4.019s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/control/cmake/controlConfig-version.cmake
+[4.019s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/control/package.xml
+[4.020s] Invoked command in '/home/olel/Projects/FPMagangBayu24/build/control' returned '0': /usr/bin/cmake --install /home/olel/Projects/FPMagangBayu24/build/control
