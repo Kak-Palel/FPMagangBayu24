@@ -1,0 +1,32 @@
+[0.098s] Invoking command in '/home/olel/Projects/FPMagangBayu24/build/control': /usr/bin/cmake --build /home/olel/Projects/FPMagangBayu24/build/control -- -j16 -l16
+[0.138s] [35m[1mScanning dependencies of target bot_control[0m
+[0.164s] [ 50%] [32mBuilding CXX object CMakeFiles/bot_control.dir/src/processor.cpp.o[0m
+[1.068s] [01m[K/home/olel/Projects/FPMagangBayu24/src/control/src/processor.cpp:[m[K In member function ‘[01m[Kvoid ControllerTicTacToe::topic_callback(std_msgs::msg::String_<std::allocator<void> >::SharedPtr) const[m[K’:
+[1.068s] [01m[K/home/olel/Projects/FPMagangBayu24/src/control/src/processor.cpp:45:57:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kconst ControllerTicTacToe[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K-fpermissive[m[K]
+[1.069s]    45 |       std::vector<int> vecBoard = string2vec("000000000"[01;31m[K)[m[K;
+[1.069s]       |                                                         [01;31m[K^[m[K
+[1.069s] [01m[K/home/olel/Projects/FPMagangBayu24/src/control/src/processor.cpp:29:22:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[Kstd::vector<int> ControllerTicTacToe::string2vec(std::string)[m[K’
+[1.069s]    29 |     std::vector<int> [01;36m[Kstring2vec[m[K(std::string strBoard)
+[1.069s]       |                      [01;36m[K^~~~~~~~~~[m[K
+[1.073s] [01m[K/home/olel/Projects/FPMagangBayu24/src/control/src/processor.cpp:[m[K In member function ‘[01m[Kbool ControllerTicTacToe::checkWin(std::vector<int>, int)[m[K’:
+[1.073s] [01m[K/home/olel/Projects/FPMagangBayu24/src/control/src/processor.cpp:79:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KboardState[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.073s]    79 |     bool checkWin([01;35m[Kstd::vector<int> boardState[m[K, int player)
+[1.073s]       |                   [01;35m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[1.073s] [01m[K/home/olel/Projects/FPMagangBayu24/src/control/src/processor.cpp:79:52:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kplayer[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.074s]    79 |     bool checkWin(std::vector<int> boardState, [01;35m[Kint player[m[K)
+[1.074s]       |                                                [01;35m[K~~~~^~~~~~[m[K
+[1.074s] [01m[K/home/olel/Projects/FPMagangBayu24/src/control/src/processor.cpp:[m[K In member function ‘[01m[Kint ControllerTicTacToe::moveScore(std::vector<int>, int)[m[K’:
+[1.074s] [01m[K/home/olel/Projects/FPMagangBayu24/src/control/src/processor.cpp:85:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KboardState[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.074s]    85 |     int moveScore([01;35m[Kstd::vector<int> boardState[m[K, int Player)
+[1.074s]       |                   [01;35m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[1.074s] [01m[K/home/olel/Projects/FPMagangBayu24/src/control/src/processor.cpp:85:52:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KPlayer[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.074s]    85 |     int moveScore(std::vector<int> boardState, [01;35m[Kint Player[m[K)
+[1.074s]       |                                                [01;35m[K~~~~^~~~~~[m[K
+[1.074s] [01m[K/home/olel/Projects/FPMagangBayu24/src/control/src/processor.cpp:[m[K In member function ‘[01m[Kint ControllerTicTacToe::determine(std::vector<int>)[m[K’:
+[1.074s] [01m[K/home/olel/Projects/FPMagangBayu24/src/control/src/processor.cpp:95:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KboardState[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.074s]    95 |     int determine([01;35m[Kstd::vector<int> boardState[m[K)
+[1.074s]       |                   [01;35m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[2.221s] make[2]: *** [CMakeFiles/bot_control.dir/build.make:63: CMakeFiles/bot_control.dir/src/processor.cpp.o] Error 1
+[2.221s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/bot_control.dir/all] Error 2
+[2.221s] make: *** [Makefile:141: all] Error 2
+[2.224s] Invoked command in '/home/olel/Projects/FPMagangBayu24/build/control' returned '2': /usr/bin/cmake --build /home/olel/Projects/FPMagangBayu24/build/control -- -j16 -l16

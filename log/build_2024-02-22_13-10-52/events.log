@@ -1,0 +1,64 @@
+[0.000000] (-) TimerEvent: {}
+[0.000646] (-) JobUnselected: {'identifier': 'vision'}
+[0.000711] (control) JobQueued: {'identifier': 'control', 'dependencies': OrderedDict()}
+[0.000761] (control) JobStarted: {'identifier': 'control'}
+[0.099913] (-) TimerEvent: {}
+[0.105588] (control) JobProgress: {'identifier': 'control', 'progress': 'cmake'}
+[0.106806] (control) JobProgress: {'identifier': 'control', 'progress': 'build'}
+[0.106965] (control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/olel/Projects/FPMagangBayu24/build/control', '--', '-j16', '-l16'], 'cwd': '/home/olel/Projects/FPMagangBayu24/build/control', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'olel'), ('LC_TIME', 'id_ID.UTF-8'), ('SSH_AGENT_PID', '1743'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('HOME', '/home/olel'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.86.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'id_ID.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1521'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2202'), ('IM_CONFIG_PHASE', '1'), ('LOGNAME', 'olel'), ('JOURNAL_STREAM', '8:37794'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'olel'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/olel-ROG-Flow-X16-GV601RE-GV601RE:@/tmp/.ICE-unix/1845,unix/olel-ROG-Flow-X16-GV601RE-GV601RE:/tmp/.ICE-unix/1845'), ('INVOCATION_ID', 'a99bbcc8b8ac4bf2baf26c863f0869c8'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-180af5a434.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/olel/Projects/FPMagangBayu24/build/control'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1')]), 'shell': False}
+[0.147928] (control) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target bot_control\x1b[0m\n'}
+[0.181073] (control) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/bot_control.dir/src/processor.cpp.o\x1b[0m\n'}
+[0.200016] (-) TimerEvent: {}
+[0.300364] (-) TimerEvent: {}
+[0.400801] (-) TimerEvent: {}
+[0.501116] (-) TimerEvent: {}
+[0.601471] (-) TimerEvent: {}
+[0.701861] (-) TimerEvent: {}
+[0.802530] (-) TimerEvent: {}
+[0.902874] (-) TimerEvent: {}
+[1.003212] (-) TimerEvent: {}
+[1.069907] (control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olel/Projects/FPMagangBayu24/src/control/src/processor.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ControllerTicTacToe::topic_callback(std_msgs::msg::String_<std::allocator<void> >::SharedPtr) const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.070174] (control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olel/Projects/FPMagangBayu24/src/control/src/processor.cpp:33:55:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kpassing \xe2\x80\x98\x1b[01m\x1b[Kconst ControllerTicTacToe\x1b[m\x1b[K\xe2\x80\x99 as \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 argument discards qualifiers [\x1b[01;31m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[1.070300] (control) StderrLine: {'line': b'   33 |       std::vector<int> vecBoard = string2vec(msg->data\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[1.070392] (control) StderrLine: {'line': b'      |                                                       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.070476] (control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olel/Projects/FPMagangBayu24/src/control/src/processor.cpp:66:22:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  in call to \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<int> ControllerTicTacToe::string2vec(std::string)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.070557] (control) StderrLine: {'line': b'   66 |     std::vector<int> \x1b[01;36m\x1b[Kstring2vec\x1b[m\x1b[K(std::string strBoard)\n'}
+[1.070638] (control) StderrLine: {'line': b'      |                      \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.075110] (control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olel/Projects/FPMagangBayu24/src/control/src/processor.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool ControllerTicTacToe::checkWin(std::vector<int>, int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.075272] (control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olel/Projects/FPMagangBayu24/src/control/src/processor.cpp:76:36:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KboardState\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[1.075431] (control) StderrLine: {'line': b'   76 |     bool checkWin(\x1b[01;35m\x1b[Kstd::vector<int> boardState\x1b[m\x1b[K, int player)\n'}
+[1.075587] (control) StderrLine: {'line': b'      |                   \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.075733] (control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olel/Projects/FPMagangBayu24/src/control/src/processor.cpp:76:52:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kplayer\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[1.075863] (control) StderrLine: {'line': b'   76 |     bool checkWin(std::vector<int> boardState, \x1b[01;35m\x1b[Kint player\x1b[m\x1b[K)\n'}
+[1.076003] (control) StderrLine: {'line': b'      |                                                \x1b[01;35m\x1b[K~~~~^~~~~~\x1b[m\x1b[K\n'}
+[1.076142] (control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olel/Projects/FPMagangBayu24/src/control/src/processor.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint ControllerTicTacToe::moveScore(std::vector<int>, int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.076299] (control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olel/Projects/FPMagangBayu24/src/control/src/processor.cpp:82:36:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KboardState\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[1.076416] (control) StderrLine: {'line': b'   82 |     int moveScore(\x1b[01;35m\x1b[Kstd::vector<int> boardState\x1b[m\x1b[K, int Player)\n'}
+[1.076539] (control) StderrLine: {'line': b'      |                   \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.076684] (control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olel/Projects/FPMagangBayu24/src/control/src/processor.cpp:82:52:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KPlayer\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[1.076825] (control) StderrLine: {'line': b'   82 |     int moveScore(std::vector<int> boardState, \x1b[01;35m\x1b[Kint Player\x1b[m\x1b[K)\n'}
+[1.076940] (control) StderrLine: {'line': b'      |                                                \x1b[01;35m\x1b[K~~~~^~~~~~\x1b[m\x1b[K\n'}
+[1.077052] (control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olel/Projects/FPMagangBayu24/src/control/src/processor.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint ControllerTicTacToe::determine(std::vector<int>)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.077165] (control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olel/Projects/FPMagangBayu24/src/control/src/processor.cpp:92:36:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KboardState\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[1.077278] (control) StderrLine: {'line': b'   92 |     int determine(\x1b[01;35m\x1b[Kstd::vector<int> boardState\x1b[m\x1b[K)\n'}
+[1.077399] (control) StderrLine: {'line': b'      |                   \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.103736] (-) TimerEvent: {}
+[1.204091] (-) TimerEvent: {}
+[1.304504] (-) TimerEvent: {}
+[1.404851] (-) TimerEvent: {}
+[1.505210] (-) TimerEvent: {}
+[1.605497] (-) TimerEvent: {}
+[1.705780] (-) TimerEvent: {}
+[1.806122] (-) TimerEvent: {}
+[1.906528] (-) TimerEvent: {}
+[2.006828] (-) TimerEvent: {}
+[2.107157] (-) TimerEvent: {}
+[2.207537] (-) TimerEvent: {}
+[2.242081] (control) StderrLine: {'line': b'make[2]: *** [CMakeFiles/bot_control.dir/build.make:63: CMakeFiles/bot_control.dir/src/processor.cpp.o] Error 1\n'}
+[2.242621] (control) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/bot_control.dir/all] Error 2\n'}
+[2.242799] (control) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[2.245282] (control) CommandEnded: {'returncode': 2}
+[2.308336] (-) TimerEvent: {}
+[2.408870] (-) TimerEvent: {}
+[2.461712] (control) JobEnded: {'identifier': 'control', 'rc': 2}
+[2.472550] (-) EventReactorShutdown: {}

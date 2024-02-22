@@ -1,0 +1,44 @@
+[0.101s] Invoking command in '/home/olel/Projects/FPMagangBayu24/build/control': /usr/bin/cmake --build /home/olel/Projects/FPMagangBayu24/build/control -- -j16 -l16
+[0.141s] [35m[1mScanning dependencies of target bot_control[0m
+[0.162s] [ 50%] [32mBuilding CXX object CMakeFiles/bot_control.dir/src/processor.cpp.o[0m
+[1.107s] [01m[K/home/olel/Projects/FPMagangBayu24/src/control/src/processor.cpp:[m[K In member function ‘[01m[Kbool ControllerTicTacToe::checkWin(std::vector<int>, int)[m[K’:
+[1.108s] [01m[K/home/olel/Projects/FPMagangBayu24/src/control/src/processor.cpp:79:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KboardState[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.108s]    79 |     bool checkWin([01;35m[Kstd::vector<int> boardState[m[K, int player)
+[1.108s]       |                   [01;35m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[1.108s] [01m[K/home/olel/Projects/FPMagangBayu24/src/control/src/processor.cpp:79:52:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kplayer[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.108s]    79 |     bool checkWin(std::vector<int> boardState, [01;35m[Kint player[m[K)
+[1.108s]       |                                                [01;35m[K~~~~^~~~~~[m[K
+[1.108s] [01m[K/home/olel/Projects/FPMagangBayu24/src/control/src/processor.cpp:[m[K In member function ‘[01m[Kint ControllerTicTacToe::moveScore(std::vector<int>, int)[m[K’:
+[1.108s] [01m[K/home/olel/Projects/FPMagangBayu24/src/control/src/processor.cpp:85:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KboardState[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.108s]    85 |     int moveScore([01;35m[Kstd::vector<int> boardState[m[K, int Player)
+[1.108s]       |                   [01;35m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[1.108s] [01m[K/home/olel/Projects/FPMagangBayu24/src/control/src/processor.cpp:85:52:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KPlayer[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.109s]    85 |     int moveScore(std::vector<int> boardState, [01;35m[Kint Player[m[K)
+[1.109s]       |                                                [01;35m[K~~~~^~~~~~[m[K
+[1.109s] [01m[K/home/olel/Projects/FPMagangBayu24/src/control/src/processor.cpp:[m[K In member function ‘[01m[Kint ControllerTicTacToe::determine(std::vector<int>)[m[K’:
+[1.109s] [01m[K/home/olel/Projects/FPMagangBayu24/src/control/src/processor.cpp:95:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KboardState[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.109s]    95 |     int determine([01;35m[Kstd::vector<int> boardState[m[K)
+[1.109s]       |                   [01;35m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[4.039s] [100%] [32m[1mLinking CXX executable bot_control[0m
+[4.235s] [100%] Built target bot_control
+[4.248s] Invoked command in '/home/olel/Projects/FPMagangBayu24/build/control' returned '0': /usr/bin/cmake --build /home/olel/Projects/FPMagangBayu24/build/control -- -j16 -l16
+[4.280s] Invoking command in '/home/olel/Projects/FPMagangBayu24/build/control': /usr/bin/cmake --install /home/olel/Projects/FPMagangBayu24/build/control
+[4.288s] -- Install configuration: ""
+[4.288s] -- Installing: /home/olel/Projects/FPMagangBayu24/install/control/lib/control/bot_control
+[4.290s] -- Set runtime path of "/home/olel/Projects/FPMagangBayu24/install/control/lib/control/bot_control" to ""
+[4.290s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/ament_index/resource_index/package_run_dependencies/control
+[4.290s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/ament_index/resource_index/parent_prefix_path/control
+[4.290s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/control/environment/ament_prefix_path.sh
+[4.290s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/control/environment/ament_prefix_path.dsv
+[4.290s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/control/environment/path.sh
+[4.290s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/control/environment/path.dsv
+[4.290s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/control/local_setup.bash
+[4.291s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/control/local_setup.sh
+[4.291s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/control/local_setup.zsh
+[4.291s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/control/local_setup.dsv
+[4.291s] -- Installing: /home/olel/Projects/FPMagangBayu24/install/control/share/control/package.dsv
+[4.291s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/ament_index/resource_index/packages/control
+[4.291s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/control/cmake/controlConfig.cmake
+[4.292s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/control/cmake/controlConfig-version.cmake
+[4.292s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/control/package.xml
+[4.293s] Invoked command in '/home/olel/Projects/FPMagangBayu24/build/control' returned '0': /usr/bin/cmake --install /home/olel/Projects/FPMagangBayu24/build/control

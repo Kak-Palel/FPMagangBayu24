@@ -71,8 +71,8 @@ class VisionerTicTacToe(Node):
                     if i[0] <= x and x <= i[1] and i[2] <= y and y <= i[3] and gridState[i[4]-1] != 2:
                         gridState[i[4]-1] = 1
         
-        cv.imshow("ni olel", drawnFrame)
         cv.imshow("olel ngeri", processFrame)
+        cv.imshow("ni olel", drawnFrame)
         
         msg = ''
         for i in gridState:

@@ -1,4 +1,9 @@
 {
   "cmake.sourceDirectory": "/home/olel/Projects/FPMagangBayu24/src/control",
-  "cmake.configureOnOpen": true
+  "cmake.configureOnOpen": true,
+  "files.associations": {
+    "array": "cpp",
+    "string": "cpp",
+    "string_view": "cpp"
+  }
 }
