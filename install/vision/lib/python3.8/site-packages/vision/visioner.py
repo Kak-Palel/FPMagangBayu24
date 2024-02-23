@@ -13,7 +13,7 @@ class VisionerTicTacToe(Node):
 
         cv.namedWindow("ni olel")
         cv.createTrackbar('param1', 'ni olel', 100, 200, self.nothing)
-        cv.createTrackbar('param2', 'ni olel', 20, 200, self.nothing)
+        cv.createTrackbar('param2', 'ni olel', 15, 200, self.nothing)
         self.cap = cv.VideoCapture(0)
         if not self.cap.isOpened():
             print("HUAAAAAAAAAA RUSAAAAAAAAAAAK")

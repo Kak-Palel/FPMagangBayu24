@@ -107,10 +107,10 @@ class ControllerTicTacToe : public rclcpp::Node
       return moves;
     }
 
-    int moveScore(std::vector<int> boardState, int playing)
+    int alphaBeta(std::vector<int> boardState, int playing, int alpha, int beta)
     {
-      if(checkWin(boardState, 1)) {return 1;}
-      else if(checkWin(boardState, 2)) {return -1;}
+      if(checkWin(boardState, 2)) {return 1;}
+      else if(checkWin(boardState, 1)) {return -1;}
       else
       {
         for(uint64_t i = 0; i < boardState.size(); i++)
@@ -126,27 +126,38 @@ class ControllerTicTacToe : public rclcpp::Node
       for(uint64_t i = 0; i < emptyGrids.size(); i++)
       {
         boardState[emptyGrids[i]] = playing;
-        score += moveScore(boardState, (playing == 1 ? 2 : 1));
+        score = alphaBeta(boardState, (playing == 1 ? 2 : 1), alpha, beta);
         boardState[emptyGrids[i]] = 0;
+        if(playing == 2)
+        {
+          if(score > alpha) {alpha = score;}
+          if(alpha >= beta) {return beta;}
+        }
+        else
+        {
+          if(score < beta) {beta = score;}
+          if(beta <= alpha) {return alpha;}
+        }
       }
-      return score;
-      // return 0;
+      if(playing == 2) {return alpha;} return beta;
     }
 
     int determine(std::vector<int> boardState)
     {
-      int maxScore = 0;
+      int maxScore = -2;
       int maxMove = -1;
       std::vector<int> moves = availableMoves(boardState);
+      if (moves.size() == 9) {return 4;}
       for(uint64_t i = 0; i < moves.size(); i++)
       {
         boardState[moves[i]] = 2;
-        int tempScore = moveScore(boardState, 1);
+        int tempScore = alphaBeta(boardState, 1, -2, 2);
         std::cout<<"finalScore: "<<tempScore<<std::endl;
         if(tempScore > maxScore)
         {
           maxScore = tempScore;
           maxMove = moves[i];
+          if(maxScore == 1) {return maxMove;}
         }
         boardState[moves[i]] = 0;
       }
