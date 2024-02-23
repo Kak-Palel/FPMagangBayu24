@@ -1,0 +1,24 @@
+[0.647s] Invoking command in '/home/olel/Projects/FPMagangBayu24/src/vision': PYTHONPATH=/home/olel/Projects/FPMagangBayu24/build/vision/prefix_override:/home/olel/Projects/FPMagangBayu24/install/vision/lib/python3.8/site-packages: /usr/bin/python3 setup.py egg_info --egg-base ../../build/vision build --build-base /home/olel/Projects/FPMagangBayu24/build/vision/build install --record /home/olel/Projects/FPMagangBayu24/build/vision/install.log --install-scripts $base/lib/vision --single-version-externally-managed
+[0.787s] running egg_info
+[0.787s] writing ../../build/vision/vision.egg-info/PKG-INFO
+[0.788s] writing dependency_links to ../../build/vision/vision.egg-info/dependency_links.txt
+[0.788s] writing entry points to ../../build/vision/vision.egg-info/entry_points.txt
+[0.788s] writing requirements to ../../build/vision/vision.egg-info/requires.txt
+[0.788s] writing top-level names to ../../build/vision/vision.egg-info/top_level.txt
+[0.816s] reading manifest file '../../build/vision/vision.egg-info/SOURCES.txt'
+[0.816s] writing manifest file '../../build/vision/vision.egg-info/SOURCES.txt'
+[0.816s] running build
+[0.816s] running build_py
+[0.817s] copying vision/visioner.py -> /home/olel/Projects/FPMagangBayu24/build/vision/build/lib/vision
+[0.817s] running install
+[0.817s] running install_lib
+[0.818s] copying /home/olel/Projects/FPMagangBayu24/build/vision/build/lib/vision/visioner.py -> /home/olel/Projects/FPMagangBayu24/install/vision/lib/python3.8/site-packages/vision
+[0.818s] byte-compiling /home/olel/Projects/FPMagangBayu24/install/vision/lib/python3.8/site-packages/vision/visioner.py to visioner.cpython-38.pyc
+[0.821s] running install_data
+[0.821s] running install_egg_info
+[0.822s] removing '/home/olel/Projects/FPMagangBayu24/install/vision/lib/python3.8/site-packages/vision-0.0.0-py3.8.egg-info' (and everything under it)
+[0.823s] Copying ../../build/vision/vision.egg-info to /home/olel/Projects/FPMagangBayu24/install/vision/lib/python3.8/site-packages/vision-0.0.0-py3.8.egg-info
+[0.823s] running install_scripts
+[0.836s] Installing bot_vision script to /home/olel/Projects/FPMagangBayu24/install/vision/lib/vision
+[0.836s] writing list of installed files to '/home/olel/Projects/FPMagangBayu24/build/vision/install.log'
+[0.863s] Invoked command in '/home/olel/Projects/FPMagangBayu24/src/vision' returned '0': PYTHONPATH=/home/olel/Projects/FPMagangBayu24/build/vision/prefix_override:/home/olel/Projects/FPMagangBayu24/install/vision/lib/python3.8/site-packages: /usr/bin/python3 setup.py egg_info --egg-base ../../build/vision build --build-base /home/olel/Projects/FPMagangBayu24/build/vision/build install --record /home/olel/Projects/FPMagangBayu24/build/vision/install.log --install-scripts $base/lib/vision --single-version-externally-managed

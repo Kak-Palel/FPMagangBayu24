@@ -10,6 +10,10 @@ class VisionerTicTacToe(Node):
 
     def __init__(self):
         super().__init__('VisionerTicTacToe')
+
+        cv.namedWindow("ni olel")
+        cv.createTrackbar('param1', 'ni olel', 100, 200, self.nothing)
+        cv.createTrackbar('param2', 'ni olel', 20, 200, self.nothing)
         self.cap = cv.VideoCapture(0)
         if not self.cap.isOpened():
             print("HUAAAAAAAAAA RUSAAAAAAAAAAAK")
@@ -28,6 +32,9 @@ class VisionerTicTacToe(Node):
         self.subscription
         print("constructor excuted")
 
+    def nothing(self):
+        pass
+    
     def readState(self):
         
         successOpenCam, drawnFrame = self.cap.read()
@@ -46,13 +53,31 @@ class VisionerTicTacToe(Node):
         processFrame = cv.rectangle(processFrame, (150, 450), (490, 480), (0, 0, 0), -1)
         processFrame = cv.cvtColor(processFrame, cv.COLOR_BGR2HSV)
 
-        upper_range = np.array([15, 255, 255])
-        lower_range = np.array([0, 50, 50])
+        # processFrame = cv.GaussianBlur(processFrame, (5, 5), 2, 2)
+        # processFrame = cv.blur(processFrame, (5,5))
+        processFrame = cv.medianBlur(processFrame, 5)
+        # processFrame = cv.bilateralFilter(processFrame, 15, 100, 100)
 
-        processFrame = cv.inRange(processFrame, lower_range, upper_range)
-        processFrame = cv.GaussianBlur(processFrame, (9, 9), 2, 2)
+        mask1 = processFrame.copy()
+        mask2 = processFrame.copy()
         
-        circles = cv.HoughCircles(processFrame, cv.HOUGH_GRADIENT, 1, 60, param1 = 90, param2 = 35, minRadius = 40, maxRadius = 0)
+        upper_range = np.array([15, 255, 255])
+        lower_range = np.array([0, 100, 100])
+
+        mask1 = cv.inRange(mask1, lower_range, upper_range)
+
+        upper_range = np.array([179, 255, 255])
+        lower_range = np.array([155, 100, 100])
+
+        mask2 = cv.inRange(mask2, lower_range, upper_range)
+
+        processFrame = mask1 + mask2
+        
+        pram1 = int(cv.getTrackbarPos('param1', 'ni olel'))
+        pram2 = int(cv.getTrackbarPos('param2', 'ni olel'))
+
+        # circles = cv.HoughCircles(processFrame, cv.HOUGH_GRADIENT, 1.4, 50)
+        circles = cv.HoughCircles(processFrame, cv.HOUGH_GRADIENT, 1, 60, param1 = pram1, param2 = pram2, minRadius = 40, maxRadius = 0)
             
         gridPos = np.array([
             [150, 263, 110, 223, 1],
@@ -85,6 +110,7 @@ class VisionerTicTacToe(Node):
                     cv.circle(drawnFrame, (150 + 56*(2*(i-3)+1), 278), 50, (255, 0, 0), -1)
                 elif 6 <= i <= 8:
                     cv.circle(drawnFrame, (150 + 56*(2*(i-6)+1), 390), 50, (255, 0, 0), -1)
+
 
         cv.imshow("olel ngeri", processFrame)
         cv.imshow("ni olel", drawnFrame)
