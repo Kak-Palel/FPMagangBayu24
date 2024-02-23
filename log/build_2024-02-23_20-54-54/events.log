@@ -1,0 +1,137 @@
+[0.000000] (-) TimerEvent: {}
+[0.000194] (control) JobQueued: {'identifier': 'control', 'dependencies': OrderedDict()}
+[0.000255] (vision) JobQueued: {'identifier': 'vision', 'dependencies': OrderedDict()}
+[0.000290] (control) JobStarted: {'identifier': 'control'}
+[0.099280] (vision) JobStarted: {'identifier': 'vision'}
+[0.099490] (-) TimerEvent: {}
+[0.199794] (-) TimerEvent: {}
+[0.253445] (control) JobProgress: {'identifier': 'control', 'progress': 'cmake'}
+[0.254187] (control) JobProgress: {'identifier': 'control', 'progress': 'build'}
+[0.254929] (control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/olel/Projects/FPMagangBayu24/build/control', '--', '-j16', '-l16'], 'cwd': '/home/olel/Projects/FPMagangBayu24/build/control', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'olel'), ('LC_TIME', 'id_ID.UTF-8'), ('SSH_AGENT_PID', '1429'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('HOME', '/home/olel'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.86.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'id_ID.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1112'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3268'), ('IM_CONFIG_PHASE', '1'), ('LOGNAME', 'olel'), ('JOURNAL_STREAM', '8:41323'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'olel'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/olel-ROG-Flow-X16-GV601RE-GV601RE:@/tmp/.ICE-unix/1503,unix/olel-ROG-Flow-X16-GV601RE-GV601RE:/tmp/.ICE-unix/1503'), ('INVOCATION_ID', '490703825d6345f180adfb1eb45e48f5'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-180af5a434.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/olel/Projects/FPMagangBayu24/build/control'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1')]), 'shell': False}
+[0.299998] (-) TimerEvent: {}
+[0.301061] (control) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target bot_control\x1b[0m\n'}
+[0.328486] (control) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/bot_control.dir/src/processor.cpp.o\x1b[0m\n'}
+[0.400115] (-) TimerEvent: {}
+[0.500805] (-) TimerEvent: {}
+[0.602629] (-) TimerEvent: {}
+[0.703149] (-) TimerEvent: {}
+[0.803947] (-) TimerEvent: {}
+[0.876772] (vision) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/vision', 'build', '--build-base', '/home/olel/Projects/FPMagangBayu24/build/vision/build', 'install', '--record', '/home/olel/Projects/FPMagangBayu24/build/vision/install.log', '--install-scripts', '$base/lib/vision', '--single-version-externally-managed'], 'cwd': '/home/olel/Projects/FPMagangBayu24/src/vision', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'olel', 'LC_TIME': 'id_ID.UTF-8', 'SSH_AGENT_PID': '1429', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'HOME': '/home/olel', 'CHROME_DESKTOP': 'code-url-handler.desktop', 'TERM_PROGRAM_VERSION': '1.86.2', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'LC_MONETARY': 'id_ID.UTF-8', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '1112', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3268', 'IM_CONFIG_PHASE': '1', 'LOGNAME': 'olel', 'JOURNAL_STREAM': '8:41323', '_': '/usr/bin/colcon', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'olel', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/olel-ROG-Flow-X16-GV601RE-GV601RE:@/tmp/.ICE-unix/1503,unix/olel-ROG-Flow-X16-GV601RE-GV601RE:/tmp/.ICE-unix/1503', 'INVOCATION_ID': '490703825d6345f180adfb1eb45e48f5', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'id_ID.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'LC_TELEPHONE': 'id_ID.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-180af5a434.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'LC_NAME': 'id_ID.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'id_ID.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'id_ID.UTF-8', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/olel/Projects/FPMagangBayu24/build/vision', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'LC_NUMERIC': 'id_ID.UTF-8', 'LC_PAPER': 'id_ID.UTF-8', 'COLCON': '1', 'PYTHONPATH': '/home/olel/Projects/FPMagangBayu24/build/vision/prefix_override:/home/olel/Projects/FPMagangBayu24/install/vision/lib/python3.8/site-packages:'}, 'shell': False}
+[0.904114] (-) TimerEvent: {}
+[1.004615] (-) TimerEvent: {}
+[1.049827] (vision) StdoutLine: {'line': b'running egg_info\n'}
+[1.050257] (vision) StdoutLine: {'line': b'writing ../../build/vision/vision.egg-info/PKG-INFO\n'}
+[1.050465] (vision) StdoutLine: {'line': b'writing dependency_links to ../../build/vision/vision.egg-info/dependency_links.txt\n'}
+[1.050619] (vision) StdoutLine: {'line': b'writing entry points to ../../build/vision/vision.egg-info/entry_points.txt\n'}
+[1.050790] (vision) StdoutLine: {'line': b'writing requirements to ../../build/vision/vision.egg-info/requires.txt\n'}
+[1.050849] (vision) StdoutLine: {'line': b'writing top-level names to ../../build/vision/vision.egg-info/top_level.txt\n'}
+[1.079257] (vision) StdoutLine: {'line': b"reading manifest file '../../build/vision/vision.egg-info/SOURCES.txt'\n"}
+[1.079851] (vision) StdoutLine: {'line': b"writing manifest file '../../build/vision/vision.egg-info/SOURCES.txt'\n"}
+[1.080196] (vision) StdoutLine: {'line': b'running build\n'}
+[1.080327] (vision) StdoutLine: {'line': b'running build_py\n'}
+[1.080506] (vision) StdoutLine: {'line': b'copying vision/visioner.py -> /home/olel/Projects/FPMagangBayu24/build/vision/build/lib/vision\n'}
+[1.080625] (vision) StdoutLine: {'line': b'running install\n'}
+[1.081056] (vision) StdoutLine: {'line': b'running install_lib\n'}
+[1.081728] (vision) StdoutLine: {'line': b'copying /home/olel/Projects/FPMagangBayu24/build/vision/build/lib/vision/visioner.py -> /home/olel/Projects/FPMagangBayu24/install/vision/lib/python3.8/site-packages/vision\n'}
+[1.082144] (vision) StdoutLine: {'line': b'byte-compiling /home/olel/Projects/FPMagangBayu24/install/vision/lib/python3.8/site-packages/vision/visioner.py to visioner.cpython-38.pyc\n'}
+[1.084264] (vision) StdoutLine: {'line': b'running install_data\n'}
+[1.084689] (vision) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.085994] (vision) StdoutLine: {'line': b"removing '/home/olel/Projects/FPMagangBayu24/install/vision/lib/python3.8/site-packages/vision-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[1.086257] (vision) StdoutLine: {'line': b'Copying ../../build/vision/vision.egg-info to /home/olel/Projects/FPMagangBayu24/install/vision/lib/python3.8/site-packages/vision-0.0.0-py3.8.egg-info\n'}
+[1.086875] (vision) StdoutLine: {'line': b'running install_scripts\n'}
+[1.103003] (vision) StdoutLine: {'line': b'Installing bot_vision script to /home/olel/Projects/FPMagangBayu24/install/vision/lib/vision\n'}
+[1.103364] (vision) StdoutLine: {'line': b"writing list of installed files to '/home/olel/Projects/FPMagangBayu24/build/vision/install.log'\n"}
+[1.104706] (-) TimerEvent: {}
+[1.132210] (vision) CommandEnded: {'returncode': 0}
+[1.204878] (-) TimerEvent: {}
+[1.307404] (-) TimerEvent: {}
+[1.328529] (vision) JobEnded: {'identifier': 'vision', 'rc': 0}
+[1.407534] (-) TimerEvent: {}
+[1.507906] (-) TimerEvent: {}
+[1.608340] (-) TimerEvent: {}
+[1.708727] (-) TimerEvent: {}
+[1.809096] (-) TimerEvent: {}
+[1.909443] (-) TimerEvent: {}
+[2.009811] (-) TimerEvent: {}
+[2.110221] (-) TimerEvent: {}
+[2.210694] (-) TimerEvent: {}
+[2.311144] (-) TimerEvent: {}
+[2.411499] (-) TimerEvent: {}
+[2.511844] (-) TimerEvent: {}
+[2.612184] (-) TimerEvent: {}
+[2.712560] (-) TimerEvent: {}
+[2.812907] (-) TimerEvent: {}
+[2.913365] (-) TimerEvent: {}
+[3.013902] (-) TimerEvent: {}
+[3.114285] (-) TimerEvent: {}
+[3.214705] (-) TimerEvent: {}
+[3.315117] (-) TimerEvent: {}
+[3.415535] (-) TimerEvent: {}
+[3.515916] (-) TimerEvent: {}
+[3.616282] (-) TimerEvent: {}
+[3.716715] (-) TimerEvent: {}
+[3.817102] (-) TimerEvent: {}
+[3.917525] (-) TimerEvent: {}
+[4.017918] (-) TimerEvent: {}
+[4.118363] (-) TimerEvent: {}
+[4.219073] (-) TimerEvent: {}
+[4.319772] (-) TimerEvent: {}
+[4.420543] (-) TimerEvent: {}
+[4.521204] (-) TimerEvent: {}
+[4.622363] (-) TimerEvent: {}
+[4.723261] (-) TimerEvent: {}
+[4.824044] (-) TimerEvent: {}
+[4.925180] (-) TimerEvent: {}
+[5.025929] (-) TimerEvent: {}
+[5.126785] (-) TimerEvent: {}
+[5.227534] (-) TimerEvent: {}
+[5.328076] (-) TimerEvent: {}
+[5.428893] (-) TimerEvent: {}
+[5.529680] (-) TimerEvent: {}
+[5.630548] (-) TimerEvent: {}
+[5.731639] (-) TimerEvent: {}
+[5.832549] (-) TimerEvent: {}
+[5.933545] (-) TimerEvent: {}
+[5.949339] (control) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable bot_control\x1b[0m\n'}
+[6.033719] (-) TimerEvent: {}
+[6.134457] (-) TimerEvent: {}
+[6.235523] (-) TimerEvent: {}
+[6.336467] (-) TimerEvent: {}
+[6.436853] (-) TimerEvent: {}
+[6.537535] (-) TimerEvent: {}
+[6.554335] (control) StdoutLine: {'line': b'[100%] Built target bot_control\n'}
+[6.576624] (control) CommandEnded: {'returncode': 0}
+[6.631680] (control) JobProgress: {'identifier': 'control', 'progress': 'install'}
+[6.637702] (-) TimerEvent: {}
+[6.659772] (control) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/olel/Projects/FPMagangBayu24/build/control'], 'cwd': '/home/olel/Projects/FPMagangBayu24/build/control', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'olel'), ('LC_TIME', 'id_ID.UTF-8'), ('SSH_AGENT_PID', '1429'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('HOME', '/home/olel'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.86.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'id_ID.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1112'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3268'), ('IM_CONFIG_PHASE', '1'), ('LOGNAME', 'olel'), ('JOURNAL_STREAM', '8:41323'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'olel'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/olel-ROG-Flow-X16-GV601RE-GV601RE:@/tmp/.ICE-unix/1503,unix/olel-ROG-Flow-X16-GV601RE-GV601RE:/tmp/.ICE-unix/1503'), ('INVOCATION_ID', '490703825d6345f180adfb1eb45e48f5'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-180af5a434.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/olel/Projects/FPMagangBayu24/build/control'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1')]), 'shell': False}
+[6.683481] (control) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.684298] (control) StdoutLine: {'line': b'-- Installing: /home/olel/Projects/FPMagangBayu24/install/control/lib/control/bot_control\n'}
+[6.690721] (control) StdoutLine: {'line': b'-- Set runtime path of "/home/olel/Projects/FPMagangBayu24/install/control/lib/control/bot_control" to ""\n'}
+[6.691669] (control) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/ament_index/resource_index/package_run_dependencies/control\n'}
+[6.692153] (control) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/ament_index/resource_index/parent_prefix_path/control\n'}
+[6.692359] (control) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/control/environment/ament_prefix_path.sh\n'}
+[6.692555] (control) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/control/environment/ament_prefix_path.dsv\n'}
+[6.692877] (control) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/control/environment/path.sh\n'}
+[6.693059] (control) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/control/environment/path.dsv\n'}
+[6.693209] (control) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/control/local_setup.bash\n'}
+[6.693339] (control) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/control/local_setup.sh\n'}
+[6.693464] (control) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/control/local_setup.zsh\n'}
+[6.693593] (control) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/control/local_setup.dsv\n'}
+[6.693709] (control) StdoutLine: {'line': b'-- Installing: /home/olel/Projects/FPMagangBayu24/install/control/share/control/package.dsv\n'}
+[6.693821] (control) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/ament_index/resource_index/packages/control\n'}
+[6.693932] (control) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/control/cmake/controlConfig.cmake\n'}
+[6.694058] (control) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/control/cmake/controlConfig-version.cmake\n'}
+[6.694175] (control) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/control/share/control/package.xml\n'}
+[6.697472] (control) CommandEnded: {'returncode': 0}
+[6.738176] (-) TimerEvent: {}
+[6.839557] (-) TimerEvent: {}
+[6.942453] (-) TimerEvent: {}
+[7.043132] (-) TimerEvent: {}
+[7.144761] (-) TimerEvent: {}
+[7.247524] (-) TimerEvent: {}
+[7.349400] (-) TimerEvent: {}
+[7.450741] (-) TimerEvent: {}
+[7.551471] (-) TimerEvent: {}
+[7.653804] (-) TimerEvent: {}
+[7.734776] (control) JobEnded: {'identifier': 'control', 'rc': 0}
+[7.736112] (-) EventReactorShutdown: {}
