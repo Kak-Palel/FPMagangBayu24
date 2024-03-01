@@ -83,14 +83,30 @@ CMakeFiles/arm_interfaces__python.dir/rosidl_generator_py/arm_interfaces/msg/_se
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/arm_interfaces__python.dir/rosidl_generator_py/arm_interfaces/msg/_servo_parameters_s.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/olel/Projects/FPMagangBayu24/build/arm_interfaces/rosidl_generator_py/arm_interfaces/msg/_servo_parameters_s.c -o CMakeFiles/arm_interfaces__python.dir/rosidl_generator_py/arm_interfaces/msg/_servo_parameters_s.c.s
 
+CMakeFiles/arm_interfaces__python.dir/rosidl_generator_py/arm_interfaces/msg/_posisi_bidak_s.c.o: CMakeFiles/arm_interfaces__python.dir/flags.make
+CMakeFiles/arm_interfaces__python.dir/rosidl_generator_py/arm_interfaces/msg/_posisi_bidak_s.c.o: rosidl_generator_py/arm_interfaces/msg/_posisi_bidak_s.c
+CMakeFiles/arm_interfaces__python.dir/rosidl_generator_py/arm_interfaces/msg/_posisi_bidak_s.c.o: CMakeFiles/arm_interfaces__python.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/olel/Projects/FPMagangBayu24/build/arm_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/arm_interfaces__python.dir/rosidl_generator_py/arm_interfaces/msg/_posisi_bidak_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/arm_interfaces__python.dir/rosidl_generator_py/arm_interfaces/msg/_posisi_bidak_s.c.o -MF CMakeFiles/arm_interfaces__python.dir/rosidl_generator_py/arm_interfaces/msg/_posisi_bidak_s.c.o.d -o CMakeFiles/arm_interfaces__python.dir/rosidl_generator_py/arm_interfaces/msg/_posisi_bidak_s.c.o -c /home/olel/Projects/FPMagangBayu24/build/arm_interfaces/rosidl_generator_py/arm_interfaces/msg/_posisi_bidak_s.c
+
+CMakeFiles/arm_interfaces__python.dir/rosidl_generator_py/arm_interfaces/msg/_posisi_bidak_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/arm_interfaces__python.dir/rosidl_generator_py/arm_interfaces/msg/_posisi_bidak_s.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/olel/Projects/FPMagangBayu24/build/arm_interfaces/rosidl_generator_py/arm_interfaces/msg/_posisi_bidak_s.c > CMakeFiles/arm_interfaces__python.dir/rosidl_generator_py/arm_interfaces/msg/_posisi_bidak_s.c.i
+
+CMakeFiles/arm_interfaces__python.dir/rosidl_generator_py/arm_interfaces/msg/_posisi_bidak_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/arm_interfaces__python.dir/rosidl_generator_py/arm_interfaces/msg/_posisi_bidak_s.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/olel/Projects/FPMagangBayu24/build/arm_interfaces/rosidl_generator_py/arm_interfaces/msg/_posisi_bidak_s.c -o CMakeFiles/arm_interfaces__python.dir/rosidl_generator_py/arm_interfaces/msg/_posisi_bidak_s.c.s
+
 # Object files for target arm_interfaces__python
 arm_interfaces__python_OBJECTS = \
-"CMakeFiles/arm_interfaces__python.dir/rosidl_generator_py/arm_interfaces/msg/_servo_parameters_s.c.o"
+"CMakeFiles/arm_interfaces__python.dir/rosidl_generator_py/arm_interfaces/msg/_servo_parameters_s.c.o" \
+"CMakeFiles/arm_interfaces__python.dir/rosidl_generator_py/arm_interfaces/msg/_posisi_bidak_s.c.o"
 
 # External object files for target arm_interfaces__python
 arm_interfaces__python_EXTERNAL_OBJECTS =
 
 rosidl_generator_py/arm_interfaces/libarm_interfaces__python.so: CMakeFiles/arm_interfaces__python.dir/rosidl_generator_py/arm_interfaces/msg/_servo_parameters_s.c.o
+rosidl_generator_py/arm_interfaces/libarm_interfaces__python.so: CMakeFiles/arm_interfaces__python.dir/rosidl_generator_py/arm_interfaces/msg/_posisi_bidak_s.c.o
 rosidl_generator_py/arm_interfaces/libarm_interfaces__python.so: CMakeFiles/arm_interfaces__python.dir/build.make
 rosidl_generator_py/arm_interfaces/libarm_interfaces__python.so: libarm_interfaces__rosidl_generator_c.so
 rosidl_generator_py/arm_interfaces/libarm_interfaces__python.so: /usr/lib/x86_64-linux-gnu/libpython3.8.so
@@ -100,7 +116,7 @@ rosidl_generator_py/arm_interfaces/libarm_interfaces__python.so: /opt/ros/foxy/l
 rosidl_generator_py/arm_interfaces/libarm_interfaces__python.so: /opt/ros/foxy/lib/librcpputils.so
 rosidl_generator_py/arm_interfaces/libarm_interfaces__python.so: /opt/ros/foxy/lib/librcutils.so
 rosidl_generator_py/arm_interfaces/libarm_interfaces__python.so: CMakeFiles/arm_interfaces__python.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/olel/Projects/FPMagangBayu24/build/arm_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared library rosidl_generator_py/arm_interfaces/libarm_interfaces__python.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/olel/Projects/FPMagangBayu24/build/arm_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library rosidl_generator_py/arm_interfaces/libarm_interfaces__python.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/arm_interfaces__python.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

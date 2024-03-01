@@ -1,0 +1,98 @@
+[0.000000] (-) TimerEvent: {}
+[0.001462] (-) JobUnselected: {'identifier': 'arm_interfaces'}
+[0.001522] (-) JobUnselected: {'identifier': 'control'}
+[0.001553] (-) JobUnselected: {'identifier': 'vision'}
+[0.001587] (translator) JobQueued: {'identifier': 'translator', 'dependencies': OrderedDict([('arm_interfaces', '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces')])}
+[0.001654] (translator) JobStarted: {'identifier': 'translator'}
+[0.099360] (-) TimerEvent: {}
+[0.200091] (-) TimerEvent: {}
+[0.213838] (translator) JobProgress: {'identifier': 'translator', 'progress': 'cmake'}
+[0.214383] (translator) JobProgress: {'identifier': 'translator', 'progress': 'build'}
+[0.215003] (translator) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/home/olel/Projects/FPMagangBayu24/build/translator', '--', '-j16', '-l16'], 'cwd': '/home/olel/Projects/FPMagangBayu24/build/translator', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'olel'), ('LC_TIME', 'id_ID.UTF-8'), ('SSH_AGENT_PID', '1487'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/olel'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.86.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'id_ID.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1255'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2415'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'olel'), ('JOURNAL_STREAM', '8:41674'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'olel'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/olel/.local/bin:/home/olel/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/olel-ROG-Flow-X16-GV601RE-GV601RE:@/tmp/.ICE-unix/1603,unix/olel-ROG-Flow-X16-GV601RE-GV601RE:/tmp/.ICE-unix/1603'), ('INVOCATION_ID', '73a417397b494ef596925b9e10bef33f'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-180af5a434.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces:/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/olel/Projects/FPMagangBayu24/build/translator'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces:/opt/ros/foxy')]), 'shell': False}
+[0.258730] (translator) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/bot_translatator.dir/src/translator.cpp.o\x1b[0m\n'}
+[0.300233] (-) TimerEvent: {}
+[0.400835] (-) TimerEvent: {}
+[0.501575] (-) TimerEvent: {}
+[0.602309] (-) TimerEvent: {}
+[0.702860] (-) TimerEvent: {}
+[0.803301] (-) TimerEvent: {}
+[0.903865] (-) TimerEvent: {}
+[1.004852] (-) TimerEvent: {}
+[1.105601] (-) TimerEvent: {}
+[1.206426] (-) TimerEvent: {}
+[1.307536] (-) TimerEvent: {}
+[1.408136] (-) TimerEvent: {}
+[1.508929] (-) TimerEvent: {}
+[1.609915] (-) TimerEvent: {}
+[1.611589] (translator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olel/Projects/FPMagangBayu24/src/translator/src/translator.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid TranslatorTicTacToe::topic_callback(arm_interfaces::msg::PosisiBidak_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.611839] (translator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olel/Projects/FPMagangBayu24/src/translator/src/translator.cpp:28:75:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[1.611951] (translator) StderrLine: {'line': b'   28 |     void topic_callback(\x1b[01;35m\x1b[Kconst arm_interfaces::msg::PosisiBidak::SharedPtr msg\x1b[m\x1b[K)\n'}
+[1.612043] (translator) StderrLine: {'line': b'      |                         \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[1.613697] (translator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olel/Projects/FPMagangBayu24/src/translator/src/translator.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<int> TranslatorTicTacToe::decide(arm_interfaces::msg::PosisiBidak_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.613855] (translator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olel/Projects/FPMagangBayu24/src/translator/src/translator.cpp:34:79:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[1.613960] (translator) StderrLine: {'line': b'   34 |     std::vector<int> decide(\x1b[01;35m\x1b[Kconst arm_interfaces::msg::PosisiBidak::SharedPtr msg\x1b[m\x1b[K)\n'}
+[1.614062] (translator) StderrLine: {'line': b'      |                             \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[1.710165] (-) TimerEvent: {}
+[1.810836] (-) TimerEvent: {}
+[1.911550] (-) TimerEvent: {}
+[2.012286] (-) TimerEvent: {}
+[2.113387] (-) TimerEvent: {}
+[2.214033] (-) TimerEvent: {}
+[2.314774] (-) TimerEvent: {}
+[2.415424] (-) TimerEvent: {}
+[2.515780] (-) TimerEvent: {}
+[2.616339] (-) TimerEvent: {}
+[2.716705] (-) TimerEvent: {}
+[2.817060] (-) TimerEvent: {}
+[2.917445] (-) TimerEvent: {}
+[3.017838] (-) TimerEvent: {}
+[3.118208] (-) TimerEvent: {}
+[3.218565] (-) TimerEvent: {}
+[3.319027] (-) TimerEvent: {}
+[3.419395] (-) TimerEvent: {}
+[3.519767] (-) TimerEvent: {}
+[3.620143] (-) TimerEvent: {}
+[3.720541] (-) TimerEvent: {}
+[3.820926] (-) TimerEvent: {}
+[3.921629] (-) TimerEvent: {}
+[4.022035] (-) TimerEvent: {}
+[4.122399] (-) TimerEvent: {}
+[4.222777] (-) TimerEvent: {}
+[4.323154] (-) TimerEvent: {}
+[4.423515] (-) TimerEvent: {}
+[4.523872] (-) TimerEvent: {}
+[4.624212] (-) TimerEvent: {}
+[4.724716] (-) TimerEvent: {}
+[4.804824] (translator) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable bot_translatator\x1b[0m\n'}
+[4.824831] (-) TimerEvent: {}
+[4.925178] (-) TimerEvent: {}
+[4.971493] (translator) StdoutLine: {'line': b'[100%] Built target bot_translatator\n'}
+[4.975916] (translator) CommandEnded: {'returncode': 0}
+[4.994440] (translator) JobProgress: {'identifier': 'translator', 'progress': 'install'}
+[5.000780] (translator) Command: {'cmd': ['/usr/local/bin/cmake', '--install', '/home/olel/Projects/FPMagangBayu24/build/translator'], 'cwd': '/home/olel/Projects/FPMagangBayu24/build/translator', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'olel'), ('LC_TIME', 'id_ID.UTF-8'), ('SSH_AGENT_PID', '1487'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/olel'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.86.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'id_ID.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1255'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2415'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'olel'), ('JOURNAL_STREAM', '8:41674'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'olel'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/olel/.local/bin:/home/olel/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/olel-ROG-Flow-X16-GV601RE-GV601RE:@/tmp/.ICE-unix/1603,unix/olel-ROG-Flow-X16-GV601RE-GV601RE:/tmp/.ICE-unix/1603'), ('INVOCATION_ID', '73a417397b494ef596925b9e10bef33f'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-180af5a434.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces:/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/olel/Projects/FPMagangBayu24/build/translator'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces:/opt/ros/foxy')]), 'shell': False}
+[5.005281] (translator) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.005609] (translator) StdoutLine: {'line': b'-- Installing: /home/olel/Projects/FPMagangBayu24/install/translator/lib/translator/bot_translatator\n'}
+[5.008706] (translator) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/olel/Projects/FPMagangBayu24/install/translator/lib/translator/bot_translatator" to ""\n'}
+[5.008867] (translator) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/ament_index/resource_index/package_run_dependencies/translator\n'}
+[5.009049] (translator) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/ament_index/resource_index/parent_prefix_path/translator\n'}
+[5.009118] (translator) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/environment/ament_prefix_path.sh\n'}
+[5.009167] (translator) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/environment/ament_prefix_path.dsv\n'}
+[5.009225] (translator) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/environment/path.sh\n'}
+[5.009270] (translator) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/environment/path.dsv\n'}
+[5.009348] (translator) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/local_setup.bash\n'}
+[5.009402] (translator) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/local_setup.sh\n'}
+[5.009448] (translator) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/local_setup.zsh\n'}
+[5.009527] (translator) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/local_setup.dsv\n'}
+[5.009609] (translator) StdoutLine: {'line': b'-- Installing: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/package.dsv\n'}
+[5.009691] (translator) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/ament_index/resource_index/packages/translator\n'}
+[5.009771] (translator) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/cmake/translatorConfig.cmake\n'}
+[5.009849] (translator) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/cmake/translatorConfig-version.cmake\n'}
+[5.009926] (translator) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/package.xml\n'}
+[5.011500] (translator) CommandEnded: {'returncode': 0}
+[5.025304] (-) TimerEvent: {}
+[5.126150] (-) TimerEvent: {}
+[5.227041] (-) TimerEvent: {}
+[5.327712] (-) TimerEvent: {}
+[5.428325] (-) TimerEvent: {}
+[5.499425] (translator) JobEnded: {'identifier': 'translator', 'rc': 0}
+[5.500460] (-) EventReactorShutdown: {}

@@ -3,7 +3,8 @@
   "output_dir": "/home/olel/Projects/FPMagangBayu24/build/arm_interfaces/rosidl_typesupport_cpp/arm_interfaces",
   "template_dir": "/opt/ros/foxy/share/rosidl_typesupport_cpp/resource",
   "idl_tuples": [
-    "/home/olel/Projects/FPMagangBayu24/build/arm_interfaces/rosidl_adapter/arm_interfaces:msg/ServoParameters.idl"
+    "/home/olel/Projects/FPMagangBayu24/build/arm_interfaces/rosidl_adapter/arm_interfaces:msg/ServoParameters.idl",
+    "/home/olel/Projects/FPMagangBayu24/build/arm_interfaces/rosidl_adapter/arm_interfaces:msg/PosisiBidak.idl"
   ],
   "target_dependencies": [
     "/opt/ros/foxy/lib/rosidl_typesupport_cpp/rosidl_typesupport_cpp",
@@ -12,6 +13,7 @@
     "/opt/ros/foxy/share/rosidl_typesupport_cpp/resource/idl__type_support.cpp.em",
     "/opt/ros/foxy/share/rosidl_typesupport_cpp/resource/msg__type_support.cpp.em",
     "/opt/ros/foxy/share/rosidl_typesupport_cpp/resource/srv__type_support.cpp.em",
-    "/home/olel/Projects/FPMagangBayu24/build/arm_interfaces/rosidl_adapter/arm_interfaces/msg/ServoParameters.idl"
+    "/home/olel/Projects/FPMagangBayu24/build/arm_interfaces/rosidl_adapter/arm_interfaces/msg/ServoParameters.idl",
+    "/home/olel/Projects/FPMagangBayu24/build/arm_interfaces/rosidl_adapter/arm_interfaces/msg/PosisiBidak.idl"
   ]
 }

@@ -67,6 +67,7 @@ include CMakeFiles/arm_interfaces.dir/compiler_depend.make
 include CMakeFiles/arm_interfaces.dir/progress.make
 
 CMakeFiles/arm_interfaces: /home/olel/Projects/FPMagangBayu24/src/arm_interfaces/msg/ServoParameters.msg
+CMakeFiles/arm_interfaces: /home/olel/Projects/FPMagangBayu24/src/arm_interfaces/msg/PosisiBidak.msg
 
 arm_interfaces: CMakeFiles/arm_interfaces
 arm_interfaces: CMakeFiles/arm_interfaces.dir/build.make

@@ -510,4 +510,9 @@ CMakeFiles/bot_translatator.dir/src/translator.cpp.o: \
  /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces/msg/detail/servo_parameters__builder.hpp \
  /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces/msg/detail/servo_parameters__traits.hpp \
  /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces/msg/detail/servo_parameters__type_support.hpp \
- /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+ /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces/msg/posisi_bidak.hpp \
+ /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces/msg/detail/posisi_bidak__struct.hpp \
+ /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces/msg/detail/posisi_bidak__builder.hpp \
+ /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces/msg/detail/posisi_bidak__traits.hpp \
+ /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces/msg/detail/posisi_bidak__type_support.hpp

@@ -71,6 +71,11 @@ CMakeFiles/arm_interfaces__cpp: rosidl_generator_cpp/arm_interfaces/msg/detail/s
 CMakeFiles/arm_interfaces__cpp: rosidl_generator_cpp/arm_interfaces/msg/detail/servo_parameters__struct.hpp
 CMakeFiles/arm_interfaces__cpp: rosidl_generator_cpp/arm_interfaces/msg/detail/servo_parameters__traits.hpp
 CMakeFiles/arm_interfaces__cpp: rosidl_generator_cpp/arm_interfaces/msg/detail/servo_parameters__type_support.hpp
+CMakeFiles/arm_interfaces__cpp: rosidl_generator_cpp/arm_interfaces/msg/posisi_bidak.hpp
+CMakeFiles/arm_interfaces__cpp: rosidl_generator_cpp/arm_interfaces/msg/detail/posisi_bidak__builder.hpp
+CMakeFiles/arm_interfaces__cpp: rosidl_generator_cpp/arm_interfaces/msg/detail/posisi_bidak__struct.hpp
+CMakeFiles/arm_interfaces__cpp: rosidl_generator_cpp/arm_interfaces/msg/detail/posisi_bidak__traits.hpp
+CMakeFiles/arm_interfaces__cpp: rosidl_generator_cpp/arm_interfaces/msg/detail/posisi_bidak__type_support.hpp
 CMakeFiles/arm_interfaces__cpp: rosidl_generator_cpp/arm_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
 
 rosidl_generator_cpp/arm_interfaces/msg/servo_parameters.hpp: /opt/ros/foxy/lib/rosidl_generator_cpp/rosidl_generator_cpp
@@ -93,6 +98,7 @@ rosidl_generator_cpp/arm_interfaces/msg/servo_parameters.hpp: /opt/ros/foxy/shar
 rosidl_generator_cpp/arm_interfaces/msg/servo_parameters.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/arm_interfaces/msg/servo_parameters.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/srv__type_support.hpp.em
 rosidl_generator_cpp/arm_interfaces/msg/servo_parameters.hpp: rosidl_adapter/arm_interfaces/msg/ServoParameters.idl
+rosidl_generator_cpp/arm_interfaces/msg/servo_parameters.hpp: rosidl_adapter/arm_interfaces/msg/PosisiBidak.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/olel/Projects/FPMagangBayu24/build/arm_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
 	/usr/bin/python3 /opt/ros/foxy/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/olel/Projects/FPMagangBayu24/build/arm_interfaces/rosidl_generator_cpp__arguments.json
 
@@ -108,11 +114,31 @@ rosidl_generator_cpp/arm_interfaces/msg/detail/servo_parameters__traits.hpp: ros
 rosidl_generator_cpp/arm_interfaces/msg/detail/servo_parameters__type_support.hpp: rosidl_generator_cpp/arm_interfaces/msg/servo_parameters.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/arm_interfaces/msg/detail/servo_parameters__type_support.hpp
 
+rosidl_generator_cpp/arm_interfaces/msg/posisi_bidak.hpp: rosidl_generator_cpp/arm_interfaces/msg/servo_parameters.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/arm_interfaces/msg/posisi_bidak.hpp
+
+rosidl_generator_cpp/arm_interfaces/msg/detail/posisi_bidak__builder.hpp: rosidl_generator_cpp/arm_interfaces/msg/servo_parameters.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/arm_interfaces/msg/detail/posisi_bidak__builder.hpp
+
+rosidl_generator_cpp/arm_interfaces/msg/detail/posisi_bidak__struct.hpp: rosidl_generator_cpp/arm_interfaces/msg/servo_parameters.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/arm_interfaces/msg/detail/posisi_bidak__struct.hpp
+
+rosidl_generator_cpp/arm_interfaces/msg/detail/posisi_bidak__traits.hpp: rosidl_generator_cpp/arm_interfaces/msg/servo_parameters.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/arm_interfaces/msg/detail/posisi_bidak__traits.hpp
+
+rosidl_generator_cpp/arm_interfaces/msg/detail/posisi_bidak__type_support.hpp: rosidl_generator_cpp/arm_interfaces/msg/servo_parameters.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/arm_interfaces/msg/detail/posisi_bidak__type_support.hpp
+
 arm_interfaces__cpp: CMakeFiles/arm_interfaces__cpp
+arm_interfaces__cpp: rosidl_generator_cpp/arm_interfaces/msg/detail/posisi_bidak__builder.hpp
+arm_interfaces__cpp: rosidl_generator_cpp/arm_interfaces/msg/detail/posisi_bidak__struct.hpp
+arm_interfaces__cpp: rosidl_generator_cpp/arm_interfaces/msg/detail/posisi_bidak__traits.hpp
+arm_interfaces__cpp: rosidl_generator_cpp/arm_interfaces/msg/detail/posisi_bidak__type_support.hpp
 arm_interfaces__cpp: rosidl_generator_cpp/arm_interfaces/msg/detail/servo_parameters__builder.hpp
 arm_interfaces__cpp: rosidl_generator_cpp/arm_interfaces/msg/detail/servo_parameters__struct.hpp
 arm_interfaces__cpp: rosidl_generator_cpp/arm_interfaces/msg/detail/servo_parameters__traits.hpp
 arm_interfaces__cpp: rosidl_generator_cpp/arm_interfaces/msg/detail/servo_parameters__type_support.hpp
+arm_interfaces__cpp: rosidl_generator_cpp/arm_interfaces/msg/posisi_bidak.hpp
 arm_interfaces__cpp: rosidl_generator_cpp/arm_interfaces/msg/servo_parameters.hpp
 arm_interfaces__cpp: CMakeFiles/arm_interfaces__cpp.dir/build.make
 .PHONY : arm_interfaces__cpp

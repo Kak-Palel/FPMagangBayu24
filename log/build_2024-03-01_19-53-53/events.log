@@ -1,0 +1,6 @@
+[0.000000] (-) TimerEvent: {}
+[0.000894] (-) JobUnselected: {'identifier': 'arm_interfaces'}
+[0.000950] (-) JobUnselected: {'identifier': 'control'}
+[0.000981] (-) JobUnselected: {'identifier': 'translator'}
+[0.001025] (-) JobUnselected: {'identifier': 'vision'}
+[0.001193] (-) EventReactorShutdown: {}

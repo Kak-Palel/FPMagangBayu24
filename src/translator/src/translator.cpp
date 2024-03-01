@@ -5,8 +5,10 @@
 
 #include "rclcpp/rclcpp.hpp"
 #include "arm_interfaces/msg/servo_parameters.hpp"
+#include "arm_interfaces/msg/posisi_bidak.hpp"
 
 using namespace std::chrono_literals;
+using std::placeholders::_1;
 
 class TranslatorTicTacToe : public rclcpp::Node
 {
@@ -17,14 +19,38 @@ class TranslatorTicTacToe : public rclcpp::Node
       publisher_ = this->create_publisher<arm_interfaces::msg::ServoParameters>("topic_tes", 10);
       timer_ = this->create_wall_timer(
       3000ms, std::bind(&TranslatorTicTacToe::timer_callback, this));
+
+      subscription_ = this->create_subscription<arm_interfaces::msg::PosisiBidak>(
+      "to_move", 10, std::bind(&TranslatorTicTacToe::topic_callback, this, _1));
     }
 
   private:
+    void topic_callback(const arm_interfaces::msg::PosisiBidak::SharedPtr msg)
+    {
+      RCLCPP_INFO(this->get_logger(), "Nerima");
+    }
+    rclcpp::Subscription<arm_interfaces::msg::PosisiBidak>::SharedPtr subscription_;
+
+    std::vector<int> decide(const arm_interfaces::msg::PosisiBidak::SharedPtr msg)
+    {
+      /**
+       * 
+       * ANJENGGGGGG
+       * 
+       * HUAAAAA
+       * 
+       * 
+       * 
+      */
+      std::vector<int> JANCOK = {0, 0, 0, 0};
+      return JANCOK;
+    }
+
     void timer_callback()
     {
       auto message = arm_interfaces::msg::ServoParameters();
       message.take1 = 1;
-      message.take2 = 1;
+      message.take4 = 1;
       message.drop1 = 1;
       message.drop4 = 1;
       // RCLCPP_INFO(this->get_logger(), "Publishing: '%s'", message.data.c_str());

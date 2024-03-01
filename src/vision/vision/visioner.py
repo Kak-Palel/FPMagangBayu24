@@ -1,6 +1,7 @@
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String
+from arm_interfaces.msg import PosisiBidak
 import cv2 as cv
 import numpy as np
 
@@ -37,10 +38,14 @@ class VisionerTicTacToe(Node):
         #array untuk menyimpan grid mana saja yang ditempati oleh bot
         self.botMoves = np.array([])
         
-        #membuat publisher dan memanggil method 'timer_callback()' 30 kali sedetik
+        #membuat publisher untuk gridstate dan memanggil method 'timer_callback()' 30 kali sedetik
         self.publisher_ = self.create_publisher(String, 'ttt_state', 10)
         timer_period = 0.032  # seconds | 30 fps
         self.timer = self.create_timer(timer_period, self.timer_callback)
+
+        self.publishmoves_ = self.create_publisher(PosisiBidak, 'to_move', 10)
+        timer_period_moves = 1
+        self.timerMoves = self.create_timer(timer_period_moves, self.timer_callback_moves)
 
         #membuat subscription untuk menerima perintah gerakan bot
         self.subscription = self.create_subscription(
@@ -213,6 +218,15 @@ class VisionerTicTacToe(Node):
             self.publisher_.publish(msg)
             print(msg.data)
             print('move sent, processing...')
+    
+    def timer_callback_moves(self):
+        msg = PosisiBidak()
+        msg.fromx = 1
+        msg.fromy = 1
+        msg.tox = 1
+        msg.toy = 1
+        print("tesPublish......")
+        self.publishmoves_.publish(msg)
 
     #method listener yang menerima perintah gerakan yang telah dikirim oleh node control dan menyimpannya
     def listener_callback(self, msg):

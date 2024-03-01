@@ -83,6 +83,7 @@ rosidl_generator_c/arm_interfaces/msg/servo_parameters.h: /opt/ros/foxy/share/ro
 rosidl_generator_c/arm_interfaces/msg/servo_parameters.h: /opt/ros/foxy/share/rosidl_generator_c/resource/msg__type_support.h.em
 rosidl_generator_c/arm_interfaces/msg/servo_parameters.h: /opt/ros/foxy/share/rosidl_generator_c/resource/srv__type_support.h.em
 rosidl_generator_c/arm_interfaces/msg/servo_parameters.h: rosidl_adapter/arm_interfaces/msg/ServoParameters.idl
+rosidl_generator_c/arm_interfaces/msg/servo_parameters.h: rosidl_adapter/arm_interfaces/msg/PosisiBidak.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/olel/Projects/FPMagangBayu24/build/arm_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
 	/usr/bin/python3 /opt/ros/foxy/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/olel/Projects/FPMagangBayu24/build/arm_interfaces/rosidl_generator_c__arguments.json
 
@@ -95,8 +96,23 @@ rosidl_generator_c/arm_interfaces/msg/detail/servo_parameters__struct.h: rosidl_
 rosidl_generator_c/arm_interfaces/msg/detail/servo_parameters__type_support.h: rosidl_generator_c/arm_interfaces/msg/servo_parameters.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/arm_interfaces/msg/detail/servo_parameters__type_support.h
 
+rosidl_generator_c/arm_interfaces/msg/posisi_bidak.h: rosidl_generator_c/arm_interfaces/msg/servo_parameters.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/arm_interfaces/msg/posisi_bidak.h
+
+rosidl_generator_c/arm_interfaces/msg/detail/posisi_bidak__functions.h: rosidl_generator_c/arm_interfaces/msg/servo_parameters.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/arm_interfaces/msg/detail/posisi_bidak__functions.h
+
+rosidl_generator_c/arm_interfaces/msg/detail/posisi_bidak__struct.h: rosidl_generator_c/arm_interfaces/msg/servo_parameters.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/arm_interfaces/msg/detail/posisi_bidak__struct.h
+
+rosidl_generator_c/arm_interfaces/msg/detail/posisi_bidak__type_support.h: rosidl_generator_c/arm_interfaces/msg/servo_parameters.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/arm_interfaces/msg/detail/posisi_bidak__type_support.h
+
 rosidl_generator_c/arm_interfaces/msg/detail/servo_parameters__functions.c: rosidl_generator_c/arm_interfaces/msg/servo_parameters.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/arm_interfaces/msg/detail/servo_parameters__functions.c
+
+rosidl_generator_c/arm_interfaces/msg/detail/posisi_bidak__functions.c: rosidl_generator_c/arm_interfaces/msg/servo_parameters.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/arm_interfaces/msg/detail/posisi_bidak__functions.c
 
 CMakeFiles/arm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/arm_interfaces/msg/detail/servo_parameters__functions.c.o: CMakeFiles/arm_interfaces__rosidl_generator_c.dir/flags.make
 CMakeFiles/arm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/arm_interfaces/msg/detail/servo_parameters__functions.c.o: rosidl_generator_c/arm_interfaces/msg/detail/servo_parameters__functions.c
@@ -112,19 +128,35 @@ CMakeFiles/arm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/arm_interfa
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/arm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/arm_interfaces/msg/detail/servo_parameters__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/olel/Projects/FPMagangBayu24/build/arm_interfaces/rosidl_generator_c/arm_interfaces/msg/detail/servo_parameters__functions.c -o CMakeFiles/arm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/arm_interfaces/msg/detail/servo_parameters__functions.c.s
 
+CMakeFiles/arm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/arm_interfaces/msg/detail/posisi_bidak__functions.c.o: CMakeFiles/arm_interfaces__rosidl_generator_c.dir/flags.make
+CMakeFiles/arm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/arm_interfaces/msg/detail/posisi_bidak__functions.c.o: rosidl_generator_c/arm_interfaces/msg/detail/posisi_bidak__functions.c
+CMakeFiles/arm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/arm_interfaces/msg/detail/posisi_bidak__functions.c.o: CMakeFiles/arm_interfaces__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/olel/Projects/FPMagangBayu24/build/arm_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/arm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/arm_interfaces/msg/detail/posisi_bidak__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/arm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/arm_interfaces/msg/detail/posisi_bidak__functions.c.o -MF CMakeFiles/arm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/arm_interfaces/msg/detail/posisi_bidak__functions.c.o.d -o CMakeFiles/arm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/arm_interfaces/msg/detail/posisi_bidak__functions.c.o -c /home/olel/Projects/FPMagangBayu24/build/arm_interfaces/rosidl_generator_c/arm_interfaces/msg/detail/posisi_bidak__functions.c
+
+CMakeFiles/arm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/arm_interfaces/msg/detail/posisi_bidak__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/arm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/arm_interfaces/msg/detail/posisi_bidak__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/olel/Projects/FPMagangBayu24/build/arm_interfaces/rosidl_generator_c/arm_interfaces/msg/detail/posisi_bidak__functions.c > CMakeFiles/arm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/arm_interfaces/msg/detail/posisi_bidak__functions.c.i
+
+CMakeFiles/arm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/arm_interfaces/msg/detail/posisi_bidak__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/arm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/arm_interfaces/msg/detail/posisi_bidak__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/olel/Projects/FPMagangBayu24/build/arm_interfaces/rosidl_generator_c/arm_interfaces/msg/detail/posisi_bidak__functions.c -o CMakeFiles/arm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/arm_interfaces/msg/detail/posisi_bidak__functions.c.s
+
 # Object files for target arm_interfaces__rosidl_generator_c
 arm_interfaces__rosidl_generator_c_OBJECTS = \
-"CMakeFiles/arm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/arm_interfaces/msg/detail/servo_parameters__functions.c.o"
+"CMakeFiles/arm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/arm_interfaces/msg/detail/servo_parameters__functions.c.o" \
+"CMakeFiles/arm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/arm_interfaces/msg/detail/posisi_bidak__functions.c.o"
 
 # External object files for target arm_interfaces__rosidl_generator_c
 arm_interfaces__rosidl_generator_c_EXTERNAL_OBJECTS =
 
 libarm_interfaces__rosidl_generator_c.so: CMakeFiles/arm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/arm_interfaces/msg/detail/servo_parameters__functions.c.o
+libarm_interfaces__rosidl_generator_c.so: CMakeFiles/arm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/arm_interfaces/msg/detail/posisi_bidak__functions.c.o
 libarm_interfaces__rosidl_generator_c.so: CMakeFiles/arm_interfaces__rosidl_generator_c.dir/build.make
 libarm_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/librosidl_runtime_c.so
 libarm_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/librcutils.so
 libarm_interfaces__rosidl_generator_c.so: CMakeFiles/arm_interfaces__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/olel/Projects/FPMagangBayu24/build/arm_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library libarm_interfaces__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/olel/Projects/FPMagangBayu24/build/arm_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library libarm_interfaces__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/arm_interfaces__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -135,10 +167,15 @@ CMakeFiles/arm_interfaces__rosidl_generator_c.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/arm_interfaces__rosidl_generator_c.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/arm_interfaces__rosidl_generator_c.dir/clean
 
+CMakeFiles/arm_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/arm_interfaces/msg/detail/posisi_bidak__functions.c
+CMakeFiles/arm_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/arm_interfaces/msg/detail/posisi_bidak__functions.h
+CMakeFiles/arm_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/arm_interfaces/msg/detail/posisi_bidak__struct.h
+CMakeFiles/arm_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/arm_interfaces/msg/detail/posisi_bidak__type_support.h
 CMakeFiles/arm_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/arm_interfaces/msg/detail/servo_parameters__functions.c
 CMakeFiles/arm_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/arm_interfaces/msg/detail/servo_parameters__functions.h
 CMakeFiles/arm_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/arm_interfaces/msg/detail/servo_parameters__struct.h
 CMakeFiles/arm_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/arm_interfaces/msg/detail/servo_parameters__type_support.h
+CMakeFiles/arm_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/arm_interfaces/msg/posisi_bidak.h
 CMakeFiles/arm_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/arm_interfaces/msg/servo_parameters.h
 	cd /home/olel/Projects/FPMagangBayu24/build/arm_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/olel/Projects/FPMagangBayu24/src/arm_interfaces /home/olel/Projects/FPMagangBayu24/src/arm_interfaces /home/olel/Projects/FPMagangBayu24/build/arm_interfaces /home/olel/Projects/FPMagangBayu24/build/arm_interfaces /home/olel/Projects/FPMagangBayu24/build/arm_interfaces/CMakeFiles/arm_interfaces__rosidl_generator_c.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/arm_interfaces__rosidl_generator_c.dir/depend

@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/arm_interfaces__python.dir/rosidl_generator_py/arm_interfaces/msg/_posisi_bidak_s.c.o"
+  "CMakeFiles/arm_interfaces__python.dir/rosidl_generator_py/arm_interfaces/msg/_posisi_bidak_s.c.o.d"
   "CMakeFiles/arm_interfaces__python.dir/rosidl_generator_py/arm_interfaces/msg/_servo_parameters_s.c.o"
   "CMakeFiles/arm_interfaces__python.dir/rosidl_generator_py/arm_interfaces/msg/_servo_parameters_s.c.o.d"
   "rosidl_generator_py/arm_interfaces/libarm_interfaces__python.pdb"

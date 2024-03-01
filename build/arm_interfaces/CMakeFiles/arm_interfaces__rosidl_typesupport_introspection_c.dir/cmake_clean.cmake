@@ -1,8 +1,12 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/arm_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/arm_interfaces/msg/detail/posisi_bidak__type_support.c.o"
+  "CMakeFiles/arm_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/arm_interfaces/msg/detail/posisi_bidak__type_support.c.o.d"
   "CMakeFiles/arm_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/arm_interfaces/msg/detail/servo_parameters__type_support.c.o"
   "CMakeFiles/arm_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/arm_interfaces/msg/detail/servo_parameters__type_support.c.o.d"
   "libarm_interfaces__rosidl_typesupport_introspection_c.pdb"
   "libarm_interfaces__rosidl_typesupport_introspection_c.so"
+  "rosidl_typesupport_introspection_c/arm_interfaces/msg/detail/posisi_bidak__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/arm_interfaces/msg/detail/posisi_bidak__type_support.c"
   "rosidl_typesupport_introspection_c/arm_interfaces/msg/detail/servo_parameters__rosidl_typesupport_introspection_c.h"
   "rosidl_typesupport_introspection_c/arm_interfaces/msg/detail/servo_parameters__type_support.c"
 )

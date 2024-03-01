@@ -1,0 +1,2 @@
+Invoking command in '/home/olel/Projects/FPMagangBayu24/build/arm_interfaces': /usr/local/bin/cmake --build /home/olel/Projects/FPMagangBayu24/build/arm_interfaces -- -j16 -l16
+Invoked command in '/home/olel/Projects/FPMagangBayu24/build/arm_interfaces' returned '2': /usr/local/bin/cmake --build /home/olel/Projects/FPMagangBayu24/build/arm_interfaces -- -j16 -l16

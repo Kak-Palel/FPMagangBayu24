@@ -372,7 +372,15 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/arm_interfaces/msg" TYPE FILE FILES "/home/olel/Projects/FPMagangBayu24/build/arm_interfaces/rosidl_adapter/arm_interfaces/msg/PosisiBidak.idl")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/arm_interfaces/msg" TYPE FILE FILES "/home/olel/Projects/FPMagangBayu24/src/arm_interfaces/msg/ServoParameters.msg")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/arm_interfaces/msg" TYPE FILE FILES "/home/olel/Projects/FPMagangBayu24/src/arm_interfaces/msg/PosisiBidak.msg")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)

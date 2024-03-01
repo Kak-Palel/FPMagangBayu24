@@ -177,4 +177,7 @@ CMakeFiles/arm_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_
  /home/olel/Projects/FPMagangBayu24/build/arm_interfaces/rosidl_generator_c/arm_interfaces/msg/detail/servo_parameters__type_support.h \
  /home/olel/Projects/FPMagangBayu24/build/arm_interfaces/rosidl_generator_c/arm_interfaces/msg/rosidl_generator_c__visibility_control.h \
  /home/olel/Projects/FPMagangBayu24/build/arm_interfaces/rosidl_generator_c/arm_interfaces/msg/detail/servo_parameters__struct.h \
- /home/olel/Projects/FPMagangBayu24/build/arm_interfaces/rosidl_generator_c/arm_interfaces/msg/detail/servo_parameters__functions.h
+ /home/olel/Projects/FPMagangBayu24/build/arm_interfaces/rosidl_generator_c/arm_interfaces/msg/detail/servo_parameters__functions.h \
+ /home/olel/Projects/FPMagangBayu24/build/arm_interfaces/rosidl_generator_c/arm_interfaces/msg/detail/posisi_bidak__type_support.h \
+ /home/olel/Projects/FPMagangBayu24/build/arm_interfaces/rosidl_generator_c/arm_interfaces/msg/detail/posisi_bidak__struct.h \
+ /home/olel/Projects/FPMagangBayu24/build/arm_interfaces/rosidl_generator_c/arm_interfaces/msg/detail/posisi_bidak__functions.h
