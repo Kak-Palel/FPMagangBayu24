@@ -12,6 +12,19 @@ class VisionerTicTacToe(Node):
     def __init__(self):
         super().__init__('VisionerTicTacToe')
 
+        print("1. Merah ")
+        print("2. Biru ")
+        c = input("Pilih warna: ")
+        self.colour = True
+        if c == '1':
+            print("Bot plays red")
+        elif c == '2':
+            self.colour = False
+            print("Bot plays blue")
+        else:
+            print("wrong option, automatically choose red")
+
+
         cv.namedWindow("ni olel")                                           #window dibutuhkan supaya dapat menggunakan trackbar                                         #window dibutuhkan supaya dapat menggunakan trackbar
         cv.createTrackbar('minArea', 'ni olel', 81000, 307200, self.nothing)#trackbar untuk kalibrasi area contours deteksi grid
         cv.createTrackbar('param2', 'ni olel', 15, 200, self.nothing)       #trackbar untuk kalibrasi akurasi deteksi lingkaran terhadap kualitas cahaya
@@ -100,31 +113,36 @@ class VisionerTicTacToe(Node):
         self.gridCorner1, self.gridCorner2 = self.findGrid(self.drawnFrame.copy())
         
         #menutupi area yang tidak perlu untuk menghindari deteksi lingkaran yang tidak diinginkan
-        processFrame = cv.rectangle(processFrame, (0, 0 ), (self.gridCorner1[0], 480), (0, 0, 0), -1)
-        processFrame = cv.rectangle(processFrame, (self.gridCorner1[0], 0), (self.gridCorner2[0], self.gridCorner1[1]), (0, 0, 0), -1)
-        processFrame = cv.rectangle(processFrame, (self.gridCorner2[0], 0), (640, 480), (0, 0, 0), -1)
-        processFrame = cv.rectangle(processFrame, (self.gridCorner1[0], self.gridCorner2[1]), (self.gridCorner2[0], 480), (0, 0, 0), -1)
+        # processFrame = cv.rectangle(processFrame, (0, 0 ), (self.gridCorner1[0], 480), (0, 0, 0), -1)
+        # processFrame = cv.rectangle(processFrame, (self.gridCorner1[0], 0), (self.gridCorner2[0], self.gridCorner1[1]), (0, 0, 0), -1)
+        # processFrame = cv.rectangle(processFrame, (self.gridCorner2[0], 0), (640, 480), (0, 0, 0), -1)
+        # processFrame = cv.rectangle(processFrame, (self.gridCorner1[0], self.gridCorner2[1]), (self.gridCorner2[0], 480), (0, 0, 0), -1)
 
         #convert ke hsv dan apply blur
         processFrame = cv.cvtColor(processFrame, cv.COLOR_BGR2HSV)
         processFrame = cv.medianBlur(processFrame, 5)
 
-        #buat dua foto copy yang nanti digabung karena merah memiliki 2 interval hsv
-        mask1 = processFrame.copy()
-        mask2 = processFrame.copy()
-        
-        #mask untuk nilai hsv merah yang pertama
-        upper_range = np.array([15, 255, 255])
-        lower_range = np.array([0, 100, 100])
-        mask1 = cv.inRange(mask1, lower_range, upper_range)
+        if self.colour:
+            #buat dua foto copy yang nanti digabung karena merah memiliki 2 interval hsv
+            mask1 = processFrame.copy()
+            mask2 = processFrame.copy()
+            
+            #mask untuk nilai hsv merah yang pertama
+            upper_range = np.array([15, 255, 255])
+            lower_range = np.array([0, 100, 100])
+            mask1 = cv.inRange(mask1, lower_range, upper_range)
 
-        #mask untuk nilai hsv merah yang kedua
-        upper_range = np.array([179, 255, 255])
-        lower_range = np.array([155, 100, 100])
-        mask2 = cv.inRange(mask2, lower_range, upper_range)
+            #mask untuk nilai hsv merah yang kedua
+            upper_range = np.array([179, 255, 255])
+            lower_range = np.array([155, 100, 100])
+            mask2 = cv.inRange(mask2, lower_range, upper_range)
 
-        #gabungkan kedua mask untuk mendapatkan semua warna merah
-        processFrame = mask1 + mask2
+            #gabungkan kedua mask untuk mendapatkan semua warna merah
+            processFrame = mask1 + mask2
+        elif not self.colour:
+            upper_range = np.array([130,255,255])
+            lower_range = np.array([90,50,50])
+            processFrame = cv.inRange(processFrame, lower_range, upper_range)
         
 
         #deteksi lingkaran
@@ -159,16 +177,19 @@ class VisionerTicTacToe(Node):
                         gridState[int(i[4])] = 1
         
         #gambar posisi bidak bot dan assign sebagai gerakan yang telah dibuat oleh bot
+        botColour = (255, 0, 0)
+        if not self.colour:
+            botColour = (0, 0, 255)
         if self.botMoves is not None and self.gridCorner2[0] - self.gridCorner1[0] != 1:
             for i in self.botMoves:
                 i = int(i)
                 gridState[i] = 2
                 if 0<= i <= 2:
-                    cv.circle(self.drawnFrame, (int(self.gridCorner1[0] + boxLenX/2*(2*i+1)), int(self.gridCorner1[1] + boxLenY/2)), int(boxLenX/2 -10), (255, 0, 0), -1)
+                    cv.circle(self.drawnFrame, (int(self.gridCorner1[0] + boxLenX/2*(2*i+1)), int(self.gridCorner1[1] + boxLenY/2)), int(boxLenX/2 -10), botColour, -1)
                 elif 3 <= i <= 5:
-                    cv.circle(self.drawnFrame, (int(self.gridCorner1[0] + boxLenX/2*(2*(i-3)+1)), int(self.gridCorner1[1] + boxLenY*3/2)), int(boxLenX/2 -10), (255, 0, 0), -1)
+                    cv.circle(self.drawnFrame, (int(self.gridCorner1[0] + boxLenX/2*(2*(i-3)+1)), int(self.gridCorner1[1] + boxLenY*3/2)), int(boxLenX/2 -10), botColour, -1)
                 elif 6 <= i <= 8:
-                    cv.circle(self.drawnFrame, (int(self.gridCorner1[0] + boxLenX/2*(2*(i-6)+1)), int(self.gridCorner1[1] + boxLenY*5/2)), int(boxLenX/2 -10), (255, 0, 0), -1)
+                    cv.circle(self.drawnFrame, (int(self.gridCorner1[0] + boxLenX/2*(2*(i-6)+1)), int(self.gridCorner1[1] + boxLenY*5/2)), int(boxLenX/2 -10), botColour, -1)
 
         #tunjukkan gambar utama dan juga gambar yang dilihat oleh komputer untuk keperluan kalibrasi
         cv.imshow("olel ngeri", processFrame)
