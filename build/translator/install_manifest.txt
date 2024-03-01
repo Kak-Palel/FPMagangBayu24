@@ -1,0 +1,16 @@
+/home/olel/Projects/FPMagangBayu24/install/translator/lib/translator/bot_translatator
+/home/olel/Projects/FPMagangBayu24/install/translator/share/ament_index/resource_index/package_run_dependencies/translator
+/home/olel/Projects/FPMagangBayu24/install/translator/share/ament_index/resource_index/parent_prefix_path/translator
+/home/olel/Projects/FPMagangBayu24/install/translator/share/translator/environment/ament_prefix_path.sh
+/home/olel/Projects/FPMagangBayu24/install/translator/share/translator/environment/ament_prefix_path.dsv
+/home/olel/Projects/FPMagangBayu24/install/translator/share/translator/environment/path.sh
+/home/olel/Projects/FPMagangBayu24/install/translator/share/translator/environment/path.dsv
+/home/olel/Projects/FPMagangBayu24/install/translator/share/translator/local_setup.bash
+/home/olel/Projects/FPMagangBayu24/install/translator/share/translator/local_setup.sh
+/home/olel/Projects/FPMagangBayu24/install/translator/share/translator/local_setup.zsh
+/home/olel/Projects/FPMagangBayu24/install/translator/share/translator/local_setup.dsv
+/home/olel/Projects/FPMagangBayu24/install/translator/share/translator/package.dsv
+/home/olel/Projects/FPMagangBayu24/install/translator/share/ament_index/resource_index/packages/translator
+/home/olel/Projects/FPMagangBayu24/install/translator/share/translator/cmake/translatorConfig.cmake
+/home/olel/Projects/FPMagangBayu24/install/translator/share/translator/cmake/translatorConfig-version.cmake
+/home/olel/Projects/FPMagangBayu24/install/translator/share/translator/package.xml

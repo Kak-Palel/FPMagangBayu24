@@ -12,12 +12,12 @@ class VisionerTicTacToe(Node):
     def __init__(self):
         super().__init__('VisionerTicTacToe')
 
-        cv.namedWindow("ni olel")                                           #window dibutuhkan supaya dapat menggunakan trackbar
-        cv.createTrackbar('param1', 'ni olel', 100, 200, self.nothing)      #trackbar untuk kalibrasi threshold yang di pass ke canny edge detector
+        cv.namedWindow("ni olel")                                           #window dibutuhkan supaya dapat menggunakan trackbar                                         #window dibutuhkan supaya dapat menggunakan trackbar
+        cv.createTrackbar('minArea', 'ni olel', 81000, 307200, self.nothing)#trackbar untuk kalibrasi area contours deteksi grid
         cv.createTrackbar('param2', 'ni olel', 15, 200, self.nothing)       #trackbar untuk kalibrasi akurasi deteksi lingkaran terhadap kualitas cahaya
         
         #buka camera
-        self.cap = cv.VideoCapture(0)
+        self.cap = cv.VideoCapture(4)
         if not self.cap.isOpened():
             print("HUAAAAAAAAAA RUSAAAAAAAAAAAK")
         
@@ -43,6 +43,39 @@ class VisionerTicTacToe(Node):
     def nothing(self):
         pass
     
+    #method untuk mencari posisi grid
+    def findGrid(self, frame):
+
+        pos1 = np.array([0, 0])
+        pos2 = np.array([1, 1])
+
+        lowerBound = np.array([140, 150, 100], dtype=np.uint8)
+        upperBound = np.array([255, 255, 255], dtype=np.uint8)
+
+        frame = cv.inRange(frame, lowerBound, upperBound)
+        contours, _ = cv.findContours(frame, cv.RETR_TREE, cv.CHAIN_APPROX_SIMPLE)
+        # cv.drawContours(self.drawnFrame, contours, -1, (0, 255, 0), 3)
+
+        for contour in contours:
+            x, y, w, h = cv.boundingRect(contour)
+            area = cv.contourArea(contour)
+
+            # If the area of the contour is within a certain range, draw a bounding box
+            if self.pram1 < area < self.pram1 + 2000:
+                color = (0, 0, 255)  # Red color for the bounding box
+                thickness = 2
+                cv.rectangle(self.drawnFrame, (x, y), (x + w, y + h), color, thickness)
+                pos1[0] = x
+                pos1[1] = y
+                pos2[0] = x + w
+                pos2[1] = y + h
+
+        # cv.imshow("tes1", frame)
+        # print(pos2)
+        # print(pos1)
+        return pos1, pos2
+
+
     """
     Method untuk membaca keadaan grid.
     karena method ini terpanggil 30 kali perdetik, maka method ini dapat membaca kamera, memproses, dan 
@@ -52,22 +85,25 @@ class VisionerTicTacToe(Node):
     """
     def readState(self):
         #membaca frame kamera
-        successOpenCam, drawnFrame = self.cap.read()
+        successOpenCam, self.drawnFrame = self.cap.read()
         if not successOpenCam:
             print("NDAK BISA BACA HUAAA")
             return
         
-        #buat copy dari drawnFrame dengan nama processFrame yang akan kita gunakan untuk memproses
-        processFrame = drawnFrame.copy()
+        #buat copy dari self.drawnFrame dengan nama processFrame yang akan kita gunakan untuk memproses
+        processFrame = self.drawnFrame.copy()
         
-        #gambar kotak untuk memudahkan user menemukan dimana seharusnya grid tictactoe diletakkan
-        drawnFrame = cv.rectangle(drawnFrame, (150, 110), (490, 450), (255, 0, 0), 2)
+        self.pram1 = int(cv.getTrackbarPos('minArea', 'ni olel')) #upper threshold yang di pass ke canny edge detector, sebagai parameter yang dapat diubah dari trackbar
+        pram2 = int(cv.getTrackbarPos('param2', 'ni olel')) #tingkat akurasi deteksi lingkaran tergantung pada kualitas cahaya, sebagai parameter yang dapat diubah dari trackbar
+       
+        #mencari posisi dari grid
+        self.gridCorner1, self.gridCorner2 = self.findGrid(self.drawnFrame.copy())
         
         #menutupi area yang tidak perlu untuk menghindari deteksi lingkaran yang tidak diinginkan
-        processFrame = cv.rectangle(processFrame, (0, 0), (150, 480), (0, 0, 0), -1)
-        processFrame = cv.rectangle(processFrame, (150, 0), (490, 110), (0, 0, 0), -1)
-        processFrame = cv.rectangle(processFrame, (490, 0), (640, 480), (0, 0, 0), -1)
-        processFrame = cv.rectangle(processFrame, (150, 450), (490, 480), (0, 0, 0), -1)
+        processFrame = cv.rectangle(processFrame, (0, 0 ), (self.gridCorner1[0], 480), (0, 0, 0), -1)
+        processFrame = cv.rectangle(processFrame, (self.gridCorner1[0], 0), (self.gridCorner2[0], self.gridCorner1[1]), (0, 0, 0), -1)
+        processFrame = cv.rectangle(processFrame, (self.gridCorner2[0], 0), (640, 480), (0, 0, 0), -1)
+        processFrame = cv.rectangle(processFrame, (self.gridCorner1[0], self.gridCorner2[1]), (self.gridCorner2[0], 480), (0, 0, 0), -1)
 
         #convert ke hsv dan apply blur
         processFrame = cv.cvtColor(processFrame, cv.COLOR_BGR2HSV)
@@ -90,23 +126,25 @@ class VisionerTicTacToe(Node):
         #gabungkan kedua mask untuk mendapatkan semua warna merah
         processFrame = mask1 + mask2
         
-        pram1 = int(cv.getTrackbarPos('param1', 'ni olel')) #upper threshold yang di pass ke canny edge detector, sebagai parameter yang dapat diubah dari trackbar
-        pram2 = int(cv.getTrackbarPos('param2', 'ni olel')) #tingkat akurasi deteksi lingkaran tergantung pada kualitas cahaya, sebagai parameter yang dapat diubah dari trackbar
 
         #deteksi lingkaran
-        circles = cv.HoughCircles(processFrame, cv.HOUGH_GRADIENT, 1, 60, param1 = pram1, param2 = pram2, minRadius = 40, maxRadius = 0)
+        circles = cv.HoughCircles(processFrame, cv.HOUGH_GRADIENT, 1, 60, param1 = 100, param2 = pram2, minRadius = 0, maxRadius = 0)
             
+        boxLenX = (self.gridCorner2[0] - self.gridCorner1[0])/3 
+        boxLenY = (self.gridCorner2[1] - self.gridCorner1[1])/3 
         #batas batas tiap kolom di grid dan juga index kolomnya
         gridPos = np.array([
-            [150, 263, 110, 223, 0],
-            [264, 376, 110, 223, 1],
-            [377, 490, 110, 223, 2],
-            [150, 263, 224, 336, 3],
-            [264, 376, 224, 336, 4],
-            [377, 490, 224, 336, 5],
-            [150, 263, 337, 450, 6],
-            [264, 376, 337, 450, 7],
-            [377, 490, 337, 450, 8]])
+            [self.gridCorner1[0],             self.gridCorner1[0] + boxLenX,   self.gridCorner1[1], self.gridCorner1[1] + boxLenY, 0],
+            [self.gridCorner1[0] + boxLenX,   self.gridCorner1[0] + 2*boxLenX, self.gridCorner1[1], self.gridCorner1[1] + boxLenY, 1],
+            [self.gridCorner1[0] + 2*boxLenX, self.gridCorner2[0],             self.gridCorner1[1], self.gridCorner1[1] + boxLenY, 2],
+
+            [self.gridCorner1[0],             self.gridCorner1[0] + boxLenX,   self.gridCorner1[1] + boxLenY, self.gridCorner1[1] + 2*boxLenY, 3],
+            [self.gridCorner1[0] + boxLenX,   self.gridCorner1[0] + 2*boxLenX, self.gridCorner1[1] + boxLenY, self.gridCorner1[1] + 2*boxLenY, 4],
+            [self.gridCorner1[0] + 2*boxLenX, self.gridCorner2[0],             self.gridCorner1[1] + boxLenY, self.gridCorner1[1] + 2*boxLenY, 5],
+
+            [self.gridCorner1[0],             self.gridCorner1[0] + boxLenX,   self.gridCorner1[1] + 2*boxLenY, self.gridCorner2[1], 6],
+            [self.gridCorner1[0] + boxLenX,   self.gridCorner1[0] + 2*boxLenX, self.gridCorner1[1] + 2*boxLenY, self.gridCorner2[1], 7],
+            [self.gridCorner1[0] + 2*boxLenX, self.gridCorner2[0],             self.gridCorner1[1] + 2*boxLenY, self.gridCorner2[1], 8]])
         
         #kondisi grid dalam bentuk array
         gridState = np.array([0, 0, 0, 0, 0, 0 ,0, 0, 0])
@@ -115,26 +153,26 @@ class VisionerTicTacToe(Node):
         if circles is not None:
             circlesInt = np.round(circles[0, :]).astype("int")
             for (x, y, r) in circlesInt:
-                cv.circle(drawnFrame, (x, y), r, (255, 0, 0), 2)
+                cv.circle(self.drawnFrame, (x, y), r, (255, 0, 0), 2)
                 for i in gridPos:
-                    if i[0] <= x and x <= i[1] and i[2] <= y and y <= i[3] and gridState[i[4]] != 2:
-                        gridState[i[4]] = 1
+                    if i[0] <= x and x <= i[1] and i[2] <= y and y <= i[3] and gridState[int(i[4])] != 2:
+                        gridState[int(i[4])] = 1
         
         #gambar posisi bidak bot dan assign sebagai gerakan yang telah dibuat oleh bot
-        if self.botMoves is not None:
+        if self.botMoves is not None and self.gridCorner2[0] - self.gridCorner1[0] != 1:
             for i in self.botMoves:
                 i = int(i)
                 gridState[i] = 2
                 if 0<= i <= 2:
-                    cv.circle(drawnFrame, (150 + 56*(2*i+1), 166), 50, (255, 0, 0), -1)
+                    cv.circle(self.drawnFrame, (int(self.gridCorner1[0] + boxLenX/2*(2*i+1)), int(self.gridCorner1[1] + boxLenY/2)), int(boxLenX/2 -10), (255, 0, 0), -1)
                 elif 3 <= i <= 5:
-                    cv.circle(drawnFrame, (150 + 56*(2*(i-3)+1), 278), 50, (255, 0, 0), -1)
+                    cv.circle(self.drawnFrame, (int(self.gridCorner1[0] + boxLenX/2*(2*(i-3)+1)), int(self.gridCorner1[1] + boxLenY*3/2)), int(boxLenX/2 -10), (255, 0, 0), -1)
                 elif 6 <= i <= 8:
-                    cv.circle(drawnFrame, (150 + 56*(2*(i-6)+1), 390), 50, (255, 0, 0), -1)
+                    cv.circle(self.drawnFrame, (int(self.gridCorner1[0] + boxLenX/2*(2*(i-6)+1)), int(self.gridCorner1[1] + boxLenY*5/2)), int(boxLenX/2 -10), (255, 0, 0), -1)
 
         #tunjukkan gambar utama dan juga gambar yang dilihat oleh komputer untuk keperluan kalibrasi
         cv.imshow("olel ngeri", processFrame)
-        cv.imshow("ni olel", drawnFrame)
+        cv.imshow("ni olel", self.drawnFrame)
         
         #konversi kondisi grid dari bentuk array ke string
         msg = ''

@@ -1,0 +1,224 @@
+[0.000000] (-) TimerEvent: {}
+[0.000216] (-) JobUnselected: {'identifier': 'control'}
+[0.000262] (-) JobUnselected: {'identifier': 'vision'}
+[0.000292] (arm_interfaces) JobQueued: {'identifier': 'arm_interfaces', 'dependencies': OrderedDict()}
+[0.000323] (arm_interfaces) JobStarted: {'identifier': 'arm_interfaces'}
+[0.100167] (-) TimerEvent: {}
+[0.192819] (arm_interfaces) JobProgress: {'identifier': 'arm_interfaces', 'progress': 'cmake'}
+[0.194045] (arm_interfaces) JobProgress: {'identifier': 'arm_interfaces', 'progress': 'build'}
+[0.194107] (arm_interfaces) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/home/olel/Projects/FPMagangBayu24/build/arm_interfaces', '--', '-j16', '-l16'], 'cwd': '/home/olel/Projects/FPMagangBayu24/build/arm_interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'olel'), ('LC_TIME', 'id_ID.UTF-8'), ('SSH_AGENT_PID', '1443'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/olel'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.86.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'id_ID.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1180'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '10600'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'olel'), ('JOURNAL_STREAM', '8:42477'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'olel'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/olel/.local/bin:/home/olel/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/olel-ROG-Flow-X16-GV601RE-GV601RE:@/tmp/.ICE-unix/1518,unix/olel-ROG-Flow-X16-GV601RE-GV601RE:/tmp/.ICE-unix/1518'), ('INVOCATION_ID', '791b9287897a43eab41944ce3e97fabd'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-180af5a434.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/olel/Projects/FPMagangBayu24/build/arm_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.200248] (-) TimerEvent: {}
+[0.208507] (arm_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.209695] (arm_interfaces) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/foxy/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):\n'}
+[0.209892] (arm_interfaces) StderrLine: {'line': b'  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules\n'}
+[0.209995] (arm_interfaces) StderrLine: {'line': b'  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use\n'}
+[0.210082] (arm_interfaces) StderrLine: {'line': b'  the cmake_policy command to set the policy and suppress this warning.\n'}
+[0.210163] (arm_interfaces) StderrLine: {'line': b'\n'}
+[0.210250] (arm_interfaces) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.210339] (arm_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/core/all.cmake:53 (include)\n'}
+[0.210428] (arm_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)\n'}
+[0.210515] (arm_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)\n'}
+[0.210607] (arm_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)\n'}
+[0.210688] (arm_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)\n'}
+[0.210780] (arm_interfaces) StderrLine: {'line': b'  CMakeLists.txt:18 (find_package)\n'}
+[0.210869] (arm_interfaces) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.210949] (arm_interfaces) StderrLine: {'line': b'\x1b[0m\n'}
+[0.230323] (arm_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3")\n'}
+[0.230651] (arm_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.300390] (-) TimerEvent: {}
+[0.366958] (arm_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[0.368190] (arm_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.370461] (arm_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.400593] (-) TimerEvent: {}
+[0.478448] (arm_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.495228] (arm_interfaces) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/foxy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:40 (find_package):\n'}
+[0.495435] (arm_interfaces) StderrLine: {'line': b'  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules\n'}
+[0.495552] (arm_interfaces) StderrLine: {'line': b'  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use\n'}
+[0.495645] (arm_interfaces) StderrLine: {'line': b'  the cmake_policy command to set the policy and suppress this warning.\n'}
+[0.495731] (arm_interfaces) StderrLine: {'line': b'\n'}
+[0.495813] (arm_interfaces) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.495896] (arm_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)\n'}
+[0.495979] (arm_interfaces) StderrLine: {'line': b'  CMakeLists.txt:21 (rosidl_generate_interfaces)\n'}
+[0.496062] (arm_interfaces) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.496145] (arm_interfaces) StderrLine: {'line': b'\x1b[0m\n'}
+[0.500644] (-) TimerEvent: {}
+[0.516790] (arm_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10")\n'}
+[0.601249] (-) TimerEvent: {}
+[0.607798] (arm_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[0.679750] (arm_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.683465] (arm_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.685007] (arm_interfaces) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/foxy/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:20 (find_package):\n'}
+[0.685190] (arm_interfaces) StderrLine: {'line': b'  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules\n'}
+[0.685295] (arm_interfaces) StderrLine: {'line': b'  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use\n'}
+[0.685388] (arm_interfaces) StderrLine: {'line': b'  the cmake_policy command to set the policy and suppress this warning.\n'}
+[0.685476] (arm_interfaces) StderrLine: {'line': b'\n'}
+[0.685562] (arm_interfaces) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.685643] (arm_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)\n'}
+[0.685725] (arm_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)\n'}
+[0.685806] (arm_interfaces) StderrLine: {'line': b'  CMakeLists.txt:21 (rosidl_generate_interfaces)\n'}
+[0.685889] (arm_interfaces) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.685967] (arm_interfaces) StderrLine: {'line': b'\x1b[0m\n'}
+[0.701335] (-) TimerEvent: {}
+[0.704188] (arm_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5")\n'}
+[0.704894] (arm_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)\n'}
+[0.705540] (arm_interfaces) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/foxy/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:45 (find_package):\n'}
+[0.705756] (arm_interfaces) StderrLine: {'line': b'  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules\n'}
+[0.705892] (arm_interfaces) StderrLine: {'line': b'  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use\n'}
+[0.706010] (arm_interfaces) StderrLine: {'line': b'  the cmake_policy command to set the policy and suppress this warning.\n'}
+[0.706130] (arm_interfaces) StderrLine: {'line': b'\n'}
+[0.706252] (arm_interfaces) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.706365] (arm_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)\n'}
+[0.706476] (arm_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)\n'}
+[0.706587] (arm_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)\n'}
+[0.706705] (arm_interfaces) StderrLine: {'line': b'  CMakeLists.txt:21 (rosidl_generate_interfaces)\n'}
+[0.706813] (arm_interfaces) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.706930] (arm_interfaces) StderrLine: {'line': b'\x1b[0m\n'}
+[0.724210] (arm_interfaces) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/foxy/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:133 (find_package):\n'}
+[0.724692] (arm_interfaces) StderrLine: {'line': b'  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules\n'}
+[0.724863] (arm_interfaces) StderrLine: {'line': b'  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use\n'}
+[0.725025] (arm_interfaces) StderrLine: {'line': b'  the cmake_policy command to set the policy and suppress this warning.\n'}
+[0.725207] (arm_interfaces) StderrLine: {'line': b'\n'}
+[0.725333] (arm_interfaces) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.725456] (arm_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)\n'}
+[0.725579] (arm_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)\n'}
+[0.725701] (arm_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)\n'}
+[0.725788] (arm_interfaces) StderrLine: {'line': b'  CMakeLists.txt:21 (rosidl_generate_interfaces)\n'}
+[0.725874] (arm_interfaces) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.725962] (arm_interfaces) StderrLine: {'line': b'\x1b[0m\n'}
+[0.728487] (arm_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.728759] (arm_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[0.728920] (arm_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so\n'}
+[0.737722] (arm_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[0.744198] (arm_interfaces) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[0.744615] (arm_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.745187] (arm_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.746335] (arm_interfaces) StdoutLine: {'line': b'-- Configuring done (0.5s)\n'}
+[0.765845] (arm_interfaces) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[0.767998] (arm_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/olel/Projects/FPMagangBayu24/build/arm_interfaces\n'}
+[0.781658] (arm_interfaces) StdoutLine: {'line': b'[  3%] Built target arm_interfaces__cpp\n'}
+[0.785035] (arm_interfaces) StdoutLine: {'line': b'[ 12%] Built target arm_interfaces__rosidl_generator_c\n'}
+[0.788548] (arm_interfaces) StdoutLine: {'line': b'[ 22%] Built target arm_interfaces__rosidl_typesupport_cpp\n'}
+[0.791181] (arm_interfaces) StdoutLine: {'line': b'[ 41%] Built target arm_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[0.791423] (arm_interfaces) StdoutLine: {'line': b'[ 41%] Built target arm_interfaces__rosidl_typesupport_introspection_c\n'}
+[0.791576] (arm_interfaces) StdoutLine: {'line': b'[ 51%] Built target arm_interfaces__rosidl_typesupport_c\n'}
+[0.792377] (arm_interfaces) StdoutLine: {'line': b'[ 61%] Built target arm_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[0.800302] (arm_interfaces) StdoutLine: {'line': b'[ 70%] Built target arm_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[0.801418] (-) TimerEvent: {}
+[0.808069] (arm_interfaces) StdoutLine: {'line': b'[ 70%] Built target arm_interfaces\n'}
+[0.818080] (arm_interfaces) StdoutLine: {'line': b'[ 74%] Built target arm_interfaces__py\n'}
+[0.829094] (arm_interfaces) StdoutLine: {'line': b'[ 80%] Built target arm_interfaces__python\n'}
+[0.841223] (arm_interfaces) StdoutLine: {'line': b'[ 87%] Built target arm_interfaces__rosidl_typesupport_c__pyext\n'}
+[0.841946] (arm_interfaces) StdoutLine: {'line': b'[ 93%] Built target arm_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.842548] (arm_interfaces) StdoutLine: {'line': b'[100%] Built target arm_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[0.846027] (arm_interfaces) CommandEnded: {'returncode': 0}
+[0.899570] (arm_interfaces) JobProgress: {'identifier': 'arm_interfaces', 'progress': 'install'}
+[0.901696] (-) TimerEvent: {}
+[0.906032] (arm_interfaces) Command: {'cmd': ['/usr/local/bin/cmake', '--install', '/home/olel/Projects/FPMagangBayu24/build/arm_interfaces'], 'cwd': '/home/olel/Projects/FPMagangBayu24/build/arm_interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'olel'), ('LC_TIME', 'id_ID.UTF-8'), ('SSH_AGENT_PID', '1443'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/olel'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.86.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'id_ID.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1180'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '10600'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'olel'), ('JOURNAL_STREAM', '8:42477'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'olel'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/olel/.local/bin:/home/olel/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/olel-ROG-Flow-X16-GV601RE-GV601RE:@/tmp/.ICE-unix/1518,unix/olel-ROG-Flow-X16-GV601RE-GV601RE:/tmp/.ICE-unix/1518'), ('INVOCATION_ID', '791b9287897a43eab41944ce3e97fabd'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-180af5a434.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/olel/Projects/FPMagangBayu24/build/arm_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.910427] (arm_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.910784] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/ament_index/resource_index/rosidl_interfaces/arm_interfaces\n'}
+[0.911025] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces\n'}
+[0.911200] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces/msg\n'}
+[0.911334] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces/msg/detail\n'}
+[0.911433] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces/msg/detail/servo_parameters__functions.h\n'}
+[0.911528] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces/msg/detail/servo_parameters__type_support.h\n'}
+[0.911620] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces/msg/detail/servo_parameters__struct.h\n'}
+[0.911714] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces/msg/detail/servo_parameters__functions.c\n'}
+[0.911804] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.911891] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces/msg/servo_parameters.h\n'}
+[0.912005] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/environment/library_path.sh\n'}
+[0.912105] (arm_interfaces) StdoutLine: {'line': b'-- Installing: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/environment/library_path.dsv\n'}
+[0.912189] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib/libarm_interfaces__rosidl_generator_c.so\n'}
+[0.912312] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces\n'}
+[0.912469] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces/msg\n'}
+[0.912609] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces/msg/detail\n'}
+[0.912747] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces/msg/detail/servo_parameters__rosidl_typesupport_fastrtps_c.h\n'}
+[0.912842] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.912976] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib/libarm_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[0.913307] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces\n'}
+[0.913450] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces/msg\n'}
+[0.913584] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.913753] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces/msg/detail\n'}
+[0.913852] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces/msg/detail/dds_fastrtps\n'}
+[0.913932] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces/msg/detail/servo_parameters__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.914004] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib/libarm_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.914327] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces\n'}
+[0.914406] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces/msg\n'}
+[0.914473] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces/msg/detail\n'}
+[0.914546] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces/msg/detail/servo_parameters__rosidl_typesupport_introspection_c.h\n'}
+[0.914626] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces/msg/detail/servo_parameters__type_support.c\n'}
+[0.914718] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.914980] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib/libarm_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[0.915572] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib/libarm_interfaces__rosidl_typesupport_c.so\n'}
+[0.915943] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces\n'}
+[0.916158] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces/msg\n'}
+[0.916279] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[0.916360] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces/msg/servo_parameters.hpp\n'}
+[0.916443] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces/msg/detail\n'}
+[0.916525] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces/msg/detail/servo_parameters__builder.hpp\n'}
+[0.916670] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces/msg/detail/servo_parameters__struct.hpp\n'}
+[0.916763] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces/msg/detail/servo_parameters__type_support.hpp\n'}
+[0.916921] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces/msg/detail/servo_parameters__traits.hpp\n'}
+[0.917036] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces\n'}
+[0.917097] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces/msg\n'}
+[0.917165] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces/msg/detail\n'}
+[0.917248] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces/msg/detail/servo_parameters__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.917303] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/include/arm_interfaces/msg/detail/servo_parameters__type_support.cpp\n'}
+[0.917354] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib/libarm_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[0.917406] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib/libarm_interfaces__rosidl_typesupport_cpp.so\n'}
+[0.917453] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/environment/pythonpath.sh\n'}
+[0.917503] (arm_interfaces) StdoutLine: {'line': b'-- Installing: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/environment/pythonpath.dsv\n'}
+[0.917543] (arm_interfaces) StdoutLine: {'line': b'-- Installing: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib/python3.8/site-packages/arm_interfaces/__init__.py\n'}
+[0.947722] (arm_interfaces) StdoutLine: {'line': b"Compiling '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib/python3.8/site-packages/arm_interfaces/__init__.py'...\n"}
+[0.950908] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib/python3.8/site-packages/arm_interfaces/msg\n'}
+[0.951200] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib/python3.8/site-packages/arm_interfaces/msg/__init__.py\n'}
+[0.951326] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib/python3.8/site-packages/arm_interfaces/msg/_servo_parameters_s.c\n'}
+[0.951520] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib/python3.8/site-packages/arm_interfaces/msg/_servo_parameters.py\n'}
+[0.951627] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib/python3.8/site-packages/arm_interfaces/arm_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[0.951837] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib/python3.8/site-packages/arm_interfaces/arm_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[0.952276] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib/python3.8/site-packages/arm_interfaces/arm_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[0.952712] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib/libarm_interfaces__python.so\n'}
+[0.952989] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/msg/ServoParameters.idl\n'}
+[0.953225] (arm_interfaces) StdoutLine: {'line': b'-- Installing: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/msg/ServoParameters.msg\n'}
+[0.953414] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/ament_index/resource_index/package_run_dependencies/arm_interfaces\n'}
+[0.953596] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/ament_index/resource_index/parent_prefix_path/arm_interfaces\n'}
+[0.953768] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/environment/ament_prefix_path.sh\n'}
+[0.953932] (arm_interfaces) StdoutLine: {'line': b'-- Installing: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/environment/ament_prefix_path.dsv\n'}
+[0.954055] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/environment/path.sh\n'}
+[0.954188] (arm_interfaces) StdoutLine: {'line': b'-- Installing: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/environment/path.dsv\n'}
+[0.954329] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/local_setup.bash\n'}
+[0.954486] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/local_setup.sh\n'}
+[0.954617] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/local_setup.zsh\n'}
+[0.954748] (arm_interfaces) StdoutLine: {'line': b'-- Installing: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/local_setup.dsv\n'}
+[0.954891] (arm_interfaces) StdoutLine: {'line': b'-- Installing: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/package.dsv\n'}
+[0.955035] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/ament_index/resource_index/packages/arm_interfaces\n'}
+[0.955191] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/cmake/arm_interfaces__rosidl_generator_cExport.cmake\n'}
+[0.955335] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/cmake/arm_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.955440] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/cmake/arm_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.955538] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/cmake/arm_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.955629] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/cmake/arm_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[0.955716] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/cmake/arm_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.955804] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/cmake/arm_interfaces__rosidl_generator_cppExport.cmake\n'}
+[0.955892] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/cmake/arm_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.955979] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/cmake/arm_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.956066] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/cmake/arm_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[0.956165] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/cmake/arm_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.956264] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[0.956423] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.956870] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.957221] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.957359] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.957642] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.957832] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.958738] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/cmake/arm_interfacesConfig.cmake\n'}
+[0.958910] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/cmake/arm_interfacesConfig-version.cmake\n'}
+[0.959048] (arm_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/package.xml\n'}
+[0.959187] (arm_interfaces) CommandEnded: {'returncode': 0}
+[1.001851] (-) TimerEvent: {}
+[1.102244] (-) TimerEvent: {}
+[1.202580] (-) TimerEvent: {}
+[1.303158] (-) TimerEvent: {}
+[1.404324] (-) TimerEvent: {}
+[1.504651] (-) TimerEvent: {}
+[1.605630] (-) TimerEvent: {}
+[1.702937] (arm_interfaces) JobEnded: {'identifier': 'arm_interfaces', 'rc': 0}
+[1.703713] (-) EventReactorShutdown: {}

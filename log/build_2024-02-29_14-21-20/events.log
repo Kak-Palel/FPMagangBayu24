@@ -1,0 +1,75 @@
+[0.000000] (-) TimerEvent: {}
+[0.000278] (-) JobUnselected: {'identifier': 'arm_interfaces'}
+[0.000342] (-) JobUnselected: {'identifier': 'control'}
+[0.000394] (-) JobUnselected: {'identifier': 'vision'}
+[0.000436] (translator) JobQueued: {'identifier': 'translator', 'dependencies': OrderedDict([('arm_interfaces', '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces')])}
+[0.000484] (translator) JobStarted: {'identifier': 'translator'}
+[0.099949] (-) TimerEvent: {}
+[0.200403] (-) TimerEvent: {}
+[0.203862] (translator) JobProgress: {'identifier': 'translator', 'progress': 'cmake'}
+[0.203930] (translator) Command: {'cmd': ['/usr/local/bin/cmake', '/home/olel/Projects/FPMagangBayu24/src/translator', '-DCMAKE_INSTALL_PREFIX=/home/olel/Projects/FPMagangBayu24/install/translator'], 'cwd': '/home/olel/Projects/FPMagangBayu24/build/translator', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'olel'), ('LC_TIME', 'id_ID.UTF-8'), ('SSH_AGENT_PID', '1443'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/olel'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.86.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'id_ID.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1180'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '10600'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'olel'), ('JOURNAL_STREAM', '8:42477'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'olel'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/olel/.local/bin:/home/olel/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/olel-ROG-Flow-X16-GV601RE-GV601RE:@/tmp/.ICE-unix/1518,unix/olel-ROG-Flow-X16-GV601RE-GV601RE:/tmp/.ICE-unix/1518'), ('INVOCATION_ID', '791b9287897a43eab41944ce3e97fabd'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-180af5a434.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces:/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/olel/Projects/FPMagangBayu24/build/translator'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces')]), 'shell': False}
+[0.271740] (translator) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.300531] (-) TimerEvent: {}
+[0.331437] (translator) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.342546] (translator) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.400682] (-) TimerEvent: {}
+[0.402272] (translator) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.419300] (translator) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.419871] (translator) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.419995] (translator) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.423117] (translator) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.488420] (translator) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.500778] (-) TimerEvent: {}
+[0.506615] (translator) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.507157] (translator) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.507775] (translator) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.509490] (translator) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.512161] (translator) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/foxy/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):\n'}
+[0.512384] (translator) StderrLine: {'line': b'  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules\n'}
+[0.512491] (translator) StderrLine: {'line': b'  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use\n'}
+[0.512606] (translator) StderrLine: {'line': b'  the cmake_policy command to set the policy and suppress this warning.\n'}
+[0.512703] (translator) StderrLine: {'line': b'\n'}
+[0.512783] (translator) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.512871] (translator) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/core/all.cmake:53 (include)\n'}
+[0.512963] (translator) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)\n'}
+[0.513044] (translator) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)\n'}
+[0.513144] (translator) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)\n'}
+[0.513274] (translator) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)\n'}
+[0.513355] (translator) StderrLine: {'line': b'  CMakeLists.txt:19 (find_package)\n'}
+[0.513443] (translator) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.513524] (translator) StderrLine: {'line': b'\x1b[0m\n'}
+[0.530063] (translator) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3")\n'}
+[0.530338] (translator) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.601382] (-) TimerEvent: {}
+[0.679955] (translator) StdoutLine: {'line': b'-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[0.701532] (-) TimerEvent: {}
+[0.727570] (translator) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.731668] (translator) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.801699] (-) TimerEvent: {}
+[0.803364] (translator) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")\n'}
+[0.830448] (translator) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include\n'}
+[0.891758] (translator) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.901795] (-) TimerEvent: {}
+[0.951492] (translator) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[0.953600] (translator) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.956043] (translator) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.001945] (-) TimerEvent: {}
+[1.012948] (translator) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[1.013575] (translator) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[1.066638] (translator) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[1.067036] (translator) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[1.102116] (-) TimerEvent: {}
+[1.133367] (translator) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[1.135516] (translator) StdoutLine: {'line': b'-- Found Threads: TRUE\n'}
+[1.202236] (-) TimerEvent: {}
+[1.250347] (translator) StdoutLine: {'line': b'-- Found arm_interfaces: 0.0.0 (/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/cmake)\n'}
+[1.256628] (translator) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/foxy/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:42 (message):\n'}
+[1.256860] (translator) StderrLine: {'line': b'  ament_target_dependencies() the first argument must be a valid target name\n'}
+[1.256975] (translator) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.257073] (translator) StderrLine: {'line': b'  CMakeLists.txt:27 (ament_target_dependencies)\n'}
+[1.257165] (translator) StderrLine: {'line': b'\n'}
+[1.257267] (translator) StderrLine: {'line': b'\x1b[0m\n'}
+[1.257351] (translator) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.265788] (translator) CommandEnded: {'returncode': 1}
+[1.267567] (translator) JobEnded: {'identifier': 'translator', 'rc': 1}
+[1.277775] (-) EventReactorShutdown: {}

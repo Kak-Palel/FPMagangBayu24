@@ -1,0 +1,6 @@
+{
+  "package_name": "arm_interfaces",
+  "non_idl_tuples": [
+    "/home/olel/Projects/FPMagangBayu24/src/arm_interfaces:msg/ServoParameters.msg"
+  ]
+}
