@@ -44,8 +44,8 @@ class VisionerTicTacToe(Node):
         self.timer = self.create_timer(timer_period, self.timer_callback)
 
         self.publishmoves_ = self.create_publisher(PosisiBidak, 'to_move', 10)
-        timer_period_moves = 1
-        self.timerMoves = self.create_timer(timer_period_moves, self.timer_callback_moves)
+        # timer_period_moves = 1
+        # self.timerMoves = self.create_timer(timer_period_moves, self.timer_callback_moves)
 
         #membuat subscription untuk menerima perintah gerakan bot
         self.subscription = self.create_subscription(
@@ -111,8 +111,10 @@ class VisionerTicTacToe(Node):
         #buat copy dari self.drawnFrame dengan nama processFrame yang akan kita gunakan untuk memproses
         processFrame = self.drawnFrame.copy()
         
+        self.fromFrame = self.drawnFrame.copy()
+
         self.pram1 = int(cv.getTrackbarPos('minArea', 'ni olel')) #upper threshold yang di pass ke canny edge detector, sebagai parameter yang dapat diubah dari trackbar
-        pram2 = int(cv.getTrackbarPos('param2', 'ni olel')) #tingkat akurasi deteksi lingkaran tergantung pada kualitas cahaya, sebagai parameter yang dapat diubah dari trackbar
+        self.pram2 = int(cv.getTrackbarPos('param2', 'ni olel')) #tingkat akurasi deteksi lingkaran tergantung pada kualitas cahaya, sebagai parameter yang dapat diubah dari trackbar
        
         #mencari posisi dari grid
         self.gridCorner1, self.gridCorner2 = self.findGrid(self.drawnFrame.copy())
@@ -151,23 +153,23 @@ class VisionerTicTacToe(Node):
         
 
         #deteksi lingkaran
-        circles = cv.HoughCircles(processFrame, cv.HOUGH_GRADIENT, 1, 60, param1 = 100, param2 = pram2, minRadius = 0, maxRadius = 0)
+        circles = cv.HoughCircles(processFrame, cv.HOUGH_GRADIENT, 1, 60, param1 = 100, param2 = self.pram2, minRadius = 0, maxRadius = 0)
             
-        boxLenX = (self.gridCorner2[0] - self.gridCorner1[0])/3 
-        boxLenY = (self.gridCorner2[1] - self.gridCorner1[1])/3 
+        self.boxLenX = (self.gridCorner2[0] - self.gridCorner1[0])/3 
+        self.boxLenY = (self.gridCorner2[1] - self.gridCorner1[1])/3 
         #batas batas tiap kolom di grid dan juga index kolomnya
-        gridPos = np.array([
-            [self.gridCorner1[0],             self.gridCorner1[0] + boxLenX,   self.gridCorner1[1], self.gridCorner1[1] + boxLenY, 0],
-            [self.gridCorner1[0] + boxLenX,   self.gridCorner1[0] + 2*boxLenX, self.gridCorner1[1], self.gridCorner1[1] + boxLenY, 1],
-            [self.gridCorner1[0] + 2*boxLenX, self.gridCorner2[0],             self.gridCorner1[1], self.gridCorner1[1] + boxLenY, 2],
+        self.gridPos = np.array([
+            [self.gridCorner1[0],                  self.gridCorner1[0] + self.boxLenX,   self.gridCorner1[1], self.gridCorner1[1] + self.boxLenY, 0],
+            [self.gridCorner1[0] + self.boxLenX,   self.gridCorner1[0] + 2*self.boxLenX, self.gridCorner1[1], self.gridCorner1[1] + self.boxLenY, 1],
+            [self.gridCorner1[0] + 2*self.boxLenX, self.gridCorner2[0],                  self.gridCorner1[1], self.gridCorner1[1] + self.boxLenY, 2],
 
-            [self.gridCorner1[0],             self.gridCorner1[0] + boxLenX,   self.gridCorner1[1] + boxLenY, self.gridCorner1[1] + 2*boxLenY, 3],
-            [self.gridCorner1[0] + boxLenX,   self.gridCorner1[0] + 2*boxLenX, self.gridCorner1[1] + boxLenY, self.gridCorner1[1] + 2*boxLenY, 4],
-            [self.gridCorner1[0] + 2*boxLenX, self.gridCorner2[0],             self.gridCorner1[1] + boxLenY, self.gridCorner1[1] + 2*boxLenY, 5],
+            [self.gridCorner1[0],                  self.gridCorner1[0] + self.boxLenX,   self.gridCorner1[1] + self.boxLenY, self.gridCorner1[1] + 2*self.boxLenY, 3],
+            [self.gridCorner1[0] + self.boxLenX,   self.gridCorner1[0] + 2*self.boxLenX, self.gridCorner1[1] + self.boxLenY, self.gridCorner1[1] + 2*self.boxLenY, 4],
+            [self.gridCorner1[0] + 2*self.boxLenX, self.gridCorner2[0],                  self.gridCorner1[1] + self.boxLenY, self.gridCorner1[1] + 2*self.boxLenY, 5],
 
-            [self.gridCorner1[0],             self.gridCorner1[0] + boxLenX,   self.gridCorner1[1] + 2*boxLenY, self.gridCorner2[1], 6],
-            [self.gridCorner1[0] + boxLenX,   self.gridCorner1[0] + 2*boxLenX, self.gridCorner1[1] + 2*boxLenY, self.gridCorner2[1], 7],
-            [self.gridCorner1[0] + 2*boxLenX, self.gridCorner2[0],             self.gridCorner1[1] + 2*boxLenY, self.gridCorner2[1], 8]])
+            [self.gridCorner1[0],                  self.gridCorner1[0] + self.boxLenX,   self.gridCorner1[1] + 2*self.boxLenY, self.gridCorner2[1], 6],
+            [self.gridCorner1[0] + self.boxLenX,   self.gridCorner1[0] + 2*self.boxLenX, self.gridCorner1[1] + 2*self.boxLenY, self.gridCorner2[1], 7],
+            [self.gridCorner1[0] + 2*self.boxLenX, self.gridCorner2[0],                  self.gridCorner1[1] + 2*self.boxLenY, self.gridCorner2[1], 8]])
         
         #kondisi grid dalam bentuk array
         gridState = np.array([0, 0, 0, 0, 0, 0 ,0, 0, 0])
@@ -177,7 +179,7 @@ class VisionerTicTacToe(Node):
             circlesInt = np.round(circles[0, :]).astype("int")
             for (x, y, r) in circlesInt:
                 cv.circle(self.drawnFrame, (x, y), r, (255, 0, 0), 2)
-                for i in gridPos:
+                for i in self.gridPos:
                     if i[0] <= x and x <= i[1] and i[2] <= y and y <= i[3] and gridState[int(i[4])] != 2:
                         gridState[int(i[4])] = 1
         
@@ -190,11 +192,11 @@ class VisionerTicTacToe(Node):
                 i = int(i)
                 gridState[i] = 2
                 if 0<= i <= 2:
-                    cv.circle(self.drawnFrame, (int(self.gridCorner1[0] + boxLenX/2*(2*i+1)), int(self.gridCorner1[1] + boxLenY/2)), int(boxLenX/2 -10), botColour, -1)
+                    cv.circle(self.drawnFrame, (int(self.gridCorner1[0] + self.boxLenX/2*(2*i+1)), int(self.gridCorner1[1] + self.boxLenY/2)), int(self.boxLenX/2 -10), botColour, -1)
                 elif 3 <= i <= 5:
-                    cv.circle(self.drawnFrame, (int(self.gridCorner1[0] + boxLenX/2*(2*(i-3)+1)), int(self.gridCorner1[1] + boxLenY*3/2)), int(boxLenX/2 -10), botColour, -1)
+                    cv.circle(self.drawnFrame, (int(self.gridCorner1[0] + self.boxLenX/2*(2*(i-3)+1)), int(self.gridCorner1[1] + self.boxLenY*3/2)), int(self.boxLenX/2 -10), botColour, -1)
                 elif 6 <= i <= 8:
-                    cv.circle(self.drawnFrame, (int(self.gridCorner1[0] + boxLenX/2*(2*(i-6)+1)), int(self.gridCorner1[1] + boxLenY*5/2)), int(boxLenX/2 -10), botColour, -1)
+                    cv.circle(self.drawnFrame, (int(self.gridCorner1[0] + self.boxLenX/2*(2*(i-6)+1)), int(self.gridCorner1[1] + self.boxLenY*5/2)), int(self.boxLenX/2 -10), botColour, -1)
 
         #tunjukkan gambar utama dan juga gambar yang dilihat oleh komputer untuk keperluan kalibrasi
         cv.imshow("olel ngeri", processFrame)
@@ -219,19 +221,50 @@ class VisionerTicTacToe(Node):
             print(msg.data)
             print('move sent, processing...')
     
-    def timer_callback_moves(self):
-        msg = PosisiBidak()
-        msg.fromx = 1
-        msg.fromy = 1
-        msg.tox = 1
-        msg.toy = 1
-        print("tesPublish......")
-        self.publishmoves_.publish(msg)
+    def findFrom(self):
+
+        self.fromFrame = cv.cvtColor(self.fromFrame, cv.COLOR_BGR2HSV)
+        self.fromFrame = cv.medianBlur(self.fromFrame, 5)
+
+        if not self.colour:
+            #buat dua foto copy yang nanti digabung karena merah memiliki 2 interval hsv
+            mask1 = self.fromFrame.copy()
+            mask2 = self.fromFrame.copy()
+            
+            #mask untuk nilai hsv merah yang pertama
+            upper_range = np.array([15, 255, 255])
+            lower_range = np.array([0, 100, 100])
+            mask1 = cv.inRange(mask1, lower_range, upper_range)
+
+            #mask untuk nilai hsv merah yang kedua
+            upper_range = np.array([179, 255, 255])
+            lower_range = np.array([155, 100, 100])
+            mask2 = cv.inRange(mask2, lower_range, upper_range)
+
+            #gabungkan kedua mask untuk mendapatkan semua warna merah
+            self.fromFrame = mask1 + mask2
+        elif self.colour:
+            upper_range = np.array([130,255,255])
+            lower_range = np.array([90,50,50])
+            self.fromFrame = cv.inRange(self.fromFrame, lower_range, upper_range)
+
+        circles = cv.HoughCircles(self.fromFrame, cv.HOUGH_GRADIENT, 1, 60, param1 = 100, param2 = self.pram2, minRadius = 0, maxRadius = 0)
+        if circles is not None:
+            circlesInt = np.round(circles[0, :]).astype("int")
+            for (x, y, r) in circlesInt:
+                return int(x), int(y)
 
     #method listener yang menerima perintah gerakan yang telah dikirim oleh node control dan menyimpannya
     def listener_callback(self, msg):
         self.get_logger().info('bot move to grid "%s"' % msg.data)
         self.botMoves =  np.append(self.botMoves, int(msg.data))
+        
+        moveMsg = PosisiBidak()
+        moveMsg.fromx, moveMsg.fromy = self.findFrom()
+        moveMsg.tox = int(self.gridPos[int(msg.data), 0] + self.boxLenX/2)
+        moveMsg.toy = int(self.gridPos[int(msg.data), 2] + self.boxLenY/2)
+        print("tesPublish......")
+        self.publishmoves_.publish(moveMsg)
         
 #fungsi main (duh)
 def main(args=None):

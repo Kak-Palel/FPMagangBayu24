@@ -141,7 +141,18 @@ CMakeFiles/bot_translatator.dir/src/translator.cpp.o: \
  /usr/include/c++/9/bits/shared_ptr_atomic.h \
  /usr/include/c++/9/bits/atomic_base.h \
  /usr/include/c++/9/bits/atomic_lockfree_defines.h \
- /usr/include/c++/9/backward/auto_ptr.h \
+ /usr/include/c++/9/backward/auto_ptr.h /usr/include/c++/9/cmath \
+ /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+ /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+ /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+ /usr/include/c++/9/vector /usr/include/c++/9/bits/stl_vector.h \
+ /usr/include/c++/9/bits/stl_bvector.h /usr/include/c++/9/bits/vector.tcc \
  /opt/ros/foxy/include/rclcpp/rclcpp.hpp /usr/include/c++/9/csignal \
  /usr/include/signal.h /usr/include/x86_64-linux-gnu/bits/signum.h \
  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
@@ -200,8 +211,6 @@ CMakeFiles/bot_translatator.dir/src/translator.cpp.o: \
  /usr/include/c++/9/bits/ostream.tcc /usr/include/c++/9/istream \
  /usr/include/c++/9/bits/istream.tcc /usr/include/c++/9/list \
  /usr/include/c++/9/bits/stl_list.h /usr/include/c++/9/bits/list.tcc \
- /usr/include/c++/9/vector /usr/include/c++/9/bits/stl_vector.h \
- /usr/include/c++/9/bits/stl_bvector.h /usr/include/c++/9/bits/vector.tcc \
  /opt/ros/foxy/include/rcl/guard_condition.h \
  /opt/ros/foxy/include/rcl/allocator.h \
  /opt/ros/foxy/include/rcutils/allocator.h \
@@ -361,16 +370,6 @@ CMakeFiles/bot_translatator.dir/src/translator.cpp.o: \
  /opt/ros/foxy/include/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
  /opt/ros/foxy/include/libstatistics_collector/visibility_control.hpp \
  /opt/ros/foxy/include/libstatistics_collector/moving_average_statistics/types.hpp \
- /usr/include/c++/9/cmath /usr/include/math.h \
- /usr/include/x86_64-linux-gnu/bits/math-vector.h \
- /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
- /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
- /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
- /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
- /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
  /opt/ros/foxy/include/libstatistics_collector/topic_statistics_collector/constants.hpp \
  /opt/ros/foxy/include/libstatistics_collector/topic_statistics_collector/received_message_age.hpp \
  /opt/ros/foxy/include/libstatistics_collector/topic_statistics_collector/constants.hpp \

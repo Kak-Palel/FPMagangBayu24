@@ -1,4 +1,4 @@
-/home/olel/Projects/FPMagangBayu24/install/translator/lib/translator/bot_translatator
+/home/olel/Projects/FPMagangBayu24/install/translator/lib/translator/bot_translator
 /home/olel/Projects/FPMagangBayu24/install/translator/share/ament_index/resource_index/package_run_dependencies/translator
 /home/olel/Projects/FPMagangBayu24/install/translator/share/ament_index/resource_index/parent_prefix_path/translator
 /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/environment/ament_prefix_path.sh

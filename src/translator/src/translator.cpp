@@ -2,6 +2,8 @@
 #include <functional>
 #include <memory>
 #include <string>
+#include <cmath>
+#include <vector>
 
 #include "rclcpp/rclcpp.hpp"
 #include "arm_interfaces/msg/servo_parameters.hpp"
@@ -17,8 +19,6 @@ class TranslatorTicTacToe : public rclcpp::Node
     : Node("bot_translator"), count_(0)
     {
       publisher_ = this->create_publisher<arm_interfaces::msg::ServoParameters>("topic_tes", 10);
-      timer_ = this->create_wall_timer(
-      3000ms, std::bind(&TranslatorTicTacToe::timer_callback, this));
 
       subscription_ = this->create_subscription<arm_interfaces::msg::PosisiBidak>(
       "to_move", 10, std::bind(&TranslatorTicTacToe::topic_callback, this, _1));
@@ -28,25 +28,32 @@ class TranslatorTicTacToe : public rclcpp::Node
     void topic_callback(const arm_interfaces::msg::PosisiBidak::SharedPtr msg)
     {
       RCLCPP_INFO(this->get_logger(), "Nerima");
+      timer_callback(decide(msg));
     }
     rclcpp::Subscription<arm_interfaces::msg::PosisiBidak>::SharedPtr subscription_;
 
-    std::vector<int> decide(const arm_interfaces::msg::PosisiBidak::SharedPtr msg)
+    float findDist(float x1, float x2, float y1, float y2)
     {
-      /**
-       * 
-       * ANJENGGGGGG
-       * 
-       * HUAAAAA
-       * 
-       * 
-       * 
-      */
+      return sqrt(pow(x1 - x2, 2) + pow(y1 - y2, 2));
+    }
+
+    std::vector<int> decide(const arm_interfaces::msg::PosisiBidak::SharedPtr points)
+    {
+      const float midX = 320;
+      const float midY = 240;
+
+      const float factorPIX2REAL = (0.064*30)/(2203*0.0395);
+
+      float realDistTO = findDist(points->tox, midX, points->toy, midY) * factorPIX2REAL;
+      float realDistFR = findDist(points->tox, midX, points->toy, midY) * factorPIX2REAL;
+
+
+
       std::vector<int> JANCOK = {0, 0, 0, 0};
       return JANCOK;
     }
 
-    void timer_callback()
+    void timer_callback(std::vector<int> ServoMoves)
     {
       auto message = arm_interfaces::msg::ServoParameters();
       message.take1 = 1;

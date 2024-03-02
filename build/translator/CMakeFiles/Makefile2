@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/olel/Projects/FPMagangBayu24/build/translator
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/bot_translatator.dir/all
+all: CMakeFiles/bot_translator.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -73,7 +73,7 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/translator_uninstall.dir/clean
-clean: CMakeFiles/bot_translatator.dir/clean
+clean: CMakeFiles/bot_translator.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -129,30 +129,30 @@ CMakeFiles/translator_uninstall.dir/clean:
 .PHONY : CMakeFiles/translator_uninstall.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/bot_translatator.dir
+# Target rules for target CMakeFiles/bot_translator.dir
 
 # All Build rule for target.
-CMakeFiles/bot_translatator.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bot_translatator.dir/build.make CMakeFiles/bot_translatator.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bot_translatator.dir/build.make CMakeFiles/bot_translatator.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/olel/Projects/FPMagangBayu24/build/translator/CMakeFiles --progress-num=1,2 "Built target bot_translatator"
-.PHONY : CMakeFiles/bot_translatator.dir/all
+CMakeFiles/bot_translator.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bot_translator.dir/build.make CMakeFiles/bot_translator.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bot_translator.dir/build.make CMakeFiles/bot_translator.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/olel/Projects/FPMagangBayu24/build/translator/CMakeFiles --progress-num=1,2 "Built target bot_translator"
+.PHONY : CMakeFiles/bot_translator.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/bot_translatator.dir/rule: cmake_check_build_system
+CMakeFiles/bot_translator.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/olel/Projects/FPMagangBayu24/build/translator/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/bot_translatator.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/bot_translator.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/olel/Projects/FPMagangBayu24/build/translator/CMakeFiles 0
-.PHONY : CMakeFiles/bot_translatator.dir/rule
+.PHONY : CMakeFiles/bot_translator.dir/rule
 
 # Convenience name for target.
-bot_translatator: CMakeFiles/bot_translatator.dir/rule
-.PHONY : bot_translatator
+bot_translator: CMakeFiles/bot_translator.dir/rule
+.PHONY : bot_translator
 
 # clean rule for target.
-CMakeFiles/bot_translatator.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bot_translatator.dir/build.make CMakeFiles/bot_translatator.dir/clean
-.PHONY : CMakeFiles/bot_translatator.dir/clean
+CMakeFiles/bot_translator.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bot_translator.dir/build.make CMakeFiles/bot_translator.dir/clean
+.PHONY : CMakeFiles/bot_translator.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -589,5 +589,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/uninstall.dir/DependInfo.cmake"
   "CMakeFiles/translator_uninstall.dir/DependInfo.cmake"
-  "CMakeFiles/bot_translatator.dir/DependInfo.cmake"
+  "CMakeFiles/bot_translator.dir/DependInfo.cmake"
   )

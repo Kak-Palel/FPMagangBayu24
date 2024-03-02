@@ -1,6 +1,6 @@
 /home/olel/Projects/FPMagangBayu24/build/translator/CMakeFiles/uninstall.dir
 /home/olel/Projects/FPMagangBayu24/build/translator/CMakeFiles/translator_uninstall.dir
-/home/olel/Projects/FPMagangBayu24/build/translator/CMakeFiles/bot_translatator.dir
+/home/olel/Projects/FPMagangBayu24/build/translator/CMakeFiles/bot_translator.dir
 /home/olel/Projects/FPMagangBayu24/build/translator/CMakeFiles/test.dir
 /home/olel/Projects/FPMagangBayu24/build/translator/CMakeFiles/edit_cache.dir
 /home/olel/Projects/FPMagangBayu24/build/translator/CMakeFiles/rebuild_cache.dir

@@ -23,11 +23,11 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 # find_package(std_msgs REQUIRED)
 find_package(arm_interfaces)
-add_executable(bot_translatator src/translator.cpp)
-ament_target_dependencies(bot_translatator rclcpp arm_interfaces)
+add_executable(bot_translator src/translator.cpp)
+ament_target_dependencies(bot_translator rclcpp arm_interfaces)
 
 install(TARGETS
-  bot_translatator
+  bot_translator
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)

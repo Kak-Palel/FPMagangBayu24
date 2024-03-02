@@ -43,27 +43,27 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/translator/bot_translatator" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/translator/bot_translatator")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/translator/bot_translator" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/translator/bot_translator")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/translator/bot_translatator"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/translator/bot_translator"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/translator" TYPE EXECUTABLE FILES "/home/olel/Projects/FPMagangBayu24/build/translator/bot_translatator")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/translator/bot_translatator" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/translator/bot_translatator")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/translator" TYPE EXECUTABLE FILES "/home/olel/Projects/FPMagangBayu24/build/translator/bot_translator")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/translator/bot_translator" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/translator/bot_translator")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/translator/bot_translatator"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/translator/bot_translator"
          OLD_RPATH "/opt/ros/foxy/lib:/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/translator/bot_translatator")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/translator/bot_translator")
     endif()
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/olel/Projects/FPMagangBayu24/build/translator/CMakeFiles/bot_translatator.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
+  include("/home/olel/Projects/FPMagangBayu24/build/translator/CMakeFiles/bot_translator.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)

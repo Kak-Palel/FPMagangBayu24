@@ -198,24 +198,24 @@ translator_uninstall/fast:
 .PHONY : translator_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named bot_translatator
+# Target rules for targets named bot_translator
 
 # Build rule for target.
-bot_translatator: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bot_translatator
-.PHONY : bot_translatator
+bot_translator: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bot_translator
+.PHONY : bot_translator
 
 # fast build rule for target.
-bot_translatator/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bot_translatator.dir/build.make CMakeFiles/bot_translatator.dir/build
-.PHONY : bot_translatator/fast
+bot_translator/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bot_translator.dir/build.make CMakeFiles/bot_translator.dir/build
+.PHONY : bot_translator/fast
 
 src/translator.o: src/translator.cpp.o
 .PHONY : src/translator.o
 
 # target to build an object file
 src/translator.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bot_translatator.dir/build.make CMakeFiles/bot_translatator.dir/src/translator.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bot_translator.dir/build.make CMakeFiles/bot_translator.dir/src/translator.cpp.o
 .PHONY : src/translator.cpp.o
 
 src/translator.i: src/translator.cpp.i
@@ -223,7 +223,7 @@ src/translator.i: src/translator.cpp.i
 
 # target to preprocess a source file
 src/translator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bot_translatator.dir/build.make CMakeFiles/bot_translatator.dir/src/translator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bot_translator.dir/build.make CMakeFiles/bot_translator.dir/src/translator.cpp.i
 .PHONY : src/translator.cpp.i
 
 src/translator.s: src/translator.cpp.s
@@ -231,7 +231,7 @@ src/translator.s: src/translator.cpp.s
 
 # target to generate assembly for a file
 src/translator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bot_translatator.dir/build.make CMakeFiles/bot_translatator.dir/src/translator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bot_translator.dir/build.make CMakeFiles/bot_translator.dir/src/translator.cpp.s
 .PHONY : src/translator.cpp.s
 
 # Help Target
@@ -249,7 +249,7 @@ help:
 	@echo "... test"
 	@echo "... translator_uninstall"
 	@echo "... uninstall"
-	@echo "... bot_translatator"
+	@echo "... bot_translator"
 	@echo "... src/translator.o"
 	@echo "... src/translator.i"
 	@echo "... src/translator.s"
