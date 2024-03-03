@@ -1,4 +1,5 @@
 #include <micro_ros_arduino.h>
+#include <ESP32_Servo.h>
 
 #include <stdio.h>
 #include <rcl/rcl.h>
@@ -16,26 +17,50 @@ rcl_allocator_t allocator;
 rcl_node_t node;
 rcl_timer_t timer;
 
-#define LED_PIN 13
-#define myLED1 16
-#define myLED2 17
-#define myLED3 18
-#define myLED4 19
-
-#define myLED5 21
-#define myLED6 22
-#define myLED7 23
-#define myLED8 25
+#define LED_PIN 2
 
 #define RCCHECK(fn) { rcl_ret_t temp_rc = fn; if((temp_rc != RCL_RET_OK)){error_loop();}}
 #define RCSOFTCHECK(fn) { rcl_ret_t temp_rc = fn; if((temp_rc != RCL_RET_OK)){}}
 
+Servo face;
+Servo back;
+Servo front;
+Servo grip;
+
+const float default_face = 0;  //assign
+const float default_back = 0;  //assign
+const float default_front = 0; //assign
+
+const float gripOn = 0;   //assign
+const float gripOff = 1;  //assign
 
 void error_loop(){
   while(1){
     digitalWrite(LED_PIN, !digitalRead(LED_PIN));
-    delay(100);
+    delay(500);
   }
+}
+
+void take(float a, float b, float c)
+{
+  face.write(a);
+  back.write(b);
+  delay(500);
+  front.write(c);
+  delay(500);
+  grip.write(gripOn);
+  delay(200);
+}
+
+void drop(float a, float b, float c)
+{
+  face.write(a);
+  back.write(b);
+  delay(500);
+  front.write(c);
+  delay(500);
+  grip.write(gripOff);
+  delay(200);
 }
 
 void subscription_callback(const void * msgin)
@@ -43,39 +68,15 @@ void subscription_callback(const void * msgin)
   const arm_interfaces__msg__ServoParameters * msg = (const arm_interfaces__msg__ServoParameters *)msgin;
 //  digitalWrite(LED_PIN, (msg->take1 == 0) ? LOW : HIGH);
   delay(100);
-  if (msg->take1 > 0)
-  {
-    digitalWrite(myLED1, HIGH);
-  }
-  if (msg->take2 > 0)
-  {
-    digitalWrite(myLED2, HIGH);
-  }
-  if (msg->take3 > 0)
-  {
-    digitalWrite(myLED3, HIGH);
-  }
-  if (msg->take4 > 0)
-  {
-    digitalWrite(myLED4, HIGH);
-  }
+  
+  take(msg->take1, msg->take2, msg->take3);
+  back.write(default_back);
+  delay(500);
 
-  if (msg->drop1 > 0)
-  {
-    digitalWrite(myLED5, HIGH);
-  }
-  if (msg->drop2 > 0)
-  {
-    digitalWrite(myLED6, HIGH);
-  }
-  if (msg->drop3 > 0)
-  {
-    digitalWrite(myLED7, HIGH);
-  }
-  if (msg->drop4 > 0)
-  {
-    digitalWrite(myLED8, HIGH);
-  }
+  drop(msg->drop1, msg->drop2, msg->drop3);
+  back.write(default_back);
+  delay(500);
+
 }
 
 void setup() {
@@ -83,14 +84,12 @@ void setup() {
   set_microros_wifi_transports("bababoiy", "sembarang", "192.168.11.12", 8888);
   
   pinMode(LED_PIN, OUTPUT);
-  pinMode(myLED1, OUTPUT);
-  pinMode(myLED2, OUTPUT);
-  pinMode(myLED3, OUTPUT);
-  pinMode(myLED4, OUTPUT);
-  pinMode(myLED5, OUTPUT);
-  pinMode(myLED6, OUTPUT);
-  pinMode(myLED7, OUTPUT);
-  pinMode(myLED8, OUTPUT);
+
+  face.attach(16);
+  back.attach(17);
+  front.attach(18);
+  grip.attach(19);
+
   digitalWrite(LED_PIN, HIGH);  
   
   delay(2000);
@@ -119,12 +118,9 @@ void loop() {
   delay(100);
   RCCHECK(rclc_executor_spin_some(&executor, RCL_MS_TO_NS(100)));
   delay(1000);
-  digitalWrite(myLED1, LOW);
-  digitalWrite(myLED2, LOW);
-  digitalWrite(myLED3, LOW);
-  digitalWrite(myLED4, LOW);
-  digitalWrite(myLED5, LOW);
-  digitalWrite(myLED6, LOW);
-  digitalWrite(myLED7, LOW);
-  digitalWrite(myLED8, LOW);
+  
+  face.write(default_face);
+  back.write(default_back);
+  front.write(default_front);
+  grip.write(gripOff);
 }

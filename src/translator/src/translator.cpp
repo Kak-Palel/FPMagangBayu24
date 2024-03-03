@@ -81,18 +81,18 @@ class TranslatorTicTacToe : public rclcpp::Node
       // float realDistFR = findDistPix(points->tox, midX, points->toy, midY) * factorPIX2REAL;
 
       float dist_to2cen = findDistPix(points->tox, midX, points->toy, midY);
-      float dist_amm2cen = findDistPix(ammo[0][5], midX, ammo[0][6], midY);
-      float dist_amm2to = findDistPix(points->tox, ammo[0][5], points->toy, ammo[0][6]);
+      // float dist_amm2cen = findDistPix(ammo[0][5], midX, ammo[0][6], midY);
+      // float dist_amm2to = findDistPix(points->tox, ammo[0][5], points->toy, ammo[0][6]);
 
-      float centerAlpha = reverseCosine(dist_to2cen, dist_amm2cen, dist_amm2to);
+      // float centerAlpha = reverseCosine(dist_to2cen, dist_amm2cen, dist_amm2to);
 
-      float c = ruleOfCosine(dist_to2cen*factorPIX2REAL, ammo[0][3], centerAlpha);
+      // float c = ruleOfCosine(dist_to2cen*factorPIX2REAL, ammo[0][3], centerAlpha);
 
-      float alpha2serv = reverseCosine(dist_serv2cen, dist_to2cen, findDistPix(points->tox, midX, points->toy, pixServY));
-      float a = ruleOfCosine(dist_to2cen * factorPIX2REAL, dist_serv2cen, alpha2serv);
+      // float alpha2serv = reverseCosine(dist_serv2cen, dist_to2cen, findDistPix(points->tox, midX, points->toy, pixServY));
+      // float a = ruleOfCosine(dist_to2cen * factorPIX2REAL, dist_serv2cen, alpha2serv);
       
-      toMove[3] = reverseCosine(a, ammo[0][4], c);
-
+      // toMove[3] = reverseCosine(a, ammo[0][4], c);
+      toMove[3] = tanh((points->tox - midX)/(points->toy + dist_serv2cen - midY)) * (180/3.141592);
       return toMove;
     }
 
