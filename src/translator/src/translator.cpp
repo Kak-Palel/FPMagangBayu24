@@ -99,15 +99,16 @@ class TranslatorTicTacToe : public rclcpp::Node
     void timer_callback(std::vector<float> ServoMoves)
     {
       auto message = arm_interfaces::msg::ServoParameters();
-      message.take1 = 1;
-      message.take4 = 1;
-      message.drop1 = 1;
-      message.drop4 = 1;
+      message.take1 = ServoMoves[0];
+      message.take2 = ServoMoves[1];
+      message.take3 = ServoMoves[2];
+      message.drop1 = ServoMoves[3];
+      message.drop2 = ServoMoves[4];
+      message.drop3 = ServoMoves[5];
       // RCLCPP_INFO(this->get_logger(), "Publishing: '%s'", message.data.c_str());
       std::cout<<"Publishing... " << count_++ << std::endl;
       publisher_->publish(message);
     }
-    rclcpp::TimerBase::SharedPtr timer_;
     rclcpp::Publisher<arm_interfaces::msg::ServoParameters>::SharedPtr publisher_;
     size_t count_;
 };

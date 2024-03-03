@@ -1,0 +1,35 @@
+[0.273s] Invoking command in '/home/olel/Projects/FPMagangBayu24/build/translator': CMAKE_PREFIX_PATH=/home/olel/Projects/FPMagangBayu24/install/arm_interfaces:/home/olel/Projects/FPMagangBayu24/install/translator:/home/olel/Projects/FPMagangBayu24/install/control:/home/olel/Projects/FPMagangBayu24/install/vision:/opt/ros/foxy PYTHONPATH=/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib/python3.8/site-packages:/home/olel/Projects/FPMagangBayu24/install/vision/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/local/bin/cmake --build /home/olel/Projects/FPMagangBayu24/build/translator -- -j16 -l16
+[0.317s] [ 50%] [32mBuilding CXX object CMakeFiles/bot_translator.dir/src/translator.cpp.o[0m
+[1.684s] [01m[K/home/olel/Projects/FPMagangBayu24/src/translator/src/translator.cpp:[m[K In member function ‘[01m[Kstd::vector<float> TranslatorTicTacToe::decide(arm_interfaces::msg::PosisiBidak_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.684s] [01m[K/home/olel/Projects/FPMagangBayu24/src/translator/src/translator.cpp:70:19:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KpixServY[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[1.684s]    70 |       const float [01;35m[KpixServY[m[K = 0; //to be assigned
+[1.685s]       |                   [01;35m[K^~~~~~~~[m[K
+[1.685s] [01m[K/home/olel/Projects/FPMagangBayu24/src/translator/src/translator.cpp:77:19:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KfactorPIX2REAL[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[1.685s]    77 |       const float [01;35m[KfactorPIX2REAL[m[K = (diagonalRealLen*centerDist)/(diagonalPixLen*focLen);
+[1.685s]       |                   [01;35m[K^~~~~~~~~~~~~~[m[K
+[1.685s] [01m[K/home/olel/Projects/FPMagangBayu24/src/translator/src/translator.cpp:83:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdist_to2cen[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[1.685s]    83 |       float [01;35m[Kdist_to2cen[m[K = findDistPix(points->tox, midX, points->toy, midY);
+[1.685s]       |             [01;35m[K^~~~~~~~~~~[m[K
+[4.875s] [100%] [32m[1mLinking CXX executable bot_translator[0m
+[5.069s] [100%] Built target bot_translator
+[5.073s] Invoked command in '/home/olel/Projects/FPMagangBayu24/build/translator' returned '0': CMAKE_PREFIX_PATH=/home/olel/Projects/FPMagangBayu24/install/arm_interfaces:/home/olel/Projects/FPMagangBayu24/install/translator:/home/olel/Projects/FPMagangBayu24/install/control:/home/olel/Projects/FPMagangBayu24/install/vision:/opt/ros/foxy PYTHONPATH=/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib/python3.8/site-packages:/home/olel/Projects/FPMagangBayu24/install/vision/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/local/bin/cmake --build /home/olel/Projects/FPMagangBayu24/build/translator -- -j16 -l16
+[5.105s] Invoking command in '/home/olel/Projects/FPMagangBayu24/build/translator': CMAKE_PREFIX_PATH=/home/olel/Projects/FPMagangBayu24/install/arm_interfaces:/home/olel/Projects/FPMagangBayu24/install/translator:/home/olel/Projects/FPMagangBayu24/install/control:/home/olel/Projects/FPMagangBayu24/install/vision:/opt/ros/foxy PYTHONPATH=/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib/python3.8/site-packages:/home/olel/Projects/FPMagangBayu24/install/vision/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/local/bin/cmake --install /home/olel/Projects/FPMagangBayu24/build/translator
+[5.107s] -- Install configuration: ""
+[5.108s] -- Installing: /home/olel/Projects/FPMagangBayu24/install/translator/lib/translator/bot_translator
+[5.111s] -- Set non-toolchain portion of runtime path of "/home/olel/Projects/FPMagangBayu24/install/translator/lib/translator/bot_translator" to ""
+[5.112s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/ament_index/resource_index/package_run_dependencies/translator
+[5.112s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/ament_index/resource_index/parent_prefix_path/translator
+[5.112s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/environment/ament_prefix_path.sh
+[5.112s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/environment/ament_prefix_path.dsv
+[5.112s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/environment/path.sh
+[5.112s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/environment/path.dsv
+[5.112s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/local_setup.bash
+[5.112s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/local_setup.sh
+[5.112s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/local_setup.zsh
+[5.112s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/local_setup.dsv
+[5.112s] -- Installing: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/package.dsv
+[5.112s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/ament_index/resource_index/packages/translator
+[5.112s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/cmake/translatorConfig.cmake
+[5.113s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/cmake/translatorConfig-version.cmake
+[5.113s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/package.xml
+[5.114s] Invoked command in '/home/olel/Projects/FPMagangBayu24/build/translator' returned '0': CMAKE_PREFIX_PATH=/home/olel/Projects/FPMagangBayu24/install/arm_interfaces:/home/olel/Projects/FPMagangBayu24/install/translator:/home/olel/Projects/FPMagangBayu24/install/control:/home/olel/Projects/FPMagangBayu24/install/vision:/opt/ros/foxy PYTHONPATH=/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib/python3.8/site-packages:/home/olel/Projects/FPMagangBayu24/install/vision/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/local/bin/cmake --install /home/olel/Projects/FPMagangBayu24/build/translator
