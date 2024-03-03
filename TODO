@@ -1,0 +1,12 @@
+vision.py
+1. Fix grid detection system to base on individual collumn
+2. Remove owns pawn detection
+3. Anticipate by confirmation with the second mat 'ni tes' and also store the gamestate
+
+translatator.cpp
+1. Assign owns pawn position
+2. Assign dist_serv2cen
+3. Decide back and front servo parameters (take and drop)
+
+processor.cpp
+1. Fix the condition where bot wont take win opportunities
