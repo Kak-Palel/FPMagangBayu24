@@ -1,0 +1,4 @@
+[01m[K/home/olel/Projects/FPMagangBayu24/src/translator/src/translator.cpp:[m[K In member function ‘[01m[Kvoid TranslatorTicTacToe::timer_callback(std::vector<float>)[m[K’:
+[01m[K/home/olel/Projects/FPMagangBayu24/src/translator/src/translator.cpp:99:44:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KServoMoves[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   99 |     void timer_callback([01;35m[Kstd::vector<float> ServoMoves[m[K)
+      |                         [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K

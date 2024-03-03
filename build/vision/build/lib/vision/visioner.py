@@ -67,19 +67,20 @@ class VisionerTicTacToe(Node):
         pos1 = np.array([0, 0])
         pos2 = np.array([1, 1])
 
-        lowerBound = np.array([140, 150, 100], dtype=np.uint8)
+        lowerBound = np.array([0, 50, 0], dtype=np.uint8)
         upperBound = np.array([255, 255, 255], dtype=np.uint8)
 
         frame = cv.inRange(frame, lowerBound, upperBound)
-        contours, _ = cv.findContours(frame, cv.RETR_TREE, cv.CHAIN_APPROX_SIMPLE)
-        # cv.drawContours(self.drawnFrame, contours, -1, (0, 255, 0), 3)
+        # frame = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
+        contours, _ = cv.findContours(frame, cv.RETR_TREE, cv.CHAIN_APPROX_NONE)
+        cv.drawContours(self.drawnFrame, contours, -1, (0, 255, 0), 3)
 
         for contour in contours:
             x, y, w, h = cv.boundingRect(contour)
             area = cv.contourArea(contour)
 
             # If the area of the contour is within a certain range, draw a bounding box
-            if self.pram1 < area < self.pram1 + 2000:
+            if self.pram1 < area:
                 color = (0, 0, 255)  # Red color for the bounding box
                 thickness = 2
                 cv.rectangle(self.drawnFrame, (x, y), (x + w, y + h), color, thickness)
@@ -88,7 +89,7 @@ class VisionerTicTacToe(Node):
                 pos2[0] = x + w
                 pos2[1] = y + h
 
-        # cv.imshow("tes1", frame)
+        cv.imshow("tes1", frame)
         # print(pos2)
         # print(pos1)
         return pos1, pos2
@@ -135,13 +136,13 @@ class VisionerTicTacToe(Node):
             mask2 = processFrame.copy()
             
             #mask untuk nilai hsv merah yang pertama
-            upper_range = np.array([15, 255, 255])
+            upper_range = np.array([20, 255, 255])
             lower_range = np.array([0, 100, 100])
             mask1 = cv.inRange(mask1, lower_range, upper_range)
 
             #mask untuk nilai hsv merah yang kedua
             upper_range = np.array([179, 255, 255])
-            lower_range = np.array([155, 100, 100])
+            lower_range = np.array([150, 100, 100])
             mask2 = cv.inRange(mask2, lower_range, upper_range)
 
             #gabungkan kedua mask untuk mendapatkan semua warna merah
@@ -152,8 +153,10 @@ class VisionerTicTacToe(Node):
             processFrame = cv.inRange(processFrame, lower_range, upper_range)
         
 
+        # processFrame = cv.morphologyEx(processFrame, cv.MORPH_OPEN, (20, 20))
+
         #deteksi lingkaran
-        circles = cv.HoughCircles(processFrame, cv.HOUGH_GRADIENT, 1, 60, param1 = 100, param2 = self.pram2, minRadius = 0, maxRadius = 0)
+        circles = cv.HoughCircles(processFrame, cv.HOUGH_GRADIENT, 1, 60, param1 = 100, param2 = self.pram2, minRadius = 0, maxRadius = 50)
             
         self.boxLenX = (self.gridCorner2[0] - self.gridCorner1[0])/3 
         self.boxLenY = (self.gridCorner2[1] - self.gridCorner1[1])/3 
