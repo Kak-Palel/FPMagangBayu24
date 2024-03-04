@@ -37,10 +37,10 @@ struct PosisiBidak_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->fromx = 0;
-      this->fromy = 0;
-      this->tox = 0;
-      this->toy = 0;
+      this->fromx = 0l;
+      this->fromy = 0l;
+      this->tox = 0l;
+      this->toy = 0l;
     }
   }
 
@@ -50,48 +50,48 @@ struct PosisiBidak_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->fromx = 0;
-      this->fromy = 0;
-      this->tox = 0;
-      this->toy = 0;
+      this->fromx = 0l;
+      this->fromy = 0l;
+      this->tox = 0l;
+      this->toy = 0l;
     }
   }
 
   // field types and members
   using _fromx_type =
-    uint8_t;
+    int32_t;
   _fromx_type fromx;
   using _fromy_type =
-    uint8_t;
+    int32_t;
   _fromy_type fromy;
   using _tox_type =
-    uint8_t;
+    int32_t;
   _tox_type tox;
   using _toy_type =
-    uint8_t;
+    int32_t;
   _toy_type toy;
 
   // setters for named parameter idiom
   Type & set__fromx(
-    const uint8_t & _arg)
+    const int32_t & _arg)
   {
     this->fromx = _arg;
     return *this;
   }
   Type & set__fromy(
-    const uint8_t & _arg)
+    const int32_t & _arg)
   {
     this->fromy = _arg;
     return *this;
   }
   Type & set__tox(
-    const uint8_t & _arg)
+    const int32_t & _arg)
   {
     this->tox = _arg;
     return *this;
   }
   Type & set__toy(
-    const uint8_t & _arg)
+    const int32_t & _arg)
   {
     this->toy = _arg;
     return *this;

@@ -20,14 +20,14 @@ extern "C"
 // Struct defined in msg/ServoParameters in the package arm_interfaces.
 typedef struct arm_interfaces__msg__ServoParameters
 {
-  uint8_t take1;
-  uint8_t take2;
-  uint8_t take3;
-  uint8_t take4;
-  uint8_t drop1;
-  uint8_t drop2;
-  uint8_t drop3;
-  uint8_t drop4;
+  uint32_t take1;
+  uint32_t take2;
+  uint32_t take3;
+  uint32_t take4;
+  uint32_t drop1;
+  uint32_t drop2;
+  uint32_t drop3;
+  uint32_t drop4;
 } arm_interfaces__msg__ServoParameters;
 
 // Struct for a sequence of arm_interfaces__msg__ServoParameters.

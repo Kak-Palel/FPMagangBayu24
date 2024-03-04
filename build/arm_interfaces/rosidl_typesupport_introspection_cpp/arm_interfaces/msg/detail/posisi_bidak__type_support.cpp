@@ -40,7 +40,7 @@ void PosisiBidak_fini_function(void * message_memory)
 static const ::rosidl_typesupport_introspection_cpp::MessageMember PosisiBidak_message_member_array[4] = {
   {
     "fromx",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT8,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
@@ -55,7 +55,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember PosisiBidak_m
   },
   {
     "fromy",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT8,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
@@ -70,7 +70,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember PosisiBidak_m
   },
   {
     "tox",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT8,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
@@ -85,7 +85,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember PosisiBidak_m
   },
   {
     "toy",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT8,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array

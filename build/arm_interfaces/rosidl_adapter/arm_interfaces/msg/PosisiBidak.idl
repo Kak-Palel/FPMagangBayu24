@@ -6,13 +6,13 @@
 module arm_interfaces {
   module msg {
     struct PosisiBidak {
-      uint8 fromx;
+      int32 fromx;
 
-      uint8 fromy;
+      int32 fromy;
 
-      uint8 tox;
+      int32 tox;
 
-      uint8 toy;
+      int32 toy;
     };
   };
 };

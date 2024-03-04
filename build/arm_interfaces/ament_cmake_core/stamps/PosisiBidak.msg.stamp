@@ -1,4 +1,4 @@
-uint8 fromx
-uint8 fromy
-uint8 tox
-uint8 toy
+int32 fromx
+int32 fromy
+int32 tox
+int32 toy

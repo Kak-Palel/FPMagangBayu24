@@ -1,0 +1,39 @@
+[0.219s] Invoking command in '/home/olel/Projects/FPMagangBayu24/build/translator': AMENT_PREFIX_PATH=/home/olel/Projects/FPMagangBayu24/install/arm_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/olel/Projects/FPMagangBayu24/install/arm_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/local/bin/cmake --build /home/olel/Projects/FPMagangBayu24/build/translator -- -j16 -l16
+[0.260s] [ 50%] [32mBuilding CXX object CMakeFiles/bot_translator.dir/src/translator.cpp.o[0m
+[1.582s] [01m[K/home/olel/Projects/FPMagangBayu24/src/translator/src/translator.cpp:[m[K In member function ‘[01m[Kstd::vector<float> TranslatorTicTacToe::decide(arm_interfaces::msg::PosisiBidak_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.582s] [01m[K/home/olel/Projects/FPMagangBayu24/src/translator/src/translator.cpp:70:19:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KpixServY[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[1.583s]    70 |       const float [01;35m[KpixServY[m[K = 0; //to be assigned
+[1.583s]       |                   [01;35m[K^~~~~~~~[m[K
+[1.583s] [01m[K/home/olel/Projects/FPMagangBayu24/src/translator/src/translator.cpp:77:19:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KfactorPIX2REAL[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[1.583s]    77 |       const float [01;35m[KfactorPIX2REAL[m[K = (diagonalRealLen*centerDist)/(diagonalPixLen*focLen);
+[1.583s]       |                   [01;35m[K^~~~~~~~~~~~~~[m[K
+[1.583s] [01m[K/home/olel/Projects/FPMagangBayu24/src/translator/src/translator.cpp:83:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdist_to2cen[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[1.583s]    83 |       float [01;35m[Kdist_to2cen[m[K = findDistPix(points->tox, midX, points->toy, midY);
+[1.583s]       |             [01;35m[K^~~~~~~~~~~[m[K
+[1.593s] [01m[K/home/olel/Projects/FPMagangBayu24/src/translator/src/translator.cpp:[m[K In member function ‘[01m[Kvoid TranslatorTicTacToe::timer_callback(std::vector<float>)[m[K’:
+[1.593s] [01m[K/home/olel/Projects/FPMagangBayu24/src/translator/src/translator.cpp:99:44:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KServoMoves[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.593s]    99 |     void timer_callback([01;35m[Kstd::vector<float> ServoMoves[m[K)
+[1.593s]       |                         [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[4.696s] [100%] [32m[1mLinking CXX executable bot_translator[0m
+[4.864s] [100%] Built target bot_translator
+[4.868s] Invoked command in '/home/olel/Projects/FPMagangBayu24/build/translator' returned '0': AMENT_PREFIX_PATH=/home/olel/Projects/FPMagangBayu24/install/arm_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/olel/Projects/FPMagangBayu24/install/arm_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/local/bin/cmake --build /home/olel/Projects/FPMagangBayu24/build/translator -- -j16 -l16
+[4.895s] Invoking command in '/home/olel/Projects/FPMagangBayu24/build/translator': AMENT_PREFIX_PATH=/home/olel/Projects/FPMagangBayu24/install/arm_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/olel/Projects/FPMagangBayu24/install/arm_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/local/bin/cmake --install /home/olel/Projects/FPMagangBayu24/build/translator
+[4.897s] -- Install configuration: ""
+[4.897s] -- Installing: /home/olel/Projects/FPMagangBayu24/install/translator/lib/translator/bot_translator
+[4.899s] -- Set non-toolchain portion of runtime path of "/home/olel/Projects/FPMagangBayu24/install/translator/lib/translator/bot_translator" to ""
+[4.899s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/ament_index/resource_index/package_run_dependencies/translator
+[4.899s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/ament_index/resource_index/parent_prefix_path/translator
+[4.900s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/environment/ament_prefix_path.sh
+[4.900s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/environment/ament_prefix_path.dsv
+[4.900s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/environment/path.sh
+[4.900s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/environment/path.dsv
+[4.900s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/local_setup.bash
+[4.900s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/local_setup.sh
+[4.900s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/local_setup.zsh
+[4.900s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/local_setup.dsv
+[4.900s] -- Installing: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/package.dsv
+[4.900s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/ament_index/resource_index/packages/translator
+[4.900s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/cmake/translatorConfig.cmake
+[4.901s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/cmake/translatorConfig-version.cmake
+[4.901s] -- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/package.xml
+[4.902s] Invoked command in '/home/olel/Projects/FPMagangBayu24/build/translator' returned '0': AMENT_PREFIX_PATH=/home/olel/Projects/FPMagangBayu24/install/arm_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/olel/Projects/FPMagangBayu24/install/arm_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/local/bin/cmake --install /home/olel/Projects/FPMagangBayu24/build/translator

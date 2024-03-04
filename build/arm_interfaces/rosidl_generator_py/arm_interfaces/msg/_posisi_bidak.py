@@ -60,17 +60,17 @@ class PosisiBidak(metaclass=Metaclass_PosisiBidak):
     ]
 
     _fields_and_field_types = {
-        'fromx': 'uint8',
-        'fromy': 'uint8',
-        'tox': 'uint8',
-        'toy': 'uint8',
+        'fromx': 'int32',
+        'fromy': 'int32',
+        'tox': 'int32',
+        'toy': 'int32',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
-        rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
-        rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
-        rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
+        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
+        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
+        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
+        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -137,8 +137,8 @@ class PosisiBidak(metaclass=Metaclass_PosisiBidak):
             assert \
                 isinstance(value, int), \
                 "The 'fromx' field must be of type 'int'"
-            assert value >= 0 and value < 256, \
-                "The 'fromx' field must be an unsigned integer in [0, 255]"
+            assert value >= -2147483648 and value < 2147483648, \
+                "The 'fromx' field must be an integer in [-2147483648, 2147483647]"
         self._fromx = value
 
     @property
@@ -152,8 +152,8 @@ class PosisiBidak(metaclass=Metaclass_PosisiBidak):
             assert \
                 isinstance(value, int), \
                 "The 'fromy' field must be of type 'int'"
-            assert value >= 0 and value < 256, \
-                "The 'fromy' field must be an unsigned integer in [0, 255]"
+            assert value >= -2147483648 and value < 2147483648, \
+                "The 'fromy' field must be an integer in [-2147483648, 2147483647]"
         self._fromy = value
 
     @property
@@ -167,8 +167,8 @@ class PosisiBidak(metaclass=Metaclass_PosisiBidak):
             assert \
                 isinstance(value, int), \
                 "The 'tox' field must be of type 'int'"
-            assert value >= 0 and value < 256, \
-                "The 'tox' field must be an unsigned integer in [0, 255]"
+            assert value >= -2147483648 and value < 2147483648, \
+                "The 'tox' field must be an integer in [-2147483648, 2147483647]"
         self._tox = value
 
     @property
@@ -182,6 +182,6 @@ class PosisiBidak(metaclass=Metaclass_PosisiBidak):
             assert \
                 isinstance(value, int), \
                 "The 'toy' field must be of type 'int'"
-            assert value >= 0 and value < 256, \
-                "The 'toy' field must be an unsigned integer in [0, 255]"
+            assert value >= -2147483648 and value < 2147483648, \
+                "The 'toy' field must be an integer in [-2147483648, 2147483647]"
         self._toy = value

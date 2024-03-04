@@ -264,6 +264,10 @@ class VisionerTicTacToe(Node):
         
         moveMsg = PosisiBidak()
         moveMsg.fromx, moveMsg.fromy = self.findFrom()
+        # moveMsg.fromx = 0
+        # moveMsg.fromy = 0
+        # moveMsg.tox = 0
+        # moveMsg.toy = 0
         moveMsg.tox = int(self.gridPos[int(msg.data), 0] + self.boxLenX/2)
         moveMsg.toy = int(self.gridPos[int(msg.data), 2] + self.boxLenY/2)
         print("tesPublish......")

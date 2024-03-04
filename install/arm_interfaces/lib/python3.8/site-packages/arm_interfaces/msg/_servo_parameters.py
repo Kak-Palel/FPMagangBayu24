@@ -112,25 +112,25 @@ class ServoParameters(metaclass=Metaclass_ServoParameters):
     ]
 
     _fields_and_field_types = {
-        'take1': 'uint8',
-        'take2': 'uint8',
-        'take3': 'uint8',
-        'take4': 'uint8',
-        'drop1': 'uint8',
-        'drop2': 'uint8',
-        'drop3': 'uint8',
-        'drop4': 'uint8',
+        'take1': 'uint32',
+        'take2': 'uint32',
+        'take3': 'uint32',
+        'take4': 'uint32',
+        'drop1': 'uint32',
+        'drop2': 'uint32',
+        'drop3': 'uint32',
+        'drop4': 'uint32',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
-        rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
-        rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
-        rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
-        rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
-        rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
-        rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
-        rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
+        rosidl_parser.definition.BasicType('uint32'),  # noqa: E501
+        rosidl_parser.definition.BasicType('uint32'),  # noqa: E501
+        rosidl_parser.definition.BasicType('uint32'),  # noqa: E501
+        rosidl_parser.definition.BasicType('uint32'),  # noqa: E501
+        rosidl_parser.definition.BasicType('uint32'),  # noqa: E501
+        rosidl_parser.definition.BasicType('uint32'),  # noqa: E501
+        rosidl_parser.definition.BasicType('uint32'),  # noqa: E501
+        rosidl_parser.definition.BasicType('uint32'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -217,8 +217,8 @@ class ServoParameters(metaclass=Metaclass_ServoParameters):
             assert \
                 isinstance(value, int), \
                 "The 'take1' field must be of type 'int'"
-            assert value >= 0 and value < 256, \
-                "The 'take1' field must be an unsigned integer in [0, 255]"
+            assert value >= 0 and value < 4294967296, \
+                "The 'take1' field must be an unsigned integer in [0, 4294967295]"
         self._take1 = value
 
     @property
@@ -232,8 +232,8 @@ class ServoParameters(metaclass=Metaclass_ServoParameters):
             assert \
                 isinstance(value, int), \
                 "The 'take2' field must be of type 'int'"
-            assert value >= 0 and value < 256, \
-                "The 'take2' field must be an unsigned integer in [0, 255]"
+            assert value >= 0 and value < 4294967296, \
+                "The 'take2' field must be an unsigned integer in [0, 4294967295]"
         self._take2 = value
 
     @property
@@ -247,8 +247,8 @@ class ServoParameters(metaclass=Metaclass_ServoParameters):
             assert \
                 isinstance(value, int), \
                 "The 'take3' field must be of type 'int'"
-            assert value >= 0 and value < 256, \
-                "The 'take3' field must be an unsigned integer in [0, 255]"
+            assert value >= 0 and value < 4294967296, \
+                "The 'take3' field must be an unsigned integer in [0, 4294967295]"
         self._take3 = value
 
     @property
@@ -262,8 +262,8 @@ class ServoParameters(metaclass=Metaclass_ServoParameters):
             assert \
                 isinstance(value, int), \
                 "The 'take4' field must be of type 'int'"
-            assert value >= 0 and value < 256, \
-                "The 'take4' field must be an unsigned integer in [0, 255]"
+            assert value >= 0 and value < 4294967296, \
+                "The 'take4' field must be an unsigned integer in [0, 4294967295]"
         self._take4 = value
 
     @property
@@ -277,8 +277,8 @@ class ServoParameters(metaclass=Metaclass_ServoParameters):
             assert \
                 isinstance(value, int), \
                 "The 'drop1' field must be of type 'int'"
-            assert value >= 0 and value < 256, \
-                "The 'drop1' field must be an unsigned integer in [0, 255]"
+            assert value >= 0 and value < 4294967296, \
+                "The 'drop1' field must be an unsigned integer in [0, 4294967295]"
         self._drop1 = value
 
     @property
@@ -292,8 +292,8 @@ class ServoParameters(metaclass=Metaclass_ServoParameters):
             assert \
                 isinstance(value, int), \
                 "The 'drop2' field must be of type 'int'"
-            assert value >= 0 and value < 256, \
-                "The 'drop2' field must be an unsigned integer in [0, 255]"
+            assert value >= 0 and value < 4294967296, \
+                "The 'drop2' field must be an unsigned integer in [0, 4294967295]"
         self._drop2 = value
 
     @property
@@ -307,8 +307,8 @@ class ServoParameters(metaclass=Metaclass_ServoParameters):
             assert \
                 isinstance(value, int), \
                 "The 'drop3' field must be of type 'int'"
-            assert value >= 0 and value < 256, \
-                "The 'drop3' field must be an unsigned integer in [0, 255]"
+            assert value >= 0 and value < 4294967296, \
+                "The 'drop3' field must be an unsigned integer in [0, 4294967295]"
         self._drop3 = value
 
     @property
@@ -322,6 +322,6 @@ class ServoParameters(metaclass=Metaclass_ServoParameters):
             assert \
                 isinstance(value, int), \
                 "The 'drop4' field must be of type 'int'"
-            assert value >= 0 and value < 256, \
-                "The 'drop4' field must be an unsigned integer in [0, 255]"
+            assert value >= 0 and value < 4294967296, \
+                "The 'drop4' field must be an unsigned integer in [0, 4294967295]"
         self._drop4 = value

@@ -34,7 +34,7 @@ void ServoParameters__rosidl_typesupport_introspection_c__ServoParameters_fini_f
 static rosidl_typesupport_introspection_c__MessageMember ServoParameters__rosidl_typesupport_introspection_c__ServoParameters_message_member_array[8] = {
   {
     "take1",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_UINT32,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
@@ -49,7 +49,7 @@ static rosidl_typesupport_introspection_c__MessageMember ServoParameters__rosidl
   },
   {
     "take2",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_UINT32,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
@@ -64,7 +64,7 @@ static rosidl_typesupport_introspection_c__MessageMember ServoParameters__rosidl
   },
   {
     "take3",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_UINT32,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
@@ -79,7 +79,7 @@ static rosidl_typesupport_introspection_c__MessageMember ServoParameters__rosidl
   },
   {
     "take4",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_UINT32,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
@@ -94,7 +94,7 @@ static rosidl_typesupport_introspection_c__MessageMember ServoParameters__rosidl
   },
   {
     "drop1",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_UINT32,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
@@ -109,7 +109,7 @@ static rosidl_typesupport_introspection_c__MessageMember ServoParameters__rosidl
   },
   {
     "drop2",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_UINT32,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
@@ -124,7 +124,7 @@ static rosidl_typesupport_introspection_c__MessageMember ServoParameters__rosidl
   },
   {
     "drop3",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_UINT32,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
@@ -139,7 +139,7 @@ static rosidl_typesupport_introspection_c__MessageMember ServoParameters__rosidl
   },
   {
     "drop4",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_UINT32,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array

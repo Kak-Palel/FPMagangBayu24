@@ -168,56 +168,64 @@ max_serialized_size_ServoParameters(
   {
     size_t array_size = 1;
 
-    current_alignment += array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
   // Member: take2
   {
     size_t array_size = 1;
 
-    current_alignment += array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
   // Member: take3
   {
     size_t array_size = 1;
 
-    current_alignment += array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
   // Member: take4
   {
     size_t array_size = 1;
 
-    current_alignment += array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
   // Member: drop1
   {
     size_t array_size = 1;
 
-    current_alignment += array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
   // Member: drop2
   {
     size_t array_size = 1;
 
-    current_alignment += array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
   // Member: drop3
   {
     size_t array_size = 1;
 
-    current_alignment += array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
   // Member: drop4
   {
     size_t array_size = 1;
 
-    current_alignment += array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
   return current_alignment - initial_alignment;

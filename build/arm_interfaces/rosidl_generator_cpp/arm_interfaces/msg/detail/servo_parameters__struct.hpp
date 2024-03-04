@@ -37,23 +37,23 @@ struct ServoParameters_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::DEFAULTS_ONLY == _init)
     {
-      this->take1 = 0;
-      this->take2 = 0;
-      this->take3 = 0;
-      this->take4 = 0;
-      this->drop1 = 0;
-      this->drop2 = 0;
-      this->drop3 = 0;
-      this->drop4 = 0;
+      this->take1 = 0ul;
+      this->take2 = 0ul;
+      this->take3 = 0ul;
+      this->take4 = 0ul;
+      this->drop1 = 0ul;
+      this->drop2 = 0ul;
+      this->drop3 = 0ul;
+      this->drop4 = 0ul;
     } else if (rosidl_runtime_cpp::MessageInitialization::ZERO == _init) {
-      this->take1 = 0;
-      this->take2 = 0;
-      this->take3 = 0;
-      this->take4 = 0;
-      this->drop1 = 0;
-      this->drop2 = 0;
-      this->drop3 = 0;
-      this->drop4 = 0;
+      this->take1 = 0ul;
+      this->take2 = 0ul;
+      this->take3 = 0ul;
+      this->take4 = 0ul;
+      this->drop1 = 0ul;
+      this->drop2 = 0ul;
+      this->drop3 = 0ul;
+      this->drop4 = 0ul;
     }
   }
 
@@ -63,97 +63,97 @@ struct ServoParameters_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::DEFAULTS_ONLY == _init)
     {
-      this->take1 = 0;
-      this->take2 = 0;
-      this->take3 = 0;
-      this->take4 = 0;
-      this->drop1 = 0;
-      this->drop2 = 0;
-      this->drop3 = 0;
-      this->drop4 = 0;
+      this->take1 = 0ul;
+      this->take2 = 0ul;
+      this->take3 = 0ul;
+      this->take4 = 0ul;
+      this->drop1 = 0ul;
+      this->drop2 = 0ul;
+      this->drop3 = 0ul;
+      this->drop4 = 0ul;
     } else if (rosidl_runtime_cpp::MessageInitialization::ZERO == _init) {
-      this->take1 = 0;
-      this->take2 = 0;
-      this->take3 = 0;
-      this->take4 = 0;
-      this->drop1 = 0;
-      this->drop2 = 0;
-      this->drop3 = 0;
-      this->drop4 = 0;
+      this->take1 = 0ul;
+      this->take2 = 0ul;
+      this->take3 = 0ul;
+      this->take4 = 0ul;
+      this->drop1 = 0ul;
+      this->drop2 = 0ul;
+      this->drop3 = 0ul;
+      this->drop4 = 0ul;
     }
   }
 
   // field types and members
   using _take1_type =
-    uint8_t;
+    uint32_t;
   _take1_type take1;
   using _take2_type =
-    uint8_t;
+    uint32_t;
   _take2_type take2;
   using _take3_type =
-    uint8_t;
+    uint32_t;
   _take3_type take3;
   using _take4_type =
-    uint8_t;
+    uint32_t;
   _take4_type take4;
   using _drop1_type =
-    uint8_t;
+    uint32_t;
   _drop1_type drop1;
   using _drop2_type =
-    uint8_t;
+    uint32_t;
   _drop2_type drop2;
   using _drop3_type =
-    uint8_t;
+    uint32_t;
   _drop3_type drop3;
   using _drop4_type =
-    uint8_t;
+    uint32_t;
   _drop4_type drop4;
 
   // setters for named parameter idiom
   Type & set__take1(
-    const uint8_t & _arg)
+    const uint32_t & _arg)
   {
     this->take1 = _arg;
     return *this;
   }
   Type & set__take2(
-    const uint8_t & _arg)
+    const uint32_t & _arg)
   {
     this->take2 = _arg;
     return *this;
   }
   Type & set__take3(
-    const uint8_t & _arg)
+    const uint32_t & _arg)
   {
     this->take3 = _arg;
     return *this;
   }
   Type & set__take4(
-    const uint8_t & _arg)
+    const uint32_t & _arg)
   {
     this->take4 = _arg;
     return *this;
   }
   Type & set__drop1(
-    const uint8_t & _arg)
+    const uint32_t & _arg)
   {
     this->drop1 = _arg;
     return *this;
   }
   Type & set__drop2(
-    const uint8_t & _arg)
+    const uint32_t & _arg)
   {
     this->drop2 = _arg;
     return *this;
   }
   Type & set__drop3(
-    const uint8_t & _arg)
+    const uint32_t & _arg)
   {
     this->drop3 = _arg;
     return *this;
   }
   Type & set__drop4(
-    const uint8_t & _arg)
+    const uint32_t & _arg)
   {
     this->drop4 = _arg;
     return *this;

@@ -40,7 +40,7 @@ void ServoParameters_fini_function(void * message_memory)
 static const ::rosidl_typesupport_introspection_cpp::MessageMember ServoParameters_message_member_array[8] = {
   {
     "take1",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT8,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT32,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
@@ -55,7 +55,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember ServoParamete
   },
   {
     "take2",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT8,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT32,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
@@ -70,7 +70,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember ServoParamete
   },
   {
     "take3",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT8,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT32,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
@@ -85,7 +85,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember ServoParamete
   },
   {
     "take4",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT8,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT32,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
@@ -100,7 +100,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember ServoParamete
   },
   {
     "drop1",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT8,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT32,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
@@ -115,7 +115,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember ServoParamete
   },
   {
     "drop2",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT8,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT32,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
@@ -130,7 +130,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember ServoParamete
   },
   {
     "drop3",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT8,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT32,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
@@ -145,7 +145,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember ServoParamete
   },
   {
     "drop4",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT8,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT32,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array

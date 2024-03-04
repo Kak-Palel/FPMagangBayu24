@@ -56,7 +56,7 @@ bool arm_interfaces__msg__servo_parameters__convert_from_py(PyObject * _pymsg, v
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->take1 = (uint8_t)PyLong_AsUnsignedLong(field);
+    ros_message->take1 = PyLong_AsUnsignedLong(field);
     Py_DECREF(field);
   }
   {  // take2
@@ -65,7 +65,7 @@ bool arm_interfaces__msg__servo_parameters__convert_from_py(PyObject * _pymsg, v
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->take2 = (uint8_t)PyLong_AsUnsignedLong(field);
+    ros_message->take2 = PyLong_AsUnsignedLong(field);
     Py_DECREF(field);
   }
   {  // take3
@@ -74,7 +74,7 @@ bool arm_interfaces__msg__servo_parameters__convert_from_py(PyObject * _pymsg, v
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->take3 = (uint8_t)PyLong_AsUnsignedLong(field);
+    ros_message->take3 = PyLong_AsUnsignedLong(field);
     Py_DECREF(field);
   }
   {  // take4
@@ -83,7 +83,7 @@ bool arm_interfaces__msg__servo_parameters__convert_from_py(PyObject * _pymsg, v
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->take4 = (uint8_t)PyLong_AsUnsignedLong(field);
+    ros_message->take4 = PyLong_AsUnsignedLong(field);
     Py_DECREF(field);
   }
   {  // drop1
@@ -92,7 +92,7 @@ bool arm_interfaces__msg__servo_parameters__convert_from_py(PyObject * _pymsg, v
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->drop1 = (uint8_t)PyLong_AsUnsignedLong(field);
+    ros_message->drop1 = PyLong_AsUnsignedLong(field);
     Py_DECREF(field);
   }
   {  // drop2
@@ -101,7 +101,7 @@ bool arm_interfaces__msg__servo_parameters__convert_from_py(PyObject * _pymsg, v
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->drop2 = (uint8_t)PyLong_AsUnsignedLong(field);
+    ros_message->drop2 = PyLong_AsUnsignedLong(field);
     Py_DECREF(field);
   }
   {  // drop3
@@ -110,7 +110,7 @@ bool arm_interfaces__msg__servo_parameters__convert_from_py(PyObject * _pymsg, v
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->drop3 = (uint8_t)PyLong_AsUnsignedLong(field);
+    ros_message->drop3 = PyLong_AsUnsignedLong(field);
     Py_DECREF(field);
   }
   {  // drop4
@@ -119,7 +119,7 @@ bool arm_interfaces__msg__servo_parameters__convert_from_py(PyObject * _pymsg, v
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->drop4 = (uint8_t)PyLong_AsUnsignedLong(field);
+    ros_message->drop4 = PyLong_AsUnsignedLong(field);
     Py_DECREF(field);
   }
 

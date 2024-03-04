@@ -18,21 +18,21 @@ arm_interfaces__msg__ServoParameters__init(arm_interfaces__msg__ServoParameters 
     return false;
   }
   // take1
-  msg->take1 = 0;
+  msg->take1 = 0ul;
   // take2
-  msg->take2 = 0;
+  msg->take2 = 0ul;
   // take3
-  msg->take3 = 0;
+  msg->take3 = 0ul;
   // take4
-  msg->take4 = 0;
+  msg->take4 = 0ul;
   // drop1
-  msg->drop1 = 0;
+  msg->drop1 = 0ul;
   // drop2
-  msg->drop2 = 0;
+  msg->drop2 = 0ul;
   // drop3
-  msg->drop3 = 0;
+  msg->drop3 = 0ul;
   // drop4
-  msg->drop4 = 0;
+  msg->drop4 = 0ul;
   return true;
 }
 

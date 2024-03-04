@@ -32,7 +32,7 @@ const float default_back = 0;  //assign
 const float default_front = 0; //assign
 
 const float gripOn = 0;   //assign
-const float gripOff = 1;  //assign
+const float gripOff = 180;  //assign
 
 void error_loop(){
   while(1){
@@ -85,10 +85,10 @@ void setup() {
   
   pinMode(LED_PIN, OUTPUT);
 
-  face.attach(16);
-  back.attach(17);
-  front.attach(18);
-  grip.attach(19);
+  face.attach(12);
+  back.attach(13);
+  front.attach(33);
+  grip.attach(27);
 
   digitalWrite(LED_PIN, HIGH);  
   

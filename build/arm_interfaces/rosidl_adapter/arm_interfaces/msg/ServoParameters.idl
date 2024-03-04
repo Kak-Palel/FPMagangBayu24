@@ -7,28 +7,28 @@ module arm_interfaces {
   module msg {
     struct ServoParameters {
       @default (value=0)
-      uint8 take1;
+      uint32 take1;
 
       @default (value=0)
-      uint8 take2;
+      uint32 take2;
 
       @default (value=0)
-      uint8 take3;
+      uint32 take3;
 
       @default (value=0)
-      uint8 take4;
+      uint32 take4;
 
       @default (value=0)
-      uint8 drop1;
+      uint32 drop1;
 
       @default (value=0)
-      uint8 drop2;
+      uint32 drop2;
 
       @default (value=0)
-      uint8 drop3;
+      uint32 drop3;
 
       @default (value=0)
-      uint8 drop4;
+      uint32 drop4;
     };
   };
 };

@@ -56,7 +56,7 @@ bool arm_interfaces__msg__posisi_bidak__convert_from_py(PyObject * _pymsg, void 
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->fromx = (uint8_t)PyLong_AsUnsignedLong(field);
+    ros_message->fromx = (int32_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
   {  // fromy
@@ -65,7 +65,7 @@ bool arm_interfaces__msg__posisi_bidak__convert_from_py(PyObject * _pymsg, void 
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->fromy = (uint8_t)PyLong_AsUnsignedLong(field);
+    ros_message->fromy = (int32_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
   {  // tox
@@ -74,7 +74,7 @@ bool arm_interfaces__msg__posisi_bidak__convert_from_py(PyObject * _pymsg, void 
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->tox = (uint8_t)PyLong_AsUnsignedLong(field);
+    ros_message->tox = (int32_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
   {  // toy
@@ -83,7 +83,7 @@ bool arm_interfaces__msg__posisi_bidak__convert_from_py(PyObject * _pymsg, void 
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->toy = (uint8_t)PyLong_AsUnsignedLong(field);
+    ros_message->toy = (int32_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
 
@@ -110,7 +110,7 @@ PyObject * arm_interfaces__msg__posisi_bidak__convert_to_py(void * raw_ros_messa
   arm_interfaces__msg__PosisiBidak * ros_message = (arm_interfaces__msg__PosisiBidak *)raw_ros_message;
   {  // fromx
     PyObject * field = NULL;
-    field = PyLong_FromUnsignedLong(ros_message->fromx);
+    field = PyLong_FromLong(ros_message->fromx);
     {
       int rc = PyObject_SetAttrString(_pymessage, "fromx", field);
       Py_DECREF(field);
@@ -121,7 +121,7 @@ PyObject * arm_interfaces__msg__posisi_bidak__convert_to_py(void * raw_ros_messa
   }
   {  // fromy
     PyObject * field = NULL;
-    field = PyLong_FromUnsignedLong(ros_message->fromy);
+    field = PyLong_FromLong(ros_message->fromy);
     {
       int rc = PyObject_SetAttrString(_pymessage, "fromy", field);
       Py_DECREF(field);
@@ -132,7 +132,7 @@ PyObject * arm_interfaces__msg__posisi_bidak__convert_to_py(void * raw_ros_messa
   }
   {  // tox
     PyObject * field = NULL;
-    field = PyLong_FromUnsignedLong(ros_message->tox);
+    field = PyLong_FromLong(ros_message->tox);
     {
       int rc = PyObject_SetAttrString(_pymessage, "tox", field);
       Py_DECREF(field);
@@ -143,7 +143,7 @@ PyObject * arm_interfaces__msg__posisi_bidak__convert_to_py(void * raw_ros_messa
   }
   {  // toy
     PyObject * field = NULL;
-    field = PyLong_FromUnsignedLong(ros_message->toy);
+    field = PyLong_FromLong(ros_message->toy);
     {
       int rc = PyObject_SetAttrString(_pymessage, "toy", field);
       Py_DECREF(field);

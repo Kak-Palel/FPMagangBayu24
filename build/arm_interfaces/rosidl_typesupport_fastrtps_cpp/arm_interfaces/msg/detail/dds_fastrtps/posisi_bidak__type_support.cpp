@@ -124,28 +124,32 @@ max_serialized_size_PosisiBidak(
   {
     size_t array_size = 1;
 
-    current_alignment += array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
   // Member: fromy
   {
     size_t array_size = 1;
 
-    current_alignment += array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
   // Member: tox
   {
     size_t array_size = 1;
 
-    current_alignment += array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
   // Member: toy
   {
     size_t array_size = 1;
 
-    current_alignment += array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
   return current_alignment - initial_alignment;

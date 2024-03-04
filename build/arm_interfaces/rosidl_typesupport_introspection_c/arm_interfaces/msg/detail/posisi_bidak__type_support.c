@@ -34,7 +34,7 @@ void PosisiBidak__rosidl_typesupport_introspection_c__PosisiBidak_fini_function(
 static rosidl_typesupport_introspection_c__MessageMember PosisiBidak__rosidl_typesupport_introspection_c__PosisiBidak_message_member_array[4] = {
   {
     "fromx",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
@@ -49,7 +49,7 @@ static rosidl_typesupport_introspection_c__MessageMember PosisiBidak__rosidl_typ
   },
   {
     "fromy",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
@@ -64,7 +64,7 @@ static rosidl_typesupport_introspection_c__MessageMember PosisiBidak__rosidl_typ
   },
   {
     "tox",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
@@ -79,7 +79,7 @@ static rosidl_typesupport_introspection_c__MessageMember PosisiBidak__rosidl_typ
   },
   {
     "toy",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array

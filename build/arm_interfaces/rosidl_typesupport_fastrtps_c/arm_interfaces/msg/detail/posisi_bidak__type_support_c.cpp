@@ -170,25 +170,29 @@ size_t max_serialized_size_arm_interfaces__msg__PosisiBidak(
   {
     size_t array_size = 1;
 
-    current_alignment += array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
   // member: fromy
   {
     size_t array_size = 1;
 
-    current_alignment += array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
   // member: tox
   {
     size_t array_size = 1;
 
-    current_alignment += array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
   // member: toy
   {
     size_t array_size = 1;
 
-    current_alignment += array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
   return current_alignment - initial_alignment;

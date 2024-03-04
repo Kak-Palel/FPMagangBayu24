@@ -1,0 +1,35 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/bot_translator.dir/src/translator.cpp.o[0m
+[01m[K/home/olel/Projects/FPMagangBayu24/src/translator/src/translator.cpp:[m[K In member function ‘[01m[Kstd::vector<float> TranslatorTicTacToe::decide(arm_interfaces::msg::PosisiBidak_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/olel/Projects/FPMagangBayu24/src/translator/src/translator.cpp:70:19:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KpixServY[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   70 |       const float [01;35m[KpixServY[m[K = 0; //to be assigned
+      |                   [01;35m[K^~~~~~~~[m[K
+[01m[K/home/olel/Projects/FPMagangBayu24/src/translator/src/translator.cpp:77:19:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KfactorPIX2REAL[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   77 |       const float [01;35m[KfactorPIX2REAL[m[K = (diagonalRealLen*centerDist)/(diagonalPixLen*focLen);
+      |                   [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/olel/Projects/FPMagangBayu24/src/translator/src/translator.cpp:83:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdist_to2cen[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   83 |       float [01;35m[Kdist_to2cen[m[K = findDistPix(points->tox, midX, points->toy, midY);
+      |             [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/olel/Projects/FPMagangBayu24/src/translator/src/translator.cpp:[m[K In member function ‘[01m[Kvoid TranslatorTicTacToe::timer_callback(std::vector<float>)[m[K’:
+[01m[K/home/olel/Projects/FPMagangBayu24/src/translator/src/translator.cpp:99:44:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KServoMoves[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   99 |     void timer_callback([01;35m[Kstd::vector<float> ServoMoves[m[K)
+      |                         [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[100%] [32m[1mLinking CXX executable bot_translator[0m
+[100%] Built target bot_translator
+-- Install configuration: ""
+-- Installing: /home/olel/Projects/FPMagangBayu24/install/translator/lib/translator/bot_translator
+-- Set non-toolchain portion of runtime path of "/home/olel/Projects/FPMagangBayu24/install/translator/lib/translator/bot_translator" to ""
+-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/ament_index/resource_index/package_run_dependencies/translator
+-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/ament_index/resource_index/parent_prefix_path/translator
+-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/environment/ament_prefix_path.sh
+-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/environment/path.sh
+-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/environment/path.dsv
+-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/local_setup.bash
+-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/local_setup.sh
+-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/local_setup.zsh
+-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/local_setup.dsv
+-- Installing: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/package.dsv
+-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/ament_index/resource_index/packages/translator
+-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/cmake/translatorConfig.cmake
+-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/cmake/translatorConfig-version.cmake
+-- Up-to-date: /home/olel/Projects/FPMagangBayu24/install/translator/share/translator/package.xml

@@ -20,10 +20,10 @@ extern "C"
 // Struct defined in msg/PosisiBidak in the package arm_interfaces.
 typedef struct arm_interfaces__msg__PosisiBidak
 {
-  uint8_t fromx;
-  uint8_t fromy;
-  uint8_t tox;
-  uint8_t toy;
+  int32_t fromx;
+  int32_t fromy;
+  int32_t tox;
+  int32_t toy;
 } arm_interfaces__msg__PosisiBidak;
 
 // Struct for a sequence of arm_interfaces__msg__PosisiBidak.

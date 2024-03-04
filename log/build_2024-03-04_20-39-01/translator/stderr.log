@@ -1,0 +1,21 @@
+[01m[K/home/olel/Projects/FPMagangBayu24/src/translator/src/translator.cpp:[m[K In constructor ‘[01m[KTranslatorTicTacToe::TranslatorTicTacToe()[m[K’:
+[01m[K/home/olel/Projects/FPMagangBayu24/src/translator/src/translator.cpp:23:25:[m[K [01;31m[Kerror: [m[K‘[01m[KControllerTicTacToe[m[K’ has not been declared
+   23 |       500ms, std::bind(&[01;31m[KControllerTicTacToe[m[K::timer_callback, this));
+      |                         [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/olel/Projects/FPMagangBayu24/src/translator/src/translator.cpp:[m[K In member function ‘[01m[Kstd::vector<float> TranslatorTicTacToe::decide(arm_interfaces::msg::PosisiBidak_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/olel/Projects/FPMagangBayu24/src/translator/src/translator.cpp:72:19:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KpixServY[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   72 |       const float [01;35m[KpixServY[m[K = 0; //to be assigned
+      |                   [01;35m[K^~~~~~~~[m[K
+[01m[K/home/olel/Projects/FPMagangBayu24/src/translator/src/translator.cpp:79:19:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KfactorPIX2REAL[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   79 |       const float [01;35m[KfactorPIX2REAL[m[K = (diagonalRealLen*centerDist)/(diagonalPixLen*focLen);
+      |                   [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/olel/Projects/FPMagangBayu24/src/translator/src/translator.cpp:85:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdist_to2cen[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   85 |       float [01;35m[Kdist_to2cen[m[K = findDistPix(points->tox, midX, points->toy, midY);
+      |             [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/olel/Projects/FPMagangBayu24/src/translator/src/translator.cpp:[m[K In member function ‘[01m[Kvoid TranslatorTicTacToe::timer_callback(std::vector<float>)[m[K’:
+[01m[K/home/olel/Projects/FPMagangBayu24/src/translator/src/translator.cpp:101:44:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KServoMoves[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  101 |     void timer_callback([01;35m[Kstd::vector<float> ServoMoves[m[K)
+      |                         [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/bot_translator.dir/build.make:76: CMakeFiles/bot_translator.dir/src/translator.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/bot_translator.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2
