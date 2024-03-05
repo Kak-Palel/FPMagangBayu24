@@ -16,11 +16,11 @@ class VisionerTicTacToe(Node):
         print("1. Merah ")
         print("2. Biru ")
         c = input("Pilih warna: ")
-        self.colour = True
+        self.colour = False
         if c == '1':
             print("Bot plays red")
         elif c == '2':
-            self.colour = False
+            self.colour = True
             print("Bot plays blue")
         else:
             print("wrong option, automatically choose red")
@@ -228,6 +228,8 @@ class VisionerTicTacToe(Node):
 
         self.fromFrame = cv.cvtColor(self.fromFrame, cv.COLOR_BGR2HSV)
         self.fromFrame = cv.medianBlur(self.fromFrame, 5)
+        
+        cv.rectangle(self.fromFrame, self.gridCorner1, self.gridCorner2, (0, 0, 0), -1)
 
         if not self.colour:
             #buat dua foto copy yang nanti digabung karena merah memiliki 2 interval hsv

@@ -16,11 +16,11 @@ class VisionerTicTacToe(Node):
         print("1. Merah ")
         print("2. Biru ")
         c = input("Pilih warna: ")
-        self.colour = True
+        self.colour = False
         if c == '1':
             print("Bot plays red")
         elif c == '2':
-            self.colour = False
+            self.colour = True
             print("Bot plays blue")
         else:
             print("wrong option, automatically choose red")
@@ -228,6 +228,8 @@ class VisionerTicTacToe(Node):
 
         self.fromFrame = cv.cvtColor(self.fromFrame, cv.COLOR_BGR2HSV)
         self.fromFrame = cv.medianBlur(self.fromFrame, 5)
+        
+        cv.rectangle(self.fromFrame, self.gridCorner1, self.gridCorner2, (0, 0, 0), -1)
 
         if not self.colour:
             #buat dua foto copy yang nanti digabung karena merah memiliki 2 interval hsv
@@ -263,13 +265,13 @@ class VisionerTicTacToe(Node):
         self.botMoves =  np.append(self.botMoves, int(msg.data))
         
         moveMsg = PosisiBidak()
-        # moveMsg.fromx, moveMsg.fromy = self.findFrom()
-        moveMsg.fromx = 0
-        moveMsg.fromy = 0
-        moveMsg.tox = 0
-        moveMsg.toy = 0
-        # moveMsg.tox = int(self.gridPos[int(msg.data), 0] + self.boxLenX/2)
-        # moveMsg.toy = int(self.gridPos[int(msg.data), 2] + self.boxLenY/2)
+        moveMsg.fromx, moveMsg.fromy = self.findFrom()
+        # moveMsg.fromx = 0
+        # moveMsg.fromy = 0
+        # moveMsg.tox = 0
+        # moveMsg.toy = 0
+        moveMsg.tox = int(self.gridPos[int(msg.data), 0] + self.boxLenX/2)
+        moveMsg.toy = int(self.gridPos[int(msg.data), 2] + self.boxLenY/2)
         print("tesPublish......")
         self.publishmoves_.publish(moveMsg)
         
