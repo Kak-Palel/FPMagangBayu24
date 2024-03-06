@@ -43,56 +43,62 @@ class TranslatorTicTacToe : public rclcpp::Node
       return sqrt(pow(a, 2) + pow(b, 2) + 2.0f*a*b*cos(alpha));
     }
 
-    float reverseCosine(float a, float b, float c)
+    float inverseCosine(float a, float b, float c)
     {
-      return cosh((pow(c, 2) - pow(a, 2) - pow(b, 2))/(2.0f*a*b));
+      return acos((pow(c, 2) - pow(a, 2) - pow(b, 2))/(2.0f*a*b));
     }
 
     //serv1, serv2, serv3, dist2cen, dist2serv1, pixX, pixY
-    std::vector<std::vector<float>> ammo = 
-    {
-      {0, 0, 0, 0, 0, 0},
-      {0, 0, 0, 0, 0, 0},
-      {0, 0, 0, 0, 0, 0},
-      {0, 0, 0, 0, 0, 0},
-      {0, 0, 0, 0, 0, 0}
-    };
+    // std::vector<std::vector<float>> ammo = 
+    // {
+    //   {0, 0, 0, 0, 0, 0},
+    //   {0, 0, 0, 0, 0, 0},
+    //   {0, 0, 0, 0, 0, 0},
+    //   {0, 0, 0, 0, 0, 0},
+    //   {0, 0, 0, 0, 0, 0}
+    // };
     
     std::vector<float> decide(const arm_interfaces::msg::PosisiBidak::SharedPtr points)
     {
-      std::vector<float> toMove = {ammo[0][0], ammo[0][1], ammo[0][2], 0, 0, 0};
+      // std::vector<float> toMove = {ammo[0][0], ammo[0][1], ammo[0][2], 0, 0, 0};
+      std::vector<float> toMove = {0, 0, 0, 0, 0, 0};
 
       const float midX = 320.0f;
       const float midY = 240.0f;
 
-      const float dist_serv2cen = 0; //to be assigned
-
-      const float pixServY = 0; //to be assigned
-
       const float diagonalRealLen = 0.064f;
-      const float centerDist = 50.0f;
+      const float centerDist = 55.0f;
       const float diagonalPixLen = 800.0f;
       const float focLen = 0.0395f;
 
+      const float pixServY = 0; //to be assigned (in pixelll)
+      const float backArmLen = 14.0f;
+      const float frontArmLen = 15.0f;
+      const float height_arm2pawn = 6.7f;
+
       const float factorPIX2REAL = (diagonalRealLen*centerDist)/(diagonalPixLen*focLen);
-      // const float factorPIX2REAL = (0.064*50)/(2203*0.0395);
 
-      // float realDistTO = findDistPix(points->tox, midX, points->toy, midY) * factorPIX2REAL;
-      // float realDistFR = findDistPix(points->tox, midX, points->toy, midY) * factorPIX2REAL;
+      toMove[0] = atan2((points->fromx - midX), (pixServY - points->fromy)) * (180/3.141592);
+      toMove[3] = atan2((points->tox - midX), (pixServY - points->toy)) * (180/3.141592);
 
-      float dist_to2cen = findDistPix(points->tox, midX, points->toy, midY);
-      // float dist_amm2cen = findDistPix(ammo[0][5], midX, ammo[0][6], midY);
-      // float dist_amm2to = findDistPix(points->tox, ammo[0][5], points->toy, ammo[0][6]);
+      float dist_fr2serv = (findDistPix(points->fromx, midX, points->fromy, pixServY) * factorPIX2REAL) - 10.0f;
+      float dist_to2serv = (findDistPix(points->tox, midX, points->toy, pixServY) * factorPIX2REAL) - 10.0f;
 
-      // float centerAlpha = reverseCosine(dist_to2cen, dist_amm2cen, dist_amm2to);
+      float angle_basefr = atan2(height_arm2pawn, dist_fr2serv) * (180/3.141592);
+      float angle_baseto = atan2(height_arm2pawn, dist_to2serv) * (180/3.141592);
 
-      // float c = ruleOfCosine(dist_to2cen*factorPIX2REAL, ammo[0][3], centerAlpha);
+      dist_fr2serv = sqrt(pow(height_arm2pawn, 2) + pow(dist_fr2serv, 2));
+      dist_to2serv = sqrt(pow(height_arm2pawn, 2) + pow(dist_to2serv, 2));
 
-      // float alpha2serv = reverseCosine(dist_serv2cen, dist_to2cen, findDistPix(points->tox, midX, points->toy, pixServY));
-      // float a = ruleOfCosine(dist_to2cen * factorPIX2REAL, dist_serv2cen, alpha2serv);
+      float angle_totalfr = inverseCosine(backArmLen, frontArmLen, dist_to2serv) * (180/3.141592);
+      float angle_totalto = inverseCosine(backArmLen, frontArmLen, dist_fr2serv) * (180/3.141592);
       
-      // toMove[3] = reverseCosine(a, ammo[0][4], c);
-      toMove[3] = tanh((points->tox - midX)/(points->toy + dist_serv2cen - midY)) * (180/3.141592);
+      toMove[1] = angle_totalfr/2 + angle_basefr;
+      toMove[2] = angle_totalfr/2 - angle_basefr;
+      
+      toMove[4] = angle_totalto/2 + angle_baseto;
+      toMove[5] = angle_totalto/2 - angle_baseto;
+
       return toMove;
     }
 

@@ -17,11 +17,6 @@ rcl_allocator_t allocator;
 rcl_node_t node;
 rcl_timer_t timer;
 
-#define LED_PIN 2
-
-#define RCCHECK(fn) { rcl_ret_t temp_rc = fn; if((temp_rc != RCL_RET_OK)){error_loop();}}
-#define RCSOFTCHECK(fn) { rcl_ret_t temp_rc = fn; if((temp_rc != RCL_RET_OK)){}}
-
 Servo face;
 Servo back;
 Servo front;
@@ -69,7 +64,8 @@ void subscription_callback(const void * msgin)
 //  digitalWrite(LED_PIN, (msg->take1 == 0) ? LOW : HIGH);
   delay(100);
   
-  take(msg->take1, msg->take2, msg->take3);
+  ta
+  ke(msg->take1, msg->take2, msg->take3);
   back.write(default_back);
   delay(500);
 
@@ -88,6 +84,11 @@ void setup() {
   face.attach(12);
   back.attach(13);
   front.attach(33);
+#define LED_PIN 2
+
+#define RCCHECK(fn) { rcl_ret_t temp_rc = fn; if((temp_rc != RCL_RET_OK)){error_loop();}}
+#define RCSOFTCHECK(fn) { rcl_ret_t temp_rc = fn; if((temp_rc != RCL_RET_OK)){}}
+);
   grip.attach(27);
 
   digitalWrite(LED_PIN, HIGH);  
