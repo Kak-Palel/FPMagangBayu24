@@ -26,12 +26,12 @@ class VisionerTicTacToe(Node):
             print("wrong option, automatically choose red")
 
 
-        cv.namedWindow("ni olel")                                           #window dibutuhkan supaya dapat menggunakan trackbar                                         #window dibutuhkan supaya dapat menggunakan trackbar
-        cv.createTrackbar('minArea', 'ni olel', 19000, 307200, self.nothing)#trackbar untuk kalibrasi area contours deteksi grid
-        cv.createTrackbar('param2', 'ni olel', 15, 200, self.nothing)       #trackbar untuk kalibrasi akurasi deteksi lingkaran terhadap kualitas cahaya
+        cv.namedWindow("ni olel")                                            #window dibutuhkan supaya dapat menggunakan trackbar                                         #window dibutuhkan supaya dapat menggunakan trackbar
+        cv.createTrackbar('minArea', 'ni olel', 171500, 307200, self.nothing)#trackbar untuk kalibrasi area contours deteksi grid
+        cv.createTrackbar('param2', 'ni olel', 15, 200, self.nothing)        #trackbar untuk kalibrasi akurasi deteksi lingkaran terhadap kualitas cahaya
         
         #buka camera
-        self.cap = cv.VideoCapture(4)
+        self.cap = cv.VideoCapture(5)
         if not self.cap.isOpened():
             print("HUAAAAAAAAAA RUSAAAAAAAAAAAK")
         
@@ -266,12 +266,16 @@ class VisionerTicTacToe(Node):
         
         moveMsg = PosisiBidak()
         moveMsg.fromx, moveMsg.fromy = self.findFrom()
-        # moveMsg.fromx = 0
-        # moveMsg.fromy = 0
-        # moveMsg.tox = 0
-        # moveMsg.toy = 0
         moveMsg.tox = int(self.gridPos[int(msg.data), 0] + self.boxLenX/2)
         moveMsg.toy = int(self.gridPos[int(msg.data), 2] + self.boxLenY/2)
+        
+        print("from: ")
+        print(moveMsg.fromx)
+        print(moveMsg.fromy)
+        print("to: ")
+        print(moveMsg.tox)
+        print(moveMsg.toy)
+        
         print("tesPublish......")
         self.publishmoves_.publish(moveMsg)
         

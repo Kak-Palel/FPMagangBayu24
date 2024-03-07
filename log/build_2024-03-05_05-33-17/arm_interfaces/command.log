@@ -1,4 +1,0 @@
-Invoking command in '/home/olel/Projects/FPMagangBayu24/build/arm_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/local/bin/cmake --build /home/olel/Projects/FPMagangBayu24/build/arm_interfaces -- -j16 -l16
-Invoked command in '/home/olel/Projects/FPMagangBayu24/build/arm_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/local/bin/cmake --build /home/olel/Projects/FPMagangBayu24/build/arm_interfaces -- -j16 -l16
-Invoking command in '/home/olel/Projects/FPMagangBayu24/build/arm_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/local/bin/cmake --install /home/olel/Projects/FPMagangBayu24/build/arm_interfaces
-Invoked command in '/home/olel/Projects/FPMagangBayu24/build/arm_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/local/bin/cmake --install /home/olel/Projects/FPMagangBayu24/build/arm_interfaces

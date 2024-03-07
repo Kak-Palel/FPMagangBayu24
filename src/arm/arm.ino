@@ -19,17 +19,20 @@ rcl_timer_t timer;
 
 #define LED_PIN 2
 
+#define RCCHECK(fn) { rcl_ret_t temp_rc = fn; if((temp_rc != RCL_RET_OK)){error_loop();}}
+#define RCSOFTCHECK(fn) { rcl_ret_t temp_rc = fn; if((temp_rc != RCL_RET_OK)){}}
+
 Servo face;
 Servo back;
 Servo front;
 Servo grip;
 
-const float default_face = 0;  //assign
-const float default_back = 0;  //assign
+const float default_face = 0; 
+const float default_back = 0;
 const float default_front = 180;
 
-const float gripOn = 0;   //assign
-const float gripOff = 180;  //assign
+const float gripOn = 180;   //assign
+const float gripOff = 0;  //assign
 
 void error_loop(){
   while(1){
@@ -69,8 +72,10 @@ void subscription_callback(const void * msgin)
   take(msg->take1, msg->take2 * 2, 180 - 2 * (110 - msg->take3));
   back.write(default_back);
   delay(500);
+  front.write(default_front);
+  delay(500);
 
-  drop(msg->drop1, msg->drop2, msg->drop3);
+  drop(msg->drop1, msg->drop2 * 2, 180 - 2 * (110 - msg->drop3));
   back.write(default_back);
   delay(500);
 
@@ -78,22 +83,24 @@ void subscription_callback(const void * msgin)
 
 void setup() {
 //  set_microros_transports();
-  set_microros_wifi_transports("bababoiy", "sembarang", "192.168.11.12", 8888);
+  set_microros_wifi_transports("bababoiy", "sembarang", "192.168.110.12", 8888);
   
   pinMode(LED_PIN, OUTPUT);
 
-  face.attach(12);
+  face.attach(12, 600, 2400);
   back.attach(13);
   front.attach(33);
-
-#define RCCHECK(fn) { rcl_ret_t temp_rc = fn; if((temp_rc != RCL_RET_OK)){error_loop();}}
-#define RCSOFTCHECK(fn) { rcl_ret_t temp_rc = fn; if((temp_rc != RCL_RET_OK)){}}
 
   grip.attach(27);
 
   digitalWrite(LED_PIN, HIGH);  
   
   delay(2000);
+
+  face.write(default_face);
+  back.write(default_back);
+  front.write(default_front);
+  grip.write(gripOff);
 
   allocator = rcl_get_default_allocator();
 
