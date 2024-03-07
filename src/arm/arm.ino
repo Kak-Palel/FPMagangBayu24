@@ -47,7 +47,7 @@ void take(float a, float b, float c)
   back.write(b);
   delay(500);
   front.write(c);
-  delay(500);
+  delay(2000);
   grip.write(gripOn);
   delay(200);
 }
@@ -58,7 +58,7 @@ void drop(float a, float b, float c)
   back.write(b);
   delay(500);
   front.write(c);
-  delay(500);
+  delay(2000);
   grip.write(gripOff);
   delay(200);
 }
@@ -66,19 +66,28 @@ void drop(float a, float b, float c)
 void subscription_callback(const void * msgin)
 {  
   const arm_interfaces__msg__ServoParameters * msg = (const arm_interfaces__msg__ServoParameters *)msgin;
-//  digitalWrite(LED_PIN, (msg->take1 == 0) ? LOW : HIGH);
+  digitalWrite(LED_PIN, HIGH);
   delay(100);
   
   take(msg->take1, msg->take2 * 2, 180 - 2 * (110 - msg->take3));
   back.write(default_back);
-  delay(500);
-  front.write(default_front);
-  delay(500);
+  delay(5000);
+//  front.write(default_front);
+//  delay(500);
 
   drop(msg->drop1, msg->drop2 * 2, 180 - 2 * (110 - msg->drop3));
   back.write(default_back);
+  delay(5000);
+  
+  digitalWrite(LED_PIN, LOW);
+  face.write(default_face);
   delay(500);
-
+  back.write(default_back);
+  delay(500);
+  front.write(default_front);
+  delay(500);
+  grip.write(gripOff);
+  delay(500);
 }
 
 void setup() {
@@ -87,7 +96,7 @@ void setup() {
   
   pinMode(LED_PIN, OUTPUT);
 
-  face.attach(12, 600, 2400);
+  face.attach(12, 750, 2250);
   back.attach(13);
   front.attach(33);
 
@@ -98,9 +107,15 @@ void setup() {
   delay(2000);
 
   face.write(default_face);
+  delay(500);
   back.write(default_back);
+  delay(500);
   front.write(default_front);
+  delay(500);
   grip.write(gripOff);
+  delay(500);
+
+  digitalWrite(LED_PIN, LOW);
 
   allocator = rcl_get_default_allocator();
 
@@ -127,8 +142,4 @@ void loop() {
   RCCHECK(rclc_executor_spin_some(&executor, RCL_MS_TO_NS(100)));
   delay(1000);
   
-  face.write(default_face);
-  back.write(default_back);
-  front.write(default_front);
-  grip.write(gripOff);
 }

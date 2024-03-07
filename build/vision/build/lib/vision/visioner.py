@@ -27,11 +27,11 @@ class VisionerTicTacToe(Node):
 
 
         cv.namedWindow("ni olel")                                            #window dibutuhkan supaya dapat menggunakan trackbar                                         #window dibutuhkan supaya dapat menggunakan trackbar
-        cv.createTrackbar('minArea', 'ni olel', 171500, 307200, self.nothing)#trackbar untuk kalibrasi area contours deteksi grid
+        cv.createTrackbar('minArea', 'ni olel', 175000, 307200, self.nothing)#trackbar untuk kalibrasi area contours deteksi grid
         cv.createTrackbar('param2', 'ni olel', 15, 200, self.nothing)        #trackbar untuk kalibrasi akurasi deteksi lingkaran terhadap kualitas cahaya
         
         #buka camera
-        self.cap = cv.VideoCapture(5)
+        self.cap = cv.VideoCapture(4)
         if not self.cap.isOpened():
             print("HUAAAAAAAAAA RUSAAAAAAAAAAAK")
         
@@ -67,9 +67,10 @@ class VisionerTicTacToe(Node):
         pos1 = np.array([0, 0])
         pos2 = np.array([1, 1])
 
-        lowerBound = np.array([0, 75, 0], dtype=np.uint8)
+        lowerBound = np.array([0, 100, 0], dtype=np.uint8)
         upperBound = np.array([255, 255, 255], dtype=np.uint8)
-
+        
+        frame = cv.medianBlur(frame, 5)
         frame = cv.inRange(frame, lowerBound, upperBound)
         # frame = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
         contours, _ = cv.findContours(frame, cv.RETR_TREE, cv.CHAIN_APPROX_NONE)
