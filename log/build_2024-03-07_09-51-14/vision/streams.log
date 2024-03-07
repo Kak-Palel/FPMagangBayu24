@@ -1,0 +1,24 @@
+[1.323s] Invoking command in '/home/olel/Projects/FPMagangBayu24/src/vision': CMAKE_PREFIX_PATH=/home/olel/Projects/FPMagangBayu24/install/arm_interfaces:/home/olel/Projects/FPMagangBayu24/install/translator:/home/olel/Projects/FPMagangBayu24/install/control PYTHONPATH=/home/olel/Projects/FPMagangBayu24/build/vision/prefix_override:/home/olel/Projects/FPMagangBayu24/install/vision/lib/python3.8/site-packages:/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib/python3.8/site-packages:/home/olel/Projects/FPMagangBayu24/install/vision/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/vision build --build-base /home/olel/Projects/FPMagangBayu24/build/vision/build install --record /home/olel/Projects/FPMagangBayu24/build/vision/install.log --install-scripts $base/lib/vision --single-version-externally-managed
+[1.499s] running egg_info
+[1.499s] writing ../../build/vision/vision.egg-info/PKG-INFO
+[1.499s] writing dependency_links to ../../build/vision/vision.egg-info/dependency_links.txt
+[1.500s] writing entry points to ../../build/vision/vision.egg-info/entry_points.txt
+[1.500s] writing requirements to ../../build/vision/vision.egg-info/requires.txt
+[1.500s] writing top-level names to ../../build/vision/vision.egg-info/top_level.txt
+[1.524s] reading manifest file '../../build/vision/vision.egg-info/SOURCES.txt'
+[1.524s] writing manifest file '../../build/vision/vision.egg-info/SOURCES.txt'
+[1.524s] running build
+[1.524s] running build_py
+[1.525s] copying vision/visioner.py -> /home/olel/Projects/FPMagangBayu24/build/vision/build/lib/vision
+[1.525s] running install
+[1.525s] running install_lib
+[1.526s] copying /home/olel/Projects/FPMagangBayu24/build/vision/build/lib/vision/visioner.py -> /home/olel/Projects/FPMagangBayu24/install/vision/lib/python3.8/site-packages/vision
+[1.526s] byte-compiling /home/olel/Projects/FPMagangBayu24/install/vision/lib/python3.8/site-packages/vision/visioner.py to visioner.cpython-38.pyc
+[1.530s] running install_data
+[1.530s] running install_egg_info
+[1.531s] removing '/home/olel/Projects/FPMagangBayu24/install/vision/lib/python3.8/site-packages/vision-0.0.0-py3.8.egg-info' (and everything under it)
+[1.532s] Copying ../../build/vision/vision.egg-info to /home/olel/Projects/FPMagangBayu24/install/vision/lib/python3.8/site-packages/vision-0.0.0-py3.8.egg-info
+[1.532s] running install_scripts
+[1.549s] Installing bot_vision script to /home/olel/Projects/FPMagangBayu24/install/vision/lib/vision
+[1.550s] writing list of installed files to '/home/olel/Projects/FPMagangBayu24/build/vision/install.log'
+[1.572s] Invoked command in '/home/olel/Projects/FPMagangBayu24/src/vision' returned '0': CMAKE_PREFIX_PATH=/home/olel/Projects/FPMagangBayu24/install/arm_interfaces:/home/olel/Projects/FPMagangBayu24/install/translator:/home/olel/Projects/FPMagangBayu24/install/control PYTHONPATH=/home/olel/Projects/FPMagangBayu24/build/vision/prefix_override:/home/olel/Projects/FPMagangBayu24/install/vision/lib/python3.8/site-packages:/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib/python3.8/site-packages:/home/olel/Projects/FPMagangBayu24/install/vision/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/vision build --build-base /home/olel/Projects/FPMagangBayu24/build/vision/build install --record /home/olel/Projects/FPMagangBayu24/build/vision/install.log --install-scripts $base/lib/vision --single-version-externally-managed

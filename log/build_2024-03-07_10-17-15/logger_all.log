@@ -1,0 +1,363 @@
+[3.554s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[3.554s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f07e6a76460>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=16, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f07e6a76460>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f07e6b12a30>)
+[3.708s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[3.709s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[3.709s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[3.709s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[3.709s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[3.709s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[3.709s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/olel/Projects/FPMagangBayu24'
+[3.709s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[3.709s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[3.709s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[3.709s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[3.709s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[3.709s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[3.709s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[3.709s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[3.709s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[3.719s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[3.719s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[3.719s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[3.719s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[3.719s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[3.719s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[3.719s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[3.719s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[3.719s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['ignore', 'ignore_ament_install']
+[3.720s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ignore'
+[3.720s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ignore_ament_install'
+[3.720s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['colcon_pkg']
+[3.720s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'colcon_pkg'
+[3.720s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['colcon_meta']
+[3.720s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'colcon_meta'
+[3.720s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['ros']
+[3.720s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ros'
+[3.720s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['cmake', 'python']
+[3.720s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'cmake'
+[3.720s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'python'
+[3.720s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['python_setup_py']
+[3.720s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'python_setup_py'
+[3.720s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[3.720s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[3.720s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[3.720s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[3.720s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[3.720s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[3.720s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[3.720s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[3.720s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[3.720s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[3.721s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[3.721s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[3.721s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[3.721s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[3.721s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[3.721s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[3.721s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[3.721s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[3.721s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[3.721s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[3.721s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm) by extensions ['ignore', 'ignore_ament_install']
+[3.721s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm) by extension 'ignore'
+[3.721s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm) by extension 'ignore_ament_install'
+[3.721s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm) by extensions ['colcon_pkg']
+[3.721s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm) by extension 'colcon_pkg'
+[3.721s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm) by extensions ['colcon_meta']
+[3.721s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm) by extension 'colcon_meta'
+[3.721s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm) by extensions ['ros']
+[3.721s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm) by extension 'ros'
+[3.721s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm) by extensions ['cmake', 'python']
+[3.721s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm) by extension 'cmake'
+[3.721s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm) by extension 'python'
+[3.721s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm) by extensions ['python_setup_py']
+[3.721s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm) by extension 'python_setup_py'
+[3.721s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[3.721s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_interfaces) by extension 'ignore'
+[3.721s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_interfaces) by extension 'ignore_ament_install'
+[3.721s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_interfaces) by extensions ['colcon_pkg']
+[3.722s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_interfaces) by extension 'colcon_pkg'
+[3.722s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_interfaces) by extensions ['colcon_meta']
+[3.722s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_interfaces) by extension 'colcon_meta'
+[3.722s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_interfaces) by extensions ['ros']
+[3.722s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_interfaces) by extension 'ros'
+[3.724s] DEBUG:colcon.colcon_core.package_identification:Package 'src/arm_interfaces' with type 'ros.ament_cmake' and name 'arm_interfaces'
+[3.724s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extensions ['ignore', 'ignore_ament_install']
+[3.724s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extension 'ignore'
+[3.724s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extension 'ignore_ament_install'
+[3.724s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extensions ['colcon_pkg']
+[3.724s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extension 'colcon_pkg'
+[3.724s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extensions ['colcon_meta']
+[3.724s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extension 'colcon_meta'
+[3.724s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extensions ['ros']
+[3.724s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extension 'ros'
+[3.725s] DEBUG:colcon.colcon_core.package_identification:Package 'src/control' with type 'ros.ament_cmake' and name 'control'
+[3.725s] Level 1:colcon.colcon_core.package_identification:_identify(src/translator) by extensions ['ignore', 'ignore_ament_install']
+[3.725s] Level 1:colcon.colcon_core.package_identification:_identify(src/translator) by extension 'ignore'
+[3.725s] Level 1:colcon.colcon_core.package_identification:_identify(src/translator) by extension 'ignore_ament_install'
+[3.725s] Level 1:colcon.colcon_core.package_identification:_identify(src/translator) by extensions ['colcon_pkg']
+[3.725s] Level 1:colcon.colcon_core.package_identification:_identify(src/translator) by extension 'colcon_pkg'
+[3.725s] Level 1:colcon.colcon_core.package_identification:_identify(src/translator) by extensions ['colcon_meta']
+[3.725s] Level 1:colcon.colcon_core.package_identification:_identify(src/translator) by extension 'colcon_meta'
+[3.725s] Level 1:colcon.colcon_core.package_identification:_identify(src/translator) by extensions ['ros']
+[3.725s] Level 1:colcon.colcon_core.package_identification:_identify(src/translator) by extension 'ros'
+[3.726s] DEBUG:colcon.colcon_core.package_identification:Package 'src/translator' with type 'ros.ament_cmake' and name 'translator'
+[3.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision) by extensions ['ignore', 'ignore_ament_install']
+[3.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision) by extension 'ignore'
+[3.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision) by extension 'ignore_ament_install'
+[3.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision) by extensions ['colcon_pkg']
+[3.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision) by extension 'colcon_pkg'
+[3.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision) by extensions ['colcon_meta']
+[3.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision) by extension 'colcon_meta'
+[3.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision) by extensions ['ros']
+[3.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision) by extension 'ros'
+[3.726s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vision' with type 'ros.ament_python' and name 'vision'
+[3.727s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[3.727s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[3.727s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[3.727s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[3.727s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[4.069s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[4.069s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[4.204s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/olel/Projects/FPMagangBayu24/install
+[4.286s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 257 installed packages in /opt/ros/foxy
+[4.288s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[4.489s] Level 5:colcon.colcon_core.verb:set package 'arm_interfaces' build argument 'cmake_args' from command line to 'None'
+[4.489s] Level 5:colcon.colcon_core.verb:set package 'arm_interfaces' build argument 'cmake_target' from command line to 'None'
+[4.489s] Level 5:colcon.colcon_core.verb:set package 'arm_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.489s] Level 5:colcon.colcon_core.verb:set package 'arm_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[4.489s] Level 5:colcon.colcon_core.verb:set package 'arm_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[4.489s] Level 5:colcon.colcon_core.verb:set package 'arm_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[4.489s] Level 5:colcon.colcon_core.verb:set package 'arm_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[4.489s] Level 5:colcon.colcon_core.verb:set package 'arm_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[4.489s] Level 5:colcon.colcon_core.verb:set package 'arm_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.489s] DEBUG:colcon.colcon_core.verb:Building package 'arm_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/olel/Projects/FPMagangBayu24/build/arm_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces', 'merge_install': False, 'path': '/home/olel/Projects/FPMagangBayu24/src/arm_interfaces', 'symlink_install': False, 'test_result_base': None}
+[4.556s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'cmake_args' from command line to 'None'
+[4.556s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'cmake_target' from command line to 'None'
+[4.556s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.556s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'cmake_clean_cache' from command line to 'False'
+[4.556s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'cmake_clean_first' from command line to 'False'
+[4.556s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'cmake_force_configure' from command line to 'False'
+[4.556s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'ament_cmake_args' from command line to 'None'
+[4.556s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'catkin_cmake_args' from command line to 'None'
+[4.556s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.556s] DEBUG:colcon.colcon_core.verb:Building package 'control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/olel/Projects/FPMagangBayu24/build/control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/olel/Projects/FPMagangBayu24/install/control', 'merge_install': False, 'path': '/home/olel/Projects/FPMagangBayu24/src/control', 'symlink_install': False, 'test_result_base': None}
+[4.619s] Level 5:colcon.colcon_core.verb:set package 'translator' build argument 'cmake_args' from command line to 'None'
+[4.619s] Level 5:colcon.colcon_core.verb:set package 'translator' build argument 'cmake_target' from command line to 'None'
+[4.619s] Level 5:colcon.colcon_core.verb:set package 'translator' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.619s] Level 5:colcon.colcon_core.verb:set package 'translator' build argument 'cmake_clean_cache' from command line to 'False'
+[4.619s] Level 5:colcon.colcon_core.verb:set package 'translator' build argument 'cmake_clean_first' from command line to 'False'
+[4.619s] Level 5:colcon.colcon_core.verb:set package 'translator' build argument 'cmake_force_configure' from command line to 'False'
+[4.619s] Level 5:colcon.colcon_core.verb:set package 'translator' build argument 'ament_cmake_args' from command line to 'None'
+[4.619s] Level 5:colcon.colcon_core.verb:set package 'translator' build argument 'catkin_cmake_args' from command line to 'None'
+[4.619s] Level 5:colcon.colcon_core.verb:set package 'translator' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.619s] DEBUG:colcon.colcon_core.verb:Building package 'translator' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/olel/Projects/FPMagangBayu24/build/translator', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/olel/Projects/FPMagangBayu24/install/translator', 'merge_install': False, 'path': '/home/olel/Projects/FPMagangBayu24/src/translator', 'symlink_install': False, 'test_result_base': None}
+[4.682s] Level 5:colcon.colcon_core.verb:set package 'vision' build argument 'cmake_args' from command line to 'None'
+[4.682s] Level 5:colcon.colcon_core.verb:set package 'vision' build argument 'cmake_target' from command line to 'None'
+[4.682s] Level 5:colcon.colcon_core.verb:set package 'vision' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.682s] Level 5:colcon.colcon_core.verb:set package 'vision' build argument 'cmake_clean_cache' from command line to 'False'
+[4.682s] Level 5:colcon.colcon_core.verb:set package 'vision' build argument 'cmake_clean_first' from command line to 'False'
+[4.682s] Level 5:colcon.colcon_core.verb:set package 'vision' build argument 'cmake_force_configure' from command line to 'False'
+[4.682s] Level 5:colcon.colcon_core.verb:set package 'vision' build argument 'ament_cmake_args' from command line to 'None'
+[4.682s] Level 5:colcon.colcon_core.verb:set package 'vision' build argument 'catkin_cmake_args' from command line to 'None'
+[4.682s] Level 5:colcon.colcon_core.verb:set package 'vision' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.682s] DEBUG:colcon.colcon_core.verb:Building package 'vision' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/olel/Projects/FPMagangBayu24/build/vision', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/olel/Projects/FPMagangBayu24/install/vision', 'merge_install': False, 'path': '/home/olel/Projects/FPMagangBayu24/src/vision', 'symlink_install': False, 'test_result_base': None}
+[4.748s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[4.820s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[4.820s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/olel/Projects/FPMagangBayu24/src/arm_interfaces' with build type 'ament_cmake'
+[4.820s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/olel/Projects/FPMagangBayu24/src/arm_interfaces'
+[4.894s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[4.894s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.894s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.099s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/olel/Projects/FPMagangBayu24/src/control' with build type 'ament_cmake'
+[5.100s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/olel/Projects/FPMagangBayu24/src/control'
+[5.192s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.193s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.439s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/olel/Projects/FPMagangBayu24/build/arm_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olel/Projects/FPMagangBayu24/install/vision:/opt/ros/foxy /usr/local/bin/cmake --build /home/olel/Projects/FPMagangBayu24/build/arm_interfaces -- -j16 -l16
+[5.455s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/olel/Projects/FPMagangBayu24/build/control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olel/Projects/FPMagangBayu24/install/vision:/opt/ros/foxy /usr/local/bin/cmake --build /home/olel/Projects/FPMagangBayu24/build/control -- -j16 -l16
+[5.611s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/olel/Projects/FPMagangBayu24/build/arm_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olel/Projects/FPMagangBayu24/install/vision:/opt/ros/foxy /usr/local/bin/cmake --build /home/olel/Projects/FPMagangBayu24/build/arm_interfaces -- -j16 -l16
+[5.681s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/olel/Projects/FPMagangBayu24/build/arm_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olel/Projects/FPMagangBayu24/install/vision:/opt/ros/foxy /usr/local/bin/cmake --install /home/olel/Projects/FPMagangBayu24/build/arm_interfaces
+[5.729s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(arm_interfaces)
+[5.730s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/olel/Projects/FPMagangBayu24/build/arm_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olel/Projects/FPMagangBayu24/install/vision:/opt/ros/foxy /usr/local/bin/cmake --install /home/olel/Projects/FPMagangBayu24/build/arm_interfaces
+[5.813s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces' for CMake module files
+[5.813s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces' for CMake config files
+[5.814s] Level 1:colcon.colcon_core.shell:create_environment_hook('arm_interfaces', 'cmake_prefix_path')
+[5.892s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/hook/cmake_prefix_path.ps1'
+[5.892s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/hook/cmake_prefix_path.dsv'
+[5.893s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/hook/cmake_prefix_path.sh'
+[5.893s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib'
+[5.894s] Level 1:colcon.colcon_core.shell:create_environment_hook('arm_interfaces', 'ld_library_path_lib')
+[5.982s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/hook/ld_library_path_lib.ps1'
+[5.983s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/hook/ld_library_path_lib.dsv'
+[5.984s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/hook/ld_library_path_lib.sh'
+[5.984s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/bin'
+[5.984s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib/pkgconfig/arm_interfaces.pc'
+[5.984s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib/python3.8/site-packages'
+[5.985s] Level 1:colcon.colcon_core.shell:create_environment_hook('arm_interfaces', 'pythonpath')
+[6.061s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/hook/pythonpath.ps1'
+[6.061s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/hook/pythonpath.dsv'
+[6.062s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/hook/pythonpath.sh'
+[6.062s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/bin'
+[6.138s] INFO:colcon.colcon_core.shell:Creating package script '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/package.ps1'
+[6.139s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/package.dsv'
+[6.140s] INFO:colcon.colcon_core.shell:Creating package script '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/package.sh'
+[6.141s] INFO:colcon.colcon_core.shell:Creating package script '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/package.bash'
+[6.141s] INFO:colcon.colcon_core.shell:Creating package script '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/package.zsh'
+[6.142s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/colcon-core/packages/arm_interfaces)
+[6.281s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(arm_interfaces)
+[6.348s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces' for CMake module files
+[6.348s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces' for CMake config files
+[6.348s] Level 1:colcon.colcon_core.shell:create_environment_hook('arm_interfaces', 'cmake_prefix_path')
+[6.416s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/hook/cmake_prefix_path.ps1'
+[6.417s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/hook/cmake_prefix_path.dsv'
+[6.417s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/hook/cmake_prefix_path.sh'
+[6.417s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib'
+[6.418s] Level 1:colcon.colcon_core.shell:create_environment_hook('arm_interfaces', 'ld_library_path_lib')
+[6.488s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/hook/ld_library_path_lib.ps1'
+[6.489s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/hook/ld_library_path_lib.dsv'
+[6.489s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/hook/ld_library_path_lib.sh'
+[6.489s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/bin'
+[6.489s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib/pkgconfig/arm_interfaces.pc'
+[6.489s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib/python3.8/site-packages'
+[6.489s] Level 1:colcon.colcon_core.shell:create_environment_hook('arm_interfaces', 'pythonpath')
+[6.558s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/hook/pythonpath.ps1'
+[6.559s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/hook/pythonpath.dsv'
+[6.559s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/hook/pythonpath.sh'
+[6.560s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/bin'
+[6.627s] INFO:colcon.colcon_core.shell:Creating package script '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/package.ps1'
+[6.629s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/package.dsv'
+[6.629s] INFO:colcon.colcon_core.shell:Creating package script '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/package.sh'
+[6.630s] INFO:colcon.colcon_core.shell:Creating package script '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/package.bash'
+[6.630s] INFO:colcon.colcon_core.shell:Creating package script '/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/arm_interfaces/package.zsh'
+[6.630s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/share/colcon-core/packages/arm_interfaces)
+[6.631s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/olel/Projects/FPMagangBayu24/src/translator' with build type 'ament_cmake'
+[6.631s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/olel/Projects/FPMagangBayu24/src/translator'
+[6.697s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.697s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.904s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/olel/Projects/FPMagangBayu24/src/vision' with build type 'ament_python'
+[6.904s] Level 1:colcon.colcon_core.shell:create_environment_hook('vision', 'ament_prefix_path')
+[6.984s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olel/Projects/FPMagangBayu24/install/vision/share/vision/hook/ament_prefix_path.ps1'
+[6.985s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olel/Projects/FPMagangBayu24/install/vision/share/vision/hook/ament_prefix_path.dsv'
+[6.985s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olel/Projects/FPMagangBayu24/install/vision/share/vision/hook/ament_prefix_path.sh'
+[7.051s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.051s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.275s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/olel/Projects/FPMagangBayu24/build/translator': CMAKE_PREFIX_PATH=/home/olel/Projects/FPMagangBayu24/install/arm_interfaces:/home/olel/Projects/FPMagangBayu24/install/translator:/home/olel/Projects/FPMagangBayu24/install/control:/home/olel/Projects/FPMagangBayu24/install/vision:/opt/ros/foxy PYTHONPATH=/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib/python3.8/site-packages:/home/olel/Projects/FPMagangBayu24/install/vision/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/local/bin/cmake --build /home/olel/Projects/FPMagangBayu24/build/translator -- -j16 -l16
+[7.448s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/olel/Projects/FPMagangBayu24/src/vision'
+[7.553s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.553s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.254s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/olel/Projects/FPMagangBayu24/src/vision': CMAKE_PREFIX_PATH=/home/olel/Projects/FPMagangBayu24/install/arm_interfaces:/home/olel/Projects/FPMagangBayu24/install/translator:/home/olel/Projects/FPMagangBayu24/install/control PYTHONPATH=/home/olel/Projects/FPMagangBayu24/build/vision/prefix_override:/home/olel/Projects/FPMagangBayu24/install/vision/lib/python3.8/site-packages:/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib/python3.8/site-packages:/home/olel/Projects/FPMagangBayu24/install/vision/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/vision build --build-base /home/olel/Projects/FPMagangBayu24/build/vision/build install --record /home/olel/Projects/FPMagangBayu24/build/vision/install.log --install-scripts $base/lib/vision --single-version-externally-managed
+[8.539s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/olel/Projects/FPMagangBayu24/src/vision' returned '0': CMAKE_PREFIX_PATH=/home/olel/Projects/FPMagangBayu24/install/arm_interfaces:/home/olel/Projects/FPMagangBayu24/install/translator:/home/olel/Projects/FPMagangBayu24/install/control PYTHONPATH=/home/olel/Projects/FPMagangBayu24/build/vision/prefix_override:/home/olel/Projects/FPMagangBayu24/install/vision/lib/python3.8/site-packages:/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib/python3.8/site-packages:/home/olel/Projects/FPMagangBayu24/install/vision/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/vision build --build-base /home/olel/Projects/FPMagangBayu24/build/vision/build install --record /home/olel/Projects/FPMagangBayu24/build/vision/install.log --install-scripts $base/lib/vision --single-version-externally-managed
+[8.631s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/vision' for CMake module files
+[8.631s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/vision' for CMake config files
+[8.632s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/vision/lib'
+[8.632s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/vision/bin'
+[8.632s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/vision/lib/pkgconfig/vision.pc'
+[8.632s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/vision/lib/python3.8/site-packages'
+[8.632s] Level 1:colcon.colcon_core.shell:create_environment_hook('vision', 'pythonpath')
+[8.713s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olel/Projects/FPMagangBayu24/install/vision/share/vision/hook/pythonpath.ps1'
+[8.714s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olel/Projects/FPMagangBayu24/install/vision/share/vision/hook/pythonpath.dsv'
+[8.714s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olel/Projects/FPMagangBayu24/install/vision/share/vision/hook/pythonpath.sh'
+[8.715s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/vision/bin'
+[8.715s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vision)
+[8.791s] INFO:colcon.colcon_core.shell:Creating package script '/home/olel/Projects/FPMagangBayu24/install/vision/share/vision/package.ps1'
+[8.791s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/olel/Projects/FPMagangBayu24/install/vision/share/vision/package.dsv'
+[8.792s] INFO:colcon.colcon_core.shell:Creating package script '/home/olel/Projects/FPMagangBayu24/install/vision/share/vision/package.sh'
+[8.793s] INFO:colcon.colcon_core.shell:Creating package script '/home/olel/Projects/FPMagangBayu24/install/vision/share/vision/package.bash'
+[8.793s] INFO:colcon.colcon_core.shell:Creating package script '/home/olel/Projects/FPMagangBayu24/install/vision/share/vision/package.zsh'
+[8.793s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/olel/Projects/FPMagangBayu24/install/vision/share/colcon-core/packages/vision)
+[10.678s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/olel/Projects/FPMagangBayu24/build/control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olel/Projects/FPMagangBayu24/install/vision:/opt/ros/foxy /usr/local/bin/cmake --build /home/olel/Projects/FPMagangBayu24/build/control -- -j16 -l16
+[10.707s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/olel/Projects/FPMagangBayu24/build/control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olel/Projects/FPMagangBayu24/install/vision:/opt/ros/foxy /usr/local/bin/cmake --install /home/olel/Projects/FPMagangBayu24/build/control
+[10.713s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(control)
+[10.715s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/olel/Projects/FPMagangBayu24/build/control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/olel/Projects/FPMagangBayu24/install/vision:/opt/ros/foxy /usr/local/bin/cmake --install /home/olel/Projects/FPMagangBayu24/build/control
+[10.783s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/control' for CMake module files
+[10.783s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/control' for CMake config files
+[10.783s] Level 1:colcon.colcon_core.shell:create_environment_hook('control', 'cmake_prefix_path')
+[10.848s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olel/Projects/FPMagangBayu24/install/control/share/control/hook/cmake_prefix_path.ps1'
+[10.849s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olel/Projects/FPMagangBayu24/install/control/share/control/hook/cmake_prefix_path.dsv'
+[10.849s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olel/Projects/FPMagangBayu24/install/control/share/control/hook/cmake_prefix_path.sh'
+[10.849s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/control/lib'
+[10.849s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/control/bin'
+[10.850s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/control/lib/pkgconfig/control.pc'
+[10.850s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/control/lib/python3.8/site-packages'
+[10.850s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/control/bin'
+[10.919s] INFO:colcon.colcon_core.shell:Creating package script '/home/olel/Projects/FPMagangBayu24/install/control/share/control/package.ps1'
+[10.920s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/olel/Projects/FPMagangBayu24/install/control/share/control/package.dsv'
+[10.920s] INFO:colcon.colcon_core.shell:Creating package script '/home/olel/Projects/FPMagangBayu24/install/control/share/control/package.sh'
+[10.921s] INFO:colcon.colcon_core.shell:Creating package script '/home/olel/Projects/FPMagangBayu24/install/control/share/control/package.bash'
+[10.921s] INFO:colcon.colcon_core.shell:Creating package script '/home/olel/Projects/FPMagangBayu24/install/control/share/control/package.zsh'
+[10.921s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/olel/Projects/FPMagangBayu24/install/control/share/colcon-core/packages/control)
+[11.056s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(control)
+[11.137s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/control' for CMake module files
+[11.137s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/control' for CMake config files
+[11.138s] Level 1:colcon.colcon_core.shell:create_environment_hook('control', 'cmake_prefix_path')
+[11.211s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olel/Projects/FPMagangBayu24/install/control/share/control/hook/cmake_prefix_path.ps1'
+[11.211s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olel/Projects/FPMagangBayu24/install/control/share/control/hook/cmake_prefix_path.dsv'
+[11.211s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olel/Projects/FPMagangBayu24/install/control/share/control/hook/cmake_prefix_path.sh'
+[11.212s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/control/lib'
+[11.212s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/control/bin'
+[11.212s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/control/lib/pkgconfig/control.pc'
+[11.212s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/control/lib/python3.8/site-packages'
+[11.212s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/control/bin'
+[11.282s] INFO:colcon.colcon_core.shell:Creating package script '/home/olel/Projects/FPMagangBayu24/install/control/share/control/package.ps1'
+[11.283s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/olel/Projects/FPMagangBayu24/install/control/share/control/package.dsv'
+[11.283s] INFO:colcon.colcon_core.shell:Creating package script '/home/olel/Projects/FPMagangBayu24/install/control/share/control/package.sh'
+[11.283s] INFO:colcon.colcon_core.shell:Creating package script '/home/olel/Projects/FPMagangBayu24/install/control/share/control/package.bash'
+[11.283s] INFO:colcon.colcon_core.shell:Creating package script '/home/olel/Projects/FPMagangBayu24/install/control/share/control/package.zsh'
+[11.284s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/olel/Projects/FPMagangBayu24/install/control/share/colcon-core/packages/control)
+[12.508s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/olel/Projects/FPMagangBayu24/build/translator' returned '0': CMAKE_PREFIX_PATH=/home/olel/Projects/FPMagangBayu24/install/arm_interfaces:/home/olel/Projects/FPMagangBayu24/install/translator:/home/olel/Projects/FPMagangBayu24/install/control:/home/olel/Projects/FPMagangBayu24/install/vision:/opt/ros/foxy PYTHONPATH=/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib/python3.8/site-packages:/home/olel/Projects/FPMagangBayu24/install/vision/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/local/bin/cmake --build /home/olel/Projects/FPMagangBayu24/build/translator -- -j16 -l16
+[12.537s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/olel/Projects/FPMagangBayu24/build/translator': CMAKE_PREFIX_PATH=/home/olel/Projects/FPMagangBayu24/install/arm_interfaces:/home/olel/Projects/FPMagangBayu24/install/translator:/home/olel/Projects/FPMagangBayu24/install/control:/home/olel/Projects/FPMagangBayu24/install/vision:/opt/ros/foxy PYTHONPATH=/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib/python3.8/site-packages:/home/olel/Projects/FPMagangBayu24/install/vision/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/local/bin/cmake --install /home/olel/Projects/FPMagangBayu24/build/translator
+[12.542s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(translator)
+[12.550s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/olel/Projects/FPMagangBayu24/build/translator' returned '0': CMAKE_PREFIX_PATH=/home/olel/Projects/FPMagangBayu24/install/arm_interfaces:/home/olel/Projects/FPMagangBayu24/install/translator:/home/olel/Projects/FPMagangBayu24/install/control:/home/olel/Projects/FPMagangBayu24/install/vision:/opt/ros/foxy PYTHONPATH=/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib/python3.8/site-packages:/home/olel/Projects/FPMagangBayu24/install/vision/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/local/bin/cmake --install /home/olel/Projects/FPMagangBayu24/build/translator
+[12.628s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/translator' for CMake module files
+[12.629s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/translator' for CMake config files
+[12.629s] Level 1:colcon.colcon_core.shell:create_environment_hook('translator', 'cmake_prefix_path')
+[12.698s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olel/Projects/FPMagangBayu24/install/translator/share/translator/hook/cmake_prefix_path.ps1'
+[12.698s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olel/Projects/FPMagangBayu24/install/translator/share/translator/hook/cmake_prefix_path.dsv'
+[12.699s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olel/Projects/FPMagangBayu24/install/translator/share/translator/hook/cmake_prefix_path.sh'
+[12.699s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/translator/lib'
+[12.699s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/translator/bin'
+[12.699s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/translator/lib/pkgconfig/translator.pc'
+[12.700s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/translator/lib/python3.8/site-packages'
+[12.700s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/translator/bin'
+[12.765s] INFO:colcon.colcon_core.shell:Creating package script '/home/olel/Projects/FPMagangBayu24/install/translator/share/translator/package.ps1'
+[12.766s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/olel/Projects/FPMagangBayu24/install/translator/share/translator/package.dsv'
+[12.767s] INFO:colcon.colcon_core.shell:Creating package script '/home/olel/Projects/FPMagangBayu24/install/translator/share/translator/package.sh'
+[12.767s] INFO:colcon.colcon_core.shell:Creating package script '/home/olel/Projects/FPMagangBayu24/install/translator/share/translator/package.bash'
+[12.767s] INFO:colcon.colcon_core.shell:Creating package script '/home/olel/Projects/FPMagangBayu24/install/translator/share/translator/package.zsh'
+[12.768s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/olel/Projects/FPMagangBayu24/install/translator/share/colcon-core/packages/translator)
+[12.859s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(translator)
+[12.934s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/translator' for CMake module files
+[12.934s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/translator' for CMake config files
+[12.935s] Level 1:colcon.colcon_core.shell:create_environment_hook('translator', 'cmake_prefix_path')
+[12.999s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olel/Projects/FPMagangBayu24/install/translator/share/translator/hook/cmake_prefix_path.ps1'
+[12.999s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olel/Projects/FPMagangBayu24/install/translator/share/translator/hook/cmake_prefix_path.dsv'
+[13.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olel/Projects/FPMagangBayu24/install/translator/share/translator/hook/cmake_prefix_path.sh'
+[13.000s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/translator/lib'
+[13.000s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/translator/bin'
+[13.000s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/translator/lib/pkgconfig/translator.pc'
+[13.000s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/translator/lib/python3.8/site-packages'
+[13.001s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/translator/bin'
+[13.071s] INFO:colcon.colcon_core.shell:Creating package script '/home/olel/Projects/FPMagangBayu24/install/translator/share/translator/package.ps1'
+[13.072s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/olel/Projects/FPMagangBayu24/install/translator/share/translator/package.dsv'
+[13.072s] INFO:colcon.colcon_core.shell:Creating package script '/home/olel/Projects/FPMagangBayu24/install/translator/share/translator/package.sh'
+[13.073s] INFO:colcon.colcon_core.shell:Creating package script '/home/olel/Projects/FPMagangBayu24/install/translator/share/translator/package.bash'
+[13.073s] INFO:colcon.colcon_core.shell:Creating package script '/home/olel/Projects/FPMagangBayu24/install/translator/share/translator/package.zsh'
+[13.073s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/olel/Projects/FPMagangBayu24/install/translator/share/colcon-core/packages/translator)
+[13.074s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[13.074s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[13.074s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[13.074s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[13.149s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[13.149s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[13.150s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[13.169s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[13.247s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/olel/Projects/FPMagangBayu24/install/local_setup.ps1'
+[13.248s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/olel/Projects/FPMagangBayu24/install/_local_setup_util_ps1.py'
+[13.249s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/olel/Projects/FPMagangBayu24/install/setup.ps1'
+[13.320s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/olel/Projects/FPMagangBayu24/install/local_setup.sh'
+[13.320s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/olel/Projects/FPMagangBayu24/install/_local_setup_util_sh.py'
+[13.321s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/olel/Projects/FPMagangBayu24/install/setup.sh'
+[13.390s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/olel/Projects/FPMagangBayu24/install/local_setup.bash'
+[13.391s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/olel/Projects/FPMagangBayu24/install/setup.bash'
+[13.460s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/olel/Projects/FPMagangBayu24/install/local_setup.zsh'
+[13.460s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/olel/Projects/FPMagangBayu24/install/setup.zsh'

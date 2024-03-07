@@ -1,0 +1,202 @@
+[3.535s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'translator']
+[3.535s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f4266c982b0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=['translator'], packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=16, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f4266c982b0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f4266ca71f0>)
+[3.697s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[3.697s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[3.697s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[3.697s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[3.697s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[3.697s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[3.697s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/olel/Projects/FPMagangBayu24'
+[3.697s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[3.698s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[3.698s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[3.698s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[3.698s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[3.698s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[3.698s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[3.698s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[3.698s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[3.707s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[3.707s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[3.707s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[3.707s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[3.707s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[3.707s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[3.707s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[3.707s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[3.708s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['ignore', 'ignore_ament_install']
+[3.708s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ignore'
+[3.708s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ignore_ament_install'
+[3.708s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['colcon_pkg']
+[3.708s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'colcon_pkg'
+[3.708s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['colcon_meta']
+[3.708s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'colcon_meta'
+[3.708s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['ros']
+[3.708s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ros'
+[3.708s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['cmake', 'python']
+[3.708s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'cmake'
+[3.708s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'python'
+[3.708s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['python_setup_py']
+[3.708s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'python_setup_py'
+[3.708s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[3.708s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[3.708s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[3.708s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[3.708s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[3.708s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[3.708s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[3.708s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[3.708s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[3.708s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[3.708s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[3.709s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[3.709s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[3.709s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[3.709s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[3.709s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[3.709s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[3.709s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[3.709s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[3.709s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[3.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm) by extensions ['ignore', 'ignore_ament_install']
+[3.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm) by extension 'ignore'
+[3.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm) by extension 'ignore_ament_install'
+[3.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm) by extensions ['colcon_pkg']
+[3.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm) by extension 'colcon_pkg'
+[3.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm) by extensions ['colcon_meta']
+[3.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm) by extension 'colcon_meta'
+[3.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm) by extensions ['ros']
+[3.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm) by extension 'ros'
+[3.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm) by extensions ['cmake', 'python']
+[3.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm) by extension 'cmake'
+[3.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm) by extension 'python'
+[3.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm) by extensions ['python_setup_py']
+[3.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm) by extension 'python_setup_py'
+[3.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[3.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_interfaces) by extension 'ignore'
+[3.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_interfaces) by extension 'ignore_ament_install'
+[3.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_interfaces) by extensions ['colcon_pkg']
+[3.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_interfaces) by extension 'colcon_pkg'
+[3.710s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_interfaces) by extensions ['colcon_meta']
+[3.710s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_interfaces) by extension 'colcon_meta'
+[3.710s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_interfaces) by extensions ['ros']
+[3.710s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_interfaces) by extension 'ros'
+[3.712s] DEBUG:colcon.colcon_core.package_identification:Package 'src/arm_interfaces' with type 'ros.ament_cmake' and name 'arm_interfaces'
+[3.712s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extensions ['ignore', 'ignore_ament_install']
+[3.712s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extension 'ignore'
+[3.712s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extension 'ignore_ament_install'
+[3.712s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extensions ['colcon_pkg']
+[3.712s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extension 'colcon_pkg'
+[3.712s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extensions ['colcon_meta']
+[3.712s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extension 'colcon_meta'
+[3.712s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extensions ['ros']
+[3.712s] Level 1:colcon.colcon_core.package_identification:_identify(src/control) by extension 'ros'
+[3.713s] DEBUG:colcon.colcon_core.package_identification:Package 'src/control' with type 'ros.ament_cmake' and name 'control'
+[3.713s] Level 1:colcon.colcon_core.package_identification:_identify(src/translator) by extensions ['ignore', 'ignore_ament_install']
+[3.713s] Level 1:colcon.colcon_core.package_identification:_identify(src/translator) by extension 'ignore'
+[3.713s] Level 1:colcon.colcon_core.package_identification:_identify(src/translator) by extension 'ignore_ament_install'
+[3.713s] Level 1:colcon.colcon_core.package_identification:_identify(src/translator) by extensions ['colcon_pkg']
+[3.713s] Level 1:colcon.colcon_core.package_identification:_identify(src/translator) by extension 'colcon_pkg'
+[3.713s] Level 1:colcon.colcon_core.package_identification:_identify(src/translator) by extensions ['colcon_meta']
+[3.713s] Level 1:colcon.colcon_core.package_identification:_identify(src/translator) by extension 'colcon_meta'
+[3.713s] Level 1:colcon.colcon_core.package_identification:_identify(src/translator) by extensions ['ros']
+[3.713s] Level 1:colcon.colcon_core.package_identification:_identify(src/translator) by extension 'ros'
+[3.714s] DEBUG:colcon.colcon_core.package_identification:Package 'src/translator' with type 'ros.ament_cmake' and name 'translator'
+[3.714s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision) by extensions ['ignore', 'ignore_ament_install']
+[3.714s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision) by extension 'ignore'
+[3.714s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision) by extension 'ignore_ament_install'
+[3.714s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision) by extensions ['colcon_pkg']
+[3.714s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision) by extension 'colcon_pkg'
+[3.714s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision) by extensions ['colcon_meta']
+[3.714s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision) by extension 'colcon_meta'
+[3.714s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision) by extensions ['ros']
+[3.714s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision) by extension 'ros'
+[3.714s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vision' with type 'ros.ament_python' and name 'vision'
+[3.714s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[3.715s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[3.715s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[3.715s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[3.715s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[3.916s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'arm_interfaces' in 'src/arm_interfaces'
+[3.916s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'control' in 'src/control'
+[3.916s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'vision' in 'src/vision'
+[4.037s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[4.037s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[4.164s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/olel/Projects/FPMagangBayu24/install
+[4.241s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 257 installed packages in /opt/ros/foxy
+[4.242s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[4.475s] Level 5:colcon.colcon_core.verb:set package 'translator' build argument 'cmake_args' from command line to 'None'
+[4.475s] Level 5:colcon.colcon_core.verb:set package 'translator' build argument 'cmake_target' from command line to 'None'
+[4.475s] Level 5:colcon.colcon_core.verb:set package 'translator' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.475s] Level 5:colcon.colcon_core.verb:set package 'translator' build argument 'cmake_clean_cache' from command line to 'False'
+[4.475s] Level 5:colcon.colcon_core.verb:set package 'translator' build argument 'cmake_clean_first' from command line to 'False'
+[4.475s] Level 5:colcon.colcon_core.verb:set package 'translator' build argument 'cmake_force_configure' from command line to 'False'
+[4.475s] Level 5:colcon.colcon_core.verb:set package 'translator' build argument 'ament_cmake_args' from command line to 'None'
+[4.475s] Level 5:colcon.colcon_core.verb:set package 'translator' build argument 'catkin_cmake_args' from command line to 'None'
+[4.475s] Level 5:colcon.colcon_core.verb:set package 'translator' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.475s] DEBUG:colcon.colcon_core.verb:Building package 'translator' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/olel/Projects/FPMagangBayu24/build/translator', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/olel/Projects/FPMagangBayu24/install/translator', 'merge_install': False, 'path': '/home/olel/Projects/FPMagangBayu24/src/translator', 'symlink_install': False, 'test_result_base': None}
+[4.530s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[4.588s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[4.588s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/olel/Projects/FPMagangBayu24/src/translator' with build type 'ament_cmake'
+[4.588s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/olel/Projects/FPMagangBayu24/src/translator'
+[4.652s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[4.652s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.652s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.842s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/olel/Projects/FPMagangBayu24/build/translator': CMAKE_PREFIX_PATH=/home/olel/Projects/FPMagangBayu24/install/arm_interfaces:/home/olel/Projects/FPMagangBayu24/install/translator:/home/olel/Projects/FPMagangBayu24/install/control:/home/olel/Projects/FPMagangBayu24/install/vision:/opt/ros/foxy PYTHONPATH=/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib/python3.8/site-packages:/home/olel/Projects/FPMagangBayu24/install/vision/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/local/bin/cmake --build /home/olel/Projects/FPMagangBayu24/build/translator -- -j16 -l16
+[9.277s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/olel/Projects/FPMagangBayu24/build/translator' returned '0': CMAKE_PREFIX_PATH=/home/olel/Projects/FPMagangBayu24/install/arm_interfaces:/home/olel/Projects/FPMagangBayu24/install/translator:/home/olel/Projects/FPMagangBayu24/install/control:/home/olel/Projects/FPMagangBayu24/install/vision:/opt/ros/foxy PYTHONPATH=/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib/python3.8/site-packages:/home/olel/Projects/FPMagangBayu24/install/vision/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/local/bin/cmake --build /home/olel/Projects/FPMagangBayu24/build/translator -- -j16 -l16
+[9.297s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/olel/Projects/FPMagangBayu24/build/translator': CMAKE_PREFIX_PATH=/home/olel/Projects/FPMagangBayu24/install/arm_interfaces:/home/olel/Projects/FPMagangBayu24/install/translator:/home/olel/Projects/FPMagangBayu24/install/control:/home/olel/Projects/FPMagangBayu24/install/vision:/opt/ros/foxy PYTHONPATH=/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib/python3.8/site-packages:/home/olel/Projects/FPMagangBayu24/install/vision/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/local/bin/cmake --install /home/olel/Projects/FPMagangBayu24/build/translator
+[9.306s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(translator)
+[9.308s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/olel/Projects/FPMagangBayu24/build/translator' returned '0': CMAKE_PREFIX_PATH=/home/olel/Projects/FPMagangBayu24/install/arm_interfaces:/home/olel/Projects/FPMagangBayu24/install/translator:/home/olel/Projects/FPMagangBayu24/install/control:/home/olel/Projects/FPMagangBayu24/install/vision:/opt/ros/foxy PYTHONPATH=/home/olel/Projects/FPMagangBayu24/install/arm_interfaces/lib/python3.8/site-packages:/home/olel/Projects/FPMagangBayu24/install/vision/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/local/bin/cmake --install /home/olel/Projects/FPMagangBayu24/build/translator
+[9.382s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/translator' for CMake module files
+[9.383s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/translator' for CMake config files
+[9.383s] Level 1:colcon.colcon_core.shell:create_environment_hook('translator', 'cmake_prefix_path')
+[9.448s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olel/Projects/FPMagangBayu24/install/translator/share/translator/hook/cmake_prefix_path.ps1'
+[9.449s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olel/Projects/FPMagangBayu24/install/translator/share/translator/hook/cmake_prefix_path.dsv'
+[9.451s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olel/Projects/FPMagangBayu24/install/translator/share/translator/hook/cmake_prefix_path.sh'
+[9.454s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/translator/lib'
+[9.455s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/translator/bin'
+[9.455s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/translator/lib/pkgconfig/translator.pc'
+[9.455s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/translator/lib/python3.8/site-packages'
+[9.455s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/translator/bin'
+[9.521s] INFO:colcon.colcon_core.shell:Creating package script '/home/olel/Projects/FPMagangBayu24/install/translator/share/translator/package.ps1'
+[9.522s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/olel/Projects/FPMagangBayu24/install/translator/share/translator/package.dsv'
+[9.522s] INFO:colcon.colcon_core.shell:Creating package script '/home/olel/Projects/FPMagangBayu24/install/translator/share/translator/package.sh'
+[9.523s] INFO:colcon.colcon_core.shell:Creating package script '/home/olel/Projects/FPMagangBayu24/install/translator/share/translator/package.bash'
+[9.523s] INFO:colcon.colcon_core.shell:Creating package script '/home/olel/Projects/FPMagangBayu24/install/translator/share/translator/package.zsh'
+[9.524s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/olel/Projects/FPMagangBayu24/install/translator/share/colcon-core/packages/translator)
+[9.609s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(translator)
+[9.672s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/translator' for CMake module files
+[9.672s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/translator' for CMake config files
+[9.673s] Level 1:colcon.colcon_core.shell:create_environment_hook('translator', 'cmake_prefix_path')
+[9.732s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olel/Projects/FPMagangBayu24/install/translator/share/translator/hook/cmake_prefix_path.ps1'
+[9.733s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olel/Projects/FPMagangBayu24/install/translator/share/translator/hook/cmake_prefix_path.dsv'
+[9.734s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olel/Projects/FPMagangBayu24/install/translator/share/translator/hook/cmake_prefix_path.sh'
+[9.734s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/translator/lib'
+[9.734s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/translator/bin'
+[9.734s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/translator/lib/pkgconfig/translator.pc'
+[9.734s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/translator/lib/python3.8/site-packages'
+[9.734s] Level 1:colcon.colcon_core.environment:checking '/home/olel/Projects/FPMagangBayu24/install/translator/bin'
+[9.795s] INFO:colcon.colcon_core.shell:Creating package script '/home/olel/Projects/FPMagangBayu24/install/translator/share/translator/package.ps1'
+[9.796s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/olel/Projects/FPMagangBayu24/install/translator/share/translator/package.dsv'
+[9.796s] INFO:colcon.colcon_core.shell:Creating package script '/home/olel/Projects/FPMagangBayu24/install/translator/share/translator/package.sh'
+[9.796s] INFO:colcon.colcon_core.shell:Creating package script '/home/olel/Projects/FPMagangBayu24/install/translator/share/translator/package.bash'
+[9.797s] INFO:colcon.colcon_core.shell:Creating package script '/home/olel/Projects/FPMagangBayu24/install/translator/share/translator/package.zsh'
+[9.797s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/olel/Projects/FPMagangBayu24/install/translator/share/colcon-core/packages/translator)
+[9.797s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[9.797s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[9.799s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[9.799s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[9.874s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[9.874s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[9.874s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[9.895s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[9.964s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/olel/Projects/FPMagangBayu24/install/local_setup.ps1'
+[9.965s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/olel/Projects/FPMagangBayu24/install/_local_setup_util_ps1.py'
+[9.967s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/olel/Projects/FPMagangBayu24/install/setup.ps1'
+[10.048s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/olel/Projects/FPMagangBayu24/install/local_setup.sh'
+[10.053s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/olel/Projects/FPMagangBayu24/install/_local_setup_util_sh.py'
+[10.054s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/olel/Projects/FPMagangBayu24/install/setup.sh'
+[10.125s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/olel/Projects/FPMagangBayu24/install/local_setup.bash'
+[10.126s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/olel/Projects/FPMagangBayu24/install/setup.bash'
+[10.187s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/olel/Projects/FPMagangBayu24/install/local_setup.zsh'
+[10.187s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/olel/Projects/FPMagangBayu24/install/setup.zsh'

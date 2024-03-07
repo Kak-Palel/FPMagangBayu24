@@ -74,16 +74,16 @@ class TranslatorTicTacToe : public rclcpp::Node
 
       const float factorPIX2REAL = (diagonalRealLen*centerDist)/(diagonalPixLen*focLen);
       
-      const float pixServY = midY + (27.8f / factorPIX2REAL); //to be assigned (in pixelll)
+      const float pixServY = midY + (25.8f / factorPIX2REAL); //to be assigned (in pixelll)
       const float height_arm2pawn = 6.7f;
-      const float backArmLen = 14.0f;
-      const float frontArmLen = 15.0f;
+      const float backArmLen = 15.3f;
+      const float frontArmLen = 15.3f;
 
       toMove[0] = 90 - atan2((points->fromx - midX), (pixServY - points->fromy)) * (180/3.141592);
       toMove[3] = 90 - atan2((points->tox - midX), (pixServY - points->toy)) * (180/3.141592);
 
-      float dist_fr2serv = (findDistPix(points->fromx, midX, points->fromy, pixServY) * factorPIX2REAL) - 10.0f;
-      float dist_to2serv = (findDistPix(points->tox, midX, points->toy, pixServY) * factorPIX2REAL) - 10.0f;
+      float dist_fr2serv = (findDistPix(points->fromx, midX, points->fromy, pixServY) * factorPIX2REAL) - 14.5f;
+      float dist_to2serv = (findDistPix(points->tox, midX, points->toy, pixServY) * factorPIX2REAL) - 14.5f;
 
       std::cout<<"dist_fr2serv: "<<dist_fr2serv<<std::endl;
       std::cout<<"dist_to2serv: "<<dist_to2serv<<std::endl<<std::endl;
@@ -118,12 +118,7 @@ class TranslatorTicTacToe : public rclcpp::Node
     void timer_callback(std::vector<float> ServoMoves)
     {
       auto message = arm_interfaces::msg::ServoParameters();
-      // message.take1 = 90;
-      // message.take2 = 90;
-      // message.take3 = 90;
-      // message.drop1 = 180;
-      // message.drop2 = 180;
-      // message.drop3 = 180;
+
       message.take1 = ServoMoves[0];
       message.take2 = ServoMoves[1];
       message.take3 = ServoMoves[2];
