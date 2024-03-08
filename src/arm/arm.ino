@@ -44,23 +44,25 @@ void error_loop(){
 void take(float a, float b, float c)
 {
   face.write(a);
+  delay(5000);
   back.write(b);
-  delay(500);
+  delay(5000);
   front.write(c);
   delay(2000);
   grip.write(gripOn);
-  delay(200);
+  delay(2000);
 }
 
 void drop(float a, float b, float c)
 {
   face.write(a);
+  delay(2000);
   back.write(b);
-  delay(500);
+  delay(2000);
   front.write(c);
   delay(2000);
   grip.write(gripOff);
-  delay(200);
+  delay(2000);
 }
 
 void subscription_callback(const void * msgin)
@@ -81,13 +83,13 @@ void subscription_callback(const void * msgin)
   
   digitalWrite(LED_PIN, LOW);
   face.write(default_face);
-  delay(500);
+  delay(2000);
   back.write(default_back);
-  delay(500);
+  delay(2000);
   front.write(default_front);
-  delay(500);
+  delay(2000);
   grip.write(gripOff);
-  delay(500);
+  delay(2000);
 }
 
 void setup() {
@@ -107,13 +109,13 @@ void setup() {
   delay(2000);
 
   face.write(default_face);
-  delay(500);
+  delay(1000);
   back.write(default_back);
-  delay(500);
+  delay(1000);
   front.write(default_front);
-  delay(500);
+  delay(1000);
   grip.write(gripOff);
-  delay(500);
+  delay(1000);
 
   digitalWrite(LED_PIN, LOW);
 

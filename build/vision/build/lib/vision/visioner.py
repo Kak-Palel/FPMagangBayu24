@@ -64,10 +64,10 @@ class VisionerTicTacToe(Node):
     #method untuk mencari posisi grid
     def findGrid(self, frame):
 
-        pos1 = np.array([0, 0])
-        pos2 = np.array([1, 1])
+        pos1 = np.array([120, 30])
+        pos2 = np.array([520, 435])
 
-        lowerBound = np.array([0, 100, 0], dtype=np.uint8)
+        lowerBound = np.array([0, 80, 0], dtype=np.uint8)
         upperBound = np.array([255, 255, 255], dtype=np.uint8)
         
         frame = cv.medianBlur(frame, 5)

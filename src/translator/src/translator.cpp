@@ -79,8 +79,8 @@ class TranslatorTicTacToe : public rclcpp::Node
       const float backArmLen = 15.3f;
       const float frontArmLen = 15.3f;
 
-      toMove[0] = 90 - atan2((points->fromx - midX), (pixServY - points->fromy)) * (180/3.141592);
-      toMove[3] = 90 - atan2((points->tox - midX), (pixServY - points->toy)) * (180/3.141592);
+      toMove[0] = 90 - atan2((midX - points->fromx), (pixServY - points->fromy)) * (180/3.141592);
+      toMove[3] = 90 - atan2((midX - points->tox), (pixServY - points->toy)) * (180/3.141592);
 
       float dist_fr2serv = (findDistPix(points->fromx, midX, points->fromy, pixServY) * factorPIX2REAL) - 14.5f;
       float dist_to2serv = (findDistPix(points->tox, midX, points->toy, pixServY) * factorPIX2REAL) - 14.5f;
@@ -116,9 +116,15 @@ class TranslatorTicTacToe : public rclcpp::Node
     }
 
     void timer_callback(std::vector<float> ServoMoves)
-    {
+    
       auto message = arm_interfaces::msg::ServoParameters();
 
+      // message.take1 = 0;
+      // message.take2 = 0;
+      // message.take3 = 0;
+      // message.drop1 = 0;
+      // message.drop2 = 0;
+      // message.drop3 = 0;
       message.take1 = ServoMoves[0];
       message.take2 = ServoMoves[1];
       message.take3 = ServoMoves[2];
